@@ -1,36 +1,113 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🇵🇭 Digital Pinoy: Philippine Pop Culture 2000–2010
 
-## Getting Started
+A virtual museum celebrating the Philippines' digital culture from 2000-2010. Experience Friendster profiles, internet cafés, teleseryes, OPM music, and more through interactive exhibits.
 
-First, run the development server:
+## 🎯 Project Vision
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+**"A virtual museum that lets visitors relive the Philippines' 2000–2010 digital life through interactive exhibits"**
+
+This is not just about nostalgia—it's about preserving the cultural heritage of a generation that bridged analog and digital worlds, creating a uniquely Filipino digital identity.
+
+## ✨ Features
+
+### 🏠 **Landing Page**
+- **Hero Section**: Immersive entry point with ambient audio controls
+- **Interactive Timeline**: Draggable timeline of key moments (2000-2010)
+- **Exhibit Grid**: Visual showcase of all available experiences
+
+### 🎭 **Interactive Exhibits**
+
+#### 👥 **Friendster & Early Socials** ✅
+- Recreate authentic 2000s social media profiles
+- Custom layouts with glitter graphics
+- Testimonial system and profile customization
+- Historical context and cultural impact
+
+#### 🎮 **Internet Café / Gaming Arcade** ✅
+- Real-time computer status grid
+- DOTA, Counter-Strike, and Ragnarok nostalgia
+- Live chat simulation
+- Ambient sound controls
+
+#### 📺 **Teleserye Living Room** ✅
+- Video player with iconic episodes
+- Live reaction system
+- Real-time comment simulation
+- Watch party atmosphere
+
+## 🛠 Technical Stack
+
+- **Next.js 15** with App Router and TypeScript
+- **Tailwind CSS** for styling with custom design system
+- **Framer Motion** for smooth animations
+- **Lucide React** for consistent iconography
+
+## 🚀 Getting Started
+
+1. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+2. **Start development server**
+   ```bash
+   npm run dev
+   ```
+
+3. **Open in browser**
+   ```
+   http://localhost:3000
+   ```
+
+## 📁 Project Structure
+
+```
+src/
+├── app/                    # Next.js App Router
+│   ├── exhibits/          # Individual exhibit pages
+│   │   ├── friendster/    # Friendster recreation
+│   │   ├── internet-cafe/ # Gaming café simulation
+│   │   └── teleserye/     # TV drama experience
+│   ├── layout.tsx         # Root layout
+│   └── page.tsx          # Landing page
+├── components/
+│   └── common/           # Shared components
+├── data/                 # Static data and content
+└── lib/                  # TypeScript definitions
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎨 Design Philosophy
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Retro-Modern Aesthetic**: Clean layouts with subtle retro elements
+- **Interactive Storytelling**: Every exhibit tells a story through interaction
+- **Accessibility First**: Keyboard navigation, screen reader friendly
+- **Cultural Sensitivity**: Respectful approach to faith and cultural content
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🗺 Roadmap
 
-## Learn More
+### Phase 1 ✅ *Completed*
+- [x] Project setup and architecture
+- [x] Landing page with hero and timeline
+- [x] Friendster exhibit (full interactive profile)
+- [x] Internet café exhibit (gaming nostalgia)
+- [x] Teleserye exhibit (video player experience)
 
-To learn more about Next.js, take a look at the following resources:
+### Phase 2 🚧 *Next Steps*
+- [ ] OPM music playlist and lyric wall
+- [ ] Pacquiao arena with fight highlights
+- [ ] Faith & fiestas photo essays
+- [ ] Audio system and ambient sounds
+- [ ] Memory vault / user guestbook
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📚 Cultural Context
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This decade represents the Philippines' **first digital identity**:
+- **Technology became social** (internet cafés, text messaging)
+- **Emotional culture went digital** (OPM, teleseryes, social media)
+- **Global culture strengthened local identity** (K-dramas, Hollywood + Filipino pride)
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Built with ❤️ for the Filipino digital generation**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+*"Hindi lahat ng website ay naka-save sa Internet Archive, pero lahat ng memories ay naka-save sa puso natin."*
