@@ -80,7 +80,7 @@ export default function Home() {
     <div
       className="min-h-screen relative"
       style={{
-        backgroundImage: 'url(/images/mainhall.jpg)',
+        backgroundImage: 'url(/DigitalPinoy/images/mainhall.jpg)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',

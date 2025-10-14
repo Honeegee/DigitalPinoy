@@ -73,7 +73,7 @@ export default function FriendsterExhibit() {
     <div
       className="min-h-screen relative overflow-hidden"
       style={{
-        backgroundImage: 'url(/images/friendsterBackground.gif)',
+        backgroundImage: 'url(/DigitalPinoy/images/friendsterBackground.gif)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',

@@ -10,7 +10,7 @@ export default function ExhibitsPage() {
     <div
       className="min-h-screen relative"
       style={{
-        backgroundImage: 'url(/images/exhibit.jpg)',
+        backgroundImage: 'url(/DigitalPinoy/images/exhibit.jpg)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',

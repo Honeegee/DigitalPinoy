@@ -40,7 +40,7 @@ export default function Header() {
               <motion.img
                 whileHover={{ rotate: 360 }}
                 transition={{ duration: 0.6 }}
-                src="/images/dgLogo.png"
+                src="/DigitalPinoy/images/dgLogo.png"
                 alt="Digital Pinoy Museum Logo"
                 className="h-8 w-auto"
               />

@@ -45,7 +45,7 @@ export default function TimelinePage() {
     <div
       className="min-h-screen relative"
       style={{
-        backgroundImage: 'url(/images/ehall.jpg)',
+        backgroundImage: 'url(/DigitalPinoy/images/ehall.jpg)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',

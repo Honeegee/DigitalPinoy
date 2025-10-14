@@ -28,7 +28,7 @@ export default function HeroSection() {
       {/* Main Hall Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: 'url(/images/mainhall.jpg)' }}
+        style={{ backgroundImage: 'url(/DigitalPinoy/images/mainhall.jpg)' }}
       />
 
       {/* Enhanced overlay for better text readability */}
