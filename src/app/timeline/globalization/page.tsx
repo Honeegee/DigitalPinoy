@@ -1,23 +1,27 @@
 'use client';
 
-import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowLeft, X, Sparkles } from 'lucide-react';
+import { motion } from 'framer-motion';
+import {
+  Smartphone,
+  Wifi,
+  Music,
+  Gamepad2,
+  MessageSquare,
+  Coffee,
+  Zap,
+  TrendingUp,
+  Brain,
+  Sparkles,
+  Globe,
+  Heart,
+  Camera,
+  Radio
+} from 'lucide-react';
+import FloatingSymbols from '@/components/ui/FloatingSymbols';
 import Link from 'next/link';
-import { useState } from 'react';
 
-
-const periods = [
-  { id: 'past', label: '2000-2010', subtitle: 'Global Discovery', color: 'green', emoji: '🌏' },
-  { id: 'present', label: 'Present', subtitle: '2024', color: 'emerald', emoji: '🌍' },
-  { id: 'future', label: '2030', subtitle: 'The Future', color: 'teal', emoji: '🌎' }
-];
 
 export default function GlobalizationTimelinePage() {
-  const [selectedPeriod, setSelectedPeriod] = useState<string>('past');
-  const [selectedPedestal, setSelectedPedestal] = useState<string | null>(null);
-  const [hoveredPedestal, setHoveredPedestal] = useState<string | null>(null);
-
-  const currentPeriod = periods.find(p => p.id === selectedPeriod);
 
   return (
     <div
@@ -36,7 +40,7 @@ export default function GlobalizationTimelinePage() {
       <div className="relative z-10 pt-16 pb-8">
         <div className="max-w-7xl mx-auto px-4">
           <Link href="/timeline" className="inline-flex items-center gap-2 text-green-400 hover:text-green-300 mb-8 transition-colors">
-            <ArrowLeft className="w-5 h-5" />
+            <Globe className="w-5 h-5" />
             <span>Back to Timeline</span>
           </Link>
 
@@ -61,117 +65,241 @@ export default function GlobalizationTimelinePage() {
       </div>
 
 
-      {/* Exhibition Hall */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 pb-20">
-        {/* Hall Floor */}
-        <div className="relative min-h-[600px] bg-gradient-to-b from-transparent via-gray-900/20 to-gray-900/40 rounded-3xl p-8 border border-gray-700/30">
+      {/* 2000-2010: The Foundation Era */}
+      <div className="relative z-10 py-4">
+        <div className="max-w-7xl mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-4xl font-bold bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent mb-4">
+              2000-2010: The Foundation Era
+            </h2>
+            <p className="text-gray-300 max-w-2xl mx-auto">
+              Click on each exhibit to dive deep into the globalization milestones that shaped Filipino digital culture
+            </p>
+          </motion.div>
 
-          {/* Perspective Grid Floor */}
-          <div className="absolute inset-0 overflow-hidden rounded-3xl opacity-10">
-            <div className="absolute inset-0" style={{
-              backgroundImage: 'linear-gradient(0deg, transparent 24%, rgba(255, 255, 255, .05) 25%, rgba(255, 255, 255, .05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .05) 75%, rgba(255, 255, 255, .05) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(255, 255, 255, .05) 25%, rgba(255, 255, 255, .05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .05) 75%, rgba(255, 255, 255, .05) 76%, transparent 77%, transparent)',
-              backgroundSize: '50px 50px'
-            }}></div>
-          </div>
-
-          {/* Globalization Timeline Content */}
-          <div className="relative z-10 text-center py-20">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="max-w-4xl mx-auto"
-            >
-              <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">
-                Globalization Evolution Through Decades
-              </h2>
-              <p className="text-xl text-gray-300 mb-12">
-                We transformed global culture with our humor, language, and Filipino identity.
-              </p>
-
-              {/* Decade Timeline */}
-              <div className="grid md:grid-cols-3 gap-8 mb-16">
-                {[
-                  {
-                    period: '2000-2010',
-                    title: 'Global Discovery',
-                    description: 'Harry Potter, K-dramas, OFW remittances, global fandoms unite Filipinos.',
-                    icon: '🌍',
-                    color: 'from-blue-500 to-cyan-500',
-                    highlights: ['Harry Potter', 'K-Dramas', 'OFW Remittances', 'Global Fandoms']
-                  },
-                  {
-                    period: 'Present (2024)',
-                    title: 'Digital Diaspora',
-                    description: 'Filipino creators dominate global platforms, digital OFWs, cultural exports.',
-                    icon: '🌐',
-                    color: 'from-green-500 to-emerald-500',
-                    highlights: ['Digital Creators', 'Global Platforms', 'Cultural Exports', 'Remote Work']
-                  },
-                  {
-                    period: 'Future (2030)',
-                    title: 'Global Filipino Identity',
-                    description: 'Filipino culture mainstream worldwide, AI translation, borderless communities.',
-                    icon: '🇵🇭',
-                    color: 'from-purple-500 to-indigo-500',
-                    highlights: ['Cultural Mainstream', 'AI Translation', 'Borderless', 'Global Influence']
-                  }
-                ].map((phase, index) => (
-                  <motion.div
-                    key={phase.period}
-                    initial={{ opacity: 0, y: 50 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: index * 0.2 }}
-                    className={`bg-gradient-to-br ${phase.color} p-6 rounded-2xl backdrop-blur-sm border border-white/20`}
-                  >
-                    <div className="text-4xl mb-4">{phase.icon}</div>
-                    <div className="text-sm font-bold text-white mb-2">{phase.period}</div>
-                    <h3 className="text-lg font-semibold text-white mb-3">{phase.title}</h3>
-                    <p className="text-gray-200 text-sm mb-4">{phase.description}</p>
-                    <div className="space-y-1">
-                      {phase.highlights.map((highlight, i) => (
-                        <div key={i} className="flex items-center gap-2 text-xs text-gray-300">
-                          <div className={`w-1.5 h-1.5 rounded-full bg-gradient-to-r ${phase.color}`}></div>
-                          <span>{highlight}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </motion.div>
-                ))}
-              </div>
-
-              {/* Key Highlights */}
-              <div className="bg-black/50 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
-                <h3 className="text-2xl font-bold text-white mb-6">Key Globalization Milestones</h3>
-                <div className="grid md:grid-cols-2 gap-6">
-                  {[
-                    { year: '2001', event: 'Harry Potter Phenomenon', impact: 'Global fandom unites Filipino youth' },
-                    { year: '2003', event: 'OFW Remittance Boom', impact: '₱1.2 trillion sent home annually' },
-                    { year: '2004', event: 'K-Dramas Hit Philippines', impact: 'Korean culture influences local entertainment' },
-                    { year: '2006', event: 'Pinoy Big Brother', impact: 'Filipino culture exported globally' },
-                    { year: '2008', event: 'Global Financial Crisis', impact: 'OFWs become economic lifeline' },
-                    { year: '2010', event: 'Social Media Diaspora', impact: 'Filipino communities connect worldwide' }
-                  ].map((milestone, index) => (
-                    <motion.div
-                      key={milestone.year}
-                      initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      transition={{ delay: index * 0.1 }}
-                      className="flex items-center gap-4 p-4 bg-white/5 rounded-lg"
-                    >
-                      <div className="text-2xl font-bold text-cyan-400 min-w-[60px]">{milestone.year}</div>
-                      <div>
-                        <div className="font-semibold text-white">{milestone.event}</div>
-                        <div className="text-sm text-gray-400">{milestone.impact}</div>
-                      </div>
-                    </motion.div>
-                  ))}
-                </div>
-              </div>
-            </motion.div>
-          </div>
+          <FloatingSymbols
+            symbols={[
+              {
+                id: 'harry-potter-phenomenon',
+                title: 'Harry Potter',
+                subtitle: 'Global Fandom',
+                icon: Sparkles,
+                color: 'bg-gradient-to-br from-blue-900/30 to-cyan-900/30 border-blue-500/30',
+                href: '/timeline/globalization/harry-potter-phenomenon',
+                position: { x: 5, y: 5 },
+                imagePath: '/DigitalPinoy/images/harry.png'
+              },
+              {
+                id: 'ofw-remittances',
+                title: 'OFW Remittances',
+                subtitle: 'Economic Lifeline',
+                icon: TrendingUp,
+                color: 'bg-gradient-to-br from-green-900/30 to-emerald-900/30 border-green-500/30',
+                href: '/timeline/globalization/ofw-remittances',
+                position: { x: 23, y: 5 },
+                imagePath: '/DigitalPinoy/images/ofw.png'
+              },
+              {
+                id: 'k-dramas',
+                title: 'K-Dramas',
+                subtitle: 'Cultural Import',
+                icon: Camera,
+                color: 'bg-gradient-to-br from-purple-900/30 to-pink-900/30 border-purple-500/30',
+                href: '/timeline/globalization/k-dramas',
+                position: { x: 42, y: 5 },
+                imagePath: '/DigitalPinoy/images/kdrama.png'
+              },
+              {
+                id: 'pinoy-big-brother',
+                title: 'Pinoy Big Brother',
+                subtitle: 'Cultural Export',
+                icon: Radio,
+                color: 'bg-gradient-to-br from-yellow-900/30 to-orange-900/30 border-yellow-500/30',
+                href: '/timeline/globalization/pinoy-big-brother',
+                position: { x: 61, y: 5 },
+                imagePath: '/DigitalPinoy/images/PBB.png'
+              },
+              {
+                id: 'global-filipino-cuisine',
+                title: 'Filipino Cuisine',
+                subtitle: 'Global Food Culture',
+                icon: Coffee,
+                color: 'bg-gradient-to-br from-orange-900/30 to-red-900/30 border-orange-500/30',
+                href: '/timeline/globalization/global-filipino-cuisine',
+                position: { x: 80, y: 5 },
+                imagePath: '/DigitalPinoy/images/friendster.png'
+              }
+            ]}
+            className="mt-0"
+          />
         </div>
-
       </div>
-    </div>
-  );
+
+      {/* Present Day: The Transformation */}
+      <div className="relative z-10 py-4 border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-4xl font-bold bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent mb-4">
+              2020-2025: The Transformation
+            </h2>
+            <p className="text-gray-300 max-w-2xl mx-auto">
+              Filipino creators dominate global platforms. Digital OFWs thrive. Cultural exports flourish.
+            </p>
+          </motion.div>
+
+          <FloatingSymbols
+            symbols={[
+              {
+                id: 'digital-creators',
+                title: 'Digital Creators',
+                subtitle: 'Global Influence',
+                icon: Camera,
+                color: 'bg-gradient-to-br from-purple-900/30 to-pink-900/30 border-purple-500/30',
+                href: '/timeline/globalization/digital-creators',
+                position: { x: 20, y: 5 },
+                imagePath: '/DigitalPinoy/images/content.png'
+              },
+              {
+                id: 'global-platforms',
+                title: 'Global Platforms',
+                subtitle: 'TikTok & YouTube',
+                icon: TrendingUp,
+                color: 'bg-gradient-to-br from-blue-900/30 to-cyan-900/30 border-blue-500/30',
+                href: '/timeline/globalization/global-platforms',
+                position: { x: 45, y: 5 },
+                imagePath: '/DigitalPinoy/images/social.png'
+              },
+              {
+                id: 'cultural-exports',
+                title: 'Cultural Exports',
+                subtitle: 'Filipino Content',
+                icon: Music,
+                color: 'bg-gradient-to-br from-orange-900/30 to-red-900/30 border-orange-500/30',
+                href: '/timeline/globalization/cultural-exports',
+                position: { x: 70, y: 5 },
+                imagePath: '/DigitalPinoy/images/culturalexports.png'
+              }
+            ]}
+            className="mt-0"
+          />
+        </div>
+      </div>
+
+      {/* 2030: The Vision */}
+      <div className="relative z-10 py-4 border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-4xl font-bold bg-gradient-to-r from-teal-400 to-cyan-400 bg-clip-text text-transparent mb-4">
+              2030: The Vision
+            </h2>
+            <p className="text-gray-300 max-w-2xl mx-auto">
+              Filipino culture mainstream worldwide. AI translation enables borderless communities.
+            </p>
+          </motion.div>
+
+          <FloatingSymbols
+            symbols={[
+              {
+                id: 'cultural-mainstream',
+                title: 'Cultural Mainstream',
+                subtitle: 'Global Filipino',
+                icon: Globe,
+                color: 'bg-gradient-to-br from-green-900/30 to-emerald-900/30 border-green-500/30',
+                href: '/timeline/globalization/cultural-mainstream',
+                position: { x: 35, y: 5 },
+                imagePath: '/DigitalPinoy/images/culturalmainstream.png'
+              },
+              {
+                id: 'ai-translation',
+                title: 'AI Translation',
+                subtitle: 'Language Bridge',
+                icon: Brain,
+                color: 'bg-gradient-to-br from-indigo-900/30 to-purple-900/30 border-indigo-500/30',
+                href: '/timeline/globalization/ai-translation',
+                position: { x: 60, y: 5 },
+                imagePath: '/DigitalPinoy/images/ai.png'
+              }
+            ]}
+            className="mt-0"
+          />
+        </div>
+      </div>
+       {/* Museum Footer */}
+       <div className="relative z-10 bg-black/50 backdrop-blur-sm border-t border-white/10 py-12 mt-12">
+         <div className="max-w-7xl mx-auto px-4">
+           <div className="text-center mb-8">
+             <h3 className="text-3xl font-bold text-white mb-4">
+               The Globalization Journey Continues
+             </h3>
+             <p className="text-gray-300 max-w-3xl mx-auto mb-6">
+               From the foundation of the 2000s to today's transformation and tomorrow's vision,
+               Filipino globalization continues to evolve, innovate, and inspire.
+               Each era builds upon the last, creating a uniquely Filipino global identity.
+             </p>
+           </div>
+
+           {/* Navigation to Other Halls */}
+           <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+             <Link href="/timeline/technology">
+               <motion.div
+                 whileHover={{ scale: 1.05, y: -5 }}
+                 className="bg-gradient-to-br from-blue-900/20 to-cyan-900/20 backdrop-blur-sm rounded-xl border border-blue-500/20 p-6 hover:border-blue-500/40 transition-all cursor-pointer"
+               >
+                 <div className="flex items-center gap-4 mb-3">
+                   <Zap className="w-8 h-8 text-blue-400" />
+                   <div>
+                     <h4 className="text-xl font-bold text-white">Technology Hall</h4>
+                     <p className="text-sm text-gray-400">Digital Revolution Pavilion</p>
+                   </div>
+                 </div>
+                 <p className="text-gray-300 text-sm">Explore how technology transformed Filipino life from dial-up to AI.</p>
+               </motion.div>
+             </Link>
+
+             <Link href="/timeline/emotions">
+               <motion.div
+                 whileHover={{ scale: 1.05, y: -5 }}
+                 className="bg-gradient-to-br from-pink-900/20 to-red-900/20 backdrop-blur-sm rounded-xl border border-pink-500/20 p-6 hover:border-pink-500/40 transition-all cursor-pointer"
+               >
+                 <div className="flex items-center gap-4 mb-3">
+                   <Heart className="w-8 h-8 text-pink-400" />
+                   <div>
+                     <h4 className="text-xl font-bold text-white">Emotions Hall</h4>
+                     <p className="text-sm text-gray-400">Heart & Soul Gallery</p>
+                   </div>
+                 </div>
+                 <p className="text-gray-300 text-sm">Explore how Filipino emotions evolved from hugot culture to digital empathy.</p>
+               </motion.div>
+             </Link>
+           </div>
+
+           {/* Museum Info */}
+           <div className="mt-12 text-center">
+             <p className="text-gray-400 mb-4">
+               Part of the <span className="text-white font-semibold">Digital Pinoy Museum</span> Collection
+             </p>
+             <div className="flex items-center justify-center gap-6 text-sm text-gray-500">
+               <span>🌍 Interactive Exhibits</span>
+               <span>•</span>
+               <span>🌐 Global Artifacts</span>
+               <span>•</span>
+               <span>🖼️ Authentic Stories</span>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   );
 }

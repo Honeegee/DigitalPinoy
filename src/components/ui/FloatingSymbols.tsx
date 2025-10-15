@@ -34,7 +34,7 @@ export default function FloatingSymbols({ symbols, className = '', onSymbolClick
   }, []);
 
   return (
-    <div className={`relative w-full min-h-[800px] ${className}`}>
+    <div className={`relative w-full min-h-[300px] ${className}`}>
       {symbols.map((symbol, index) => {
         const IconComponent = symbol.icon;
         return (
@@ -157,26 +157,30 @@ export default function FloatingSymbols({ symbols, className = '', onSymbolClick
       
       {/* Enhanced Background floating particles */}
       <div className="absolute inset-0 pointer-events-none">
-        {Array.from({ length: 30 }).map((_, i) => (
-          <motion.div
-            key={i}
-            className="absolute w-2 h-2 bg-white/20 rounded-full"
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-            }}
-            animate={{
-              y: [0, -40, 0],
-              opacity: [0.3, 0.8, 0.3],
-              scale: [1, 1.5, 1],
-            }}
-            transition={{
-              duration: 5 + Math.random() * 4,
-              repeat: Infinity,
-              delay: Math.random() * 3,
-            }}
-          />
-        ))}
+        {Array.from({ length: 30 }).map((_, i) => {
+          const left = `${Math.random() * 100}%`;
+          const top = `${Math.random() * 100}%`;
+          return (
+            <motion.div
+              key={i}
+              className="absolute w-2 h-2 bg-white/20 rounded-full"
+              style={{
+                left,
+                top,
+              }}
+              animate={{
+                y: [0, -40, 0],
+                opacity: [0.3, 0.8, 0.3],
+                scale: [1, 1.5, 1],
+              }}
+              transition={{
+                duration: 5 + Math.random() * 4,
+                repeat: Infinity,
+                delay: Math.random() * 3,
+              }}
+            />
+          );
+        })}
       </div>
     </div>
   );
