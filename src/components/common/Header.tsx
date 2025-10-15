@@ -13,6 +13,7 @@ export default function Header() {
   const navItems = [
     { href: '/', label: 'Home', icon: <Home className="w-4 h-4" /> },
     { href: '/timeline', label: 'Timeline', icon: <Clock className="w-4 h-4" /> },
+    { href: '/steep-analysis', label: 'Then and Now', icon: <MessageCircle className="w-4 h-4" /> },
     { href: '/exhibits', label: 'Exhibits', icon: <Map className="w-4 h-4" /> },
     { href: '/about', label: 'About', icon: <Heart className="w-4 h-4" /> }
   ];
@@ -44,7 +45,7 @@ export default function Header() {
                 alt="Digital Pinoy Museum Logo"
                 className="h-8 w-auto"
               />
-              <div className="font-serif text-lg font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent group-hover:from-purple-400 group-hover:to-cyan-400 transition-all duration-300">
+              <div className="font-roboto text-lg font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent group-hover:from-purple-400 group-hover:to-cyan-400 transition-all duration-300">
                 Digital Pinoy
               </div>
             </motion.div>

@@ -78,10 +78,10 @@ export default function HeroSection() {
           transition={{ duration: 1, delay: 0.3 }}
           className="mb-8"
         >
-          <h1 className="text-6xl md:text-8xl mb-4 font-bold text-white">
+          <h1 className="text-6xl md:text-8xl mb-4 font-bold text-white font-roboto">
             DIGITAL
           </h1>
-          <h1 className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+          <h1 className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent font-roboto">
             PINOY
           </h1>
         </motion.div>

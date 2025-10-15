@@ -74,7 +74,7 @@ export default function AboutPage() {
     <div
       className="min-h-screen relative"
       style={{
-        backgroundImage: 'url(/DigitalPinoy/images/mainhall.jpg)',
+        backgroundImage: 'url(/DigitalPinoy/images/abouthall.jpg)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
@@ -91,11 +91,6 @@ export default function AboutPage() {
       {/* Header */}
       <div className="relative z-10 pt-24 pb-16">
         <div className="max-w-6xl mx-auto px-4">
-          <Link href="/" className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 mb-8 transition-colors">
-            <ArrowLeft className="w-5 h-5" />
-            <span>Back to Museum</span>
-          </Link>
-
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
