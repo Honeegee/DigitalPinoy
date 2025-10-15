@@ -33,13 +33,13 @@ export default function FriendsterExhibit() {
 
   const [isPlaying] = useState(true);
 
-  const profilePhoto = { src: '/images/emogirl.jpg', caption: 'the best version of me 2003' };
+  const profilePhoto = { src: '/DigitalPinoy/images/emogirl.jpg', caption: 'the best version of me 2003' };
 
   const friendPhotos = [
-    { src: '/images/friend1.jpg', caption: 'hanging out with friends' },
-    { src: '/images/friend2.jpg', caption: 'hanging out with friends' },
-    { src: '/images/friend3.jpg', caption: 'good times with my squad' },
-    { src: '/images/friend4.jpg', caption: 'bestfriends forever' }
+    { src: '/DigitalPinoy/images/friend1.jpg', caption: 'hanging out with friends' },
+    { src: '/DigitalPinoy/images/friend2.jpg', caption: 'hanging out with friends' },
+    { src: '/DigitalPinoy/images/friend3.jpg', caption: 'good times with my squad' },
+    { src: '/DigitalPinoy/images/friend4.jpg', caption: 'bestfriends forever' }
   ];
 
   const testimonials = [
@@ -47,19 +47,19 @@ export default function FriendsterExhibit() {
       author: 'super_bff_4eva',
       message: 'angie!!! ur so pretty and sweet!!! best fren 4 lyf!!! miss u so much!!! text me na!!!',
       date: '3 days ago',
-      photo: '/images/friend1.jpg'
+      photo: '/DigitalPinoy/images/friend1.jpg'
     },
     {
       author: 'emo_boy_21',
       message: 'hey angel... ur so cute!!! hope we can chat soon!!! add me sa YM!!!',
       date: '1 week ago',
-      photo: '/images/friend2.jpg'
+      photo: '/DigitalPinoy/images/friend2.jpg'
     },
     {
       author: 'barkada_gang',
       message: 'yo angie!!! gimik tayo sa mall next week!!! shopping and sing k then!!! miss u na!!!',
       date: '2 weeks ago',
-      photo: '/images/friend3.jpg'
+      photo: '/DigitalPinoy/images/friend3.jpg'
     }
   ];
 
@@ -161,7 +161,7 @@ export default function FriendsterExhibit() {
                   }}
                 >
                   <Image
-                    src="/images/Friendster-Logo.png"
+                    src="/DigitalPinoy/images/Friendster-Logo.png"
                     alt="Friendster Logo"
                     width={400}
                     height={128}
