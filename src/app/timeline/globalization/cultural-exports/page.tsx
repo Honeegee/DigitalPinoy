@@ -2,49 +2,24 @@
 
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { 
-  MessageSquare, 
-  Heart, 
-  Phone, 
-  Volume2, 
+  Package, 
   ArrowLeft,
   Calendar,
-  Users,
-  TrendingUp,
-  Zap,
-  Clock,
-  Sparkles
+  Heart,
+  Globe
 } from 'lucide-react';
 import Link from 'next/link';
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 
-export default function SMSRevolutionPage() {
+export default function CulturalExportsPage() {
   const containerRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start start", "end end"]
   });
 
-  const [playingSound, setPlayingSound] = useState(false);
-  const audioRef = useRef<HTMLAudioElement | null>(null);
-
   const heroY = useTransform(scrollYProgress, [0, 0.3], [0, 100]);
   const heroOpacity = useTransform(scrollYProgress, [0, 0.3], [1, 0]);
-
-  const playNotificationSound = () => {
-    if (audioRef.current) {
-      audioRef.current.currentTime = 0;
-      audioRef.current.play();
-      setPlayingSound(true);
-    }
-  };
-
-  const stopNotificationSound = () => {
-    if (audioRef.current) {
-      audioRef.current.pause();
-      audioRef.current.currentTime = 0;
-      setPlayingSound(false);
-    }
-  };
 
   return (
     <div ref={containerRef} className="min-h-screen bg-black">
@@ -67,7 +42,7 @@ export default function SMSRevolutionPage() {
             transition={{ duration: 1, type: "spring" }}
             className="w-20 h-20 mx-auto mb-6 rounded-2xl bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center shadow-2xl shadow-green-500/50"
           >
-            <MessageSquare className="w-10 h-10 text-white" />
+            <Package className="w-10 h-10 text-white" />
           </motion.div>
 
           <motion.h1
@@ -76,7 +51,7 @@ export default function SMSRevolutionPage() {
             transition={{ delay: 0.3, duration: 0.8 }}
             className="text-5xl font-bold mb-4 bg-gradient-to-r from-green-400 via-emerald-400 to-green-500 bg-clip-text text-transparent"
           >
-            The SMS Revolution
+            Cultural Exports
           </motion.h1>
 
           <motion.p
@@ -85,7 +60,7 @@ export default function SMSRevolutionPage() {
             transition={{ delay: 0.5, duration: 0.8 }}
             className="text-xl text-gray-300 mb-6"
           >
-            When 160 Characters Changed Everything
+            Global Culture: When Filipino Arts Went Worldwide
           </motion.p>
 
           <motion.div
@@ -95,7 +70,7 @@ export default function SMSRevolutionPage() {
             className="inline-block px-6 py-3 bg-green-900/30 backdrop-blur-sm border border-green-500/50 rounded-full"
           >
             <p className="text-sm text-green-300 font-semibold">
-              2000-2010: The Texting Capital of the World
+              2010-2020: The Cultural Export Era
             </p>
           </motion.div>
 
@@ -131,49 +106,51 @@ export default function SMSRevolutionPage() {
             >
               <div className="flex items-center gap-2 mb-4">
                 <Calendar className="w-5 h-5 text-green-400" />
-                <span className="text-green-400 font-semibold text-sm">Year 2000</span>
+                <span className="text-green-400 font-semibold text-sm">Year 2010</span>
               </div>
               <h2 className="text-3xl font-bold text-white mb-4">
-                It Started with a <span className="text-green-400">Beep</span>
+                The <span className="text-green-400">Cultural Export</span> Revolution
               </h2>
               <div className="space-y-3 text-gray-300 leading-relaxed">
                 <p>
-                  Before Facebook, before Twitter, before Instagram—there was SMS. 
-                  A simple text message. 160 characters. That's all Filipinos needed 
-                  to revolutionize communication.
+                  Cultural exports weren't just products—they were Filipino arts, global recognition, and worldwide cultural exchange.
                 </p>
                 <p>
-                  In the year 2000, something extraordinary happened. The Philippines 
-                  became the <span className="text-green-400 font-semibold">"Texting Capital of the World."</span> Not Silicon Valley. 
-                  Not Tokyo. Manila.
+                  What started as local traditions became global phenomena. Filipino arts became international treasures. 
+                  Cultural products became global ambassadors.
                 </p>
                 <div className="bg-green-900/20 border-l-4 border-green-500 rounded p-4 mt-4">
                   <p className="text-green-300 font-semibold">
-                    350 million text messages. Every. Single. Day.
+                    "From Manila to the world—Filipino culture became global export."
                   </p>
                 </div>
               </div>
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, x: -50 }}
+              initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
+              className="relative"
             >
-              <div className="aspect-video bg-gradient-to-br from-green-900/30 to-black rounded-xl border border-green-500/30 overflow-hidden relative">
+              <div className="aspect-[4/3] bg-gradient-to-br from-green-900/30 to-emerald-900/30 rounded-xl border border-green-500/30 overflow-hidden">
                 <img 
-                  src="/DigitalPinoy/images/exhibits/edsa2-sms.jpg" 
-                  alt="EDSA 2 SMS mobilization"
-                  className="w-full h-full object-cover"
+                  src="/DigitalPinoy/images/culturalexports.png" 
+                  alt="Cultural exports global culture"
+                  className="w-full h-full object-cover opacity-80"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                <div className="absolute bottom-3 left-3 right-3">
+                  <p className="text-white text-xs">Cultural exports creating global cultural exchange and worldwide recognition.</p>
+                </div>
               </div>
             </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Nokia 3310 Section */}
+      {/* Export Showcase Section */}
       <section className="relative z-10 py-16 bg-black/50">
         <div className="max-w-6xl mx-auto px-4">
           <motion.div
@@ -184,13 +161,13 @@ export default function SMSRevolutionPage() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl font-bold text-white mb-2">
-              Meet the <span className="text-green-400">Legend</span>
+              The <span className="text-green-400">Global Culture</span> Exchange
             </h2>
-            <p className="text-gray-400">The phone that survived everything</p>
+            <p className="text-gray-400">Every export built cultural connection</p>
           </motion.div>
 
           <div className="grid lg:grid-cols-2 gap-8 items-center">
-            {/* Nokia 3310 Showcase */}
+            {/* Export Showcase */}
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
@@ -200,15 +177,10 @@ export default function SMSRevolutionPage() {
             >
               <div className="aspect-square bg-gradient-to-br from-green-500/20 to-emerald-500/20 rounded-2xl border border-green-500/40 p-8 backdrop-blur-sm">
                 <div className="w-full h-full bg-black/50 rounded-xl border border-green-500/30 flex items-center justify-center relative overflow-hidden">
-                  <div className="absolute inset-0 bg-[url('/DigitalPinoy/technology/3310.gif')] bg-contain bg-center bg-no-repeat opacity-90"></div>
-                  <button className="absolute inset-0 flex items-center justify-center group">
-                    <div className="w-16 h-16 rounded-full bg-green-500/80 backdrop-blur-sm flex items-center justify-center group-hover:scale-110 transition-transform">
-                      <Volume2 className="w-8 h-8 text-white" />
-                    </div>
-                  </button>
+                  <div className="absolute inset-0 bg-[url('/DigitalPinoy/images/culturalexports.png')] bg-contain bg-center bg-no-repeat opacity-90"></div>
                   <div className="absolute bottom-3 left-3 right-3 text-center">
                     <p className="text-white text-xs bg-black/70 backdrop-blur-sm rounded-lg py-2 px-3">
-                      📹 3D Interactive Nokia 3310 Model
+                      🎨 Cultural Art
                     </p>
                   </div>
                 </div>
@@ -219,11 +191,11 @@ export default function SMSRevolutionPage() {
                 transition={{ duration: 3, repeat: Infinity }}
                 className="absolute -top-4 -right-4 bg-green-500 text-white px-4 py-2 rounded-full shadow-lg font-bold text-sm"
               >
-                Indestructible!
+                Export!
               </motion.div>
             </motion.div>
 
-            {/* Nokia 3310 Details */}
+            {/* Export Details */}
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -231,14 +203,14 @@ export default function SMSRevolutionPage() {
               viewport={{ once: true }}
               className="space-y-4"
             >
-              <h3 className="text-2xl font-bold text-white mb-4">Nokia 3310</h3>
+              <h3 className="text-2xl font-bold text-white mb-4">The Art of Cultural Exchange</h3>
               
               <div className="space-y-3">
                 {[
-                  { icon: '🔋', title: 'Battery Life', desc: '7 days standby. Charge once a week!' },
-                  { icon: '💪', title: 'Durability', desc: 'Dropped 100 times? Still works.' },
-                  { icon: '🎮', title: 'Snake II', desc: 'The only game you needed.' },
-                  { icon: '⚡', title: 'T9 Texting', desc: 'Master the art of predictive text.' },
+                  { icon: '🎨', title: 'Traditional Arts', desc: 'Filipino cultural heritage' },
+                  { icon: '🌍', title: 'Global Recognition', desc: 'International cultural awards' },
+                  { icon: '💼', title: 'Cultural Economy', desc: 'Global cultural products' },
+                  { icon: '🛡️', title: 'Cultural Diplomacy', desc: 'Filipino cultural ambassadors' },
                 ].map((feature, index) => (
                   <motion.div
                     key={index}
@@ -256,35 +228,12 @@ export default function SMSRevolutionPage() {
                   </motion.div>
                 ))}
               </div>
-
-              {/* Sound Buttons */}
-              <div className="flex gap-3 mt-6">
-                <motion.button
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                  onClick={playNotificationSound}
-                  className="flex-1 px-4 py-3 bg-gradient-to-r from-green-500 to-emerald-600 rounded-lg text-white font-semibold text-sm flex items-center justify-center gap-2 hover:from-green-600 hover:to-emerald-700 transition-all"
-                >
-                  <Volume2 className={`w-4 h-4 ${playingSound ? 'animate-pulse' : ''}`} />
-                  {playingSound ? 'Playing...' : 'Play Nokia Tune'}
-                </motion.button>
-                
-                <motion.button
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                  onClick={stopNotificationSound}
-                  className="px-4 py-3 bg-gradient-to-r from-red-500 to-red-600 rounded-lg text-white font-semibold text-sm flex items-center justify-center gap-2 hover:from-red-600 hover:to-red-700 transition-all"
-                >
-                  <div className="w-4 h-4 bg-white rounded-sm"></div>
-                  Stop
-                </motion.button>
-              </div>
             </motion.div>
           </div>
         </div>
       </section>
 
-      {/* How Filipinos Used SMS */}
+      {/* Export Culture */}
       <section className="relative z-10 py-16">
         <div className="max-w-6xl mx-auto px-4">
           <motion.div
@@ -295,53 +244,53 @@ export default function SMSRevolutionPage() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl font-bold text-white mb-2">
-              How We <span className="text-green-400">Texted</span>
+              The <span className="text-emerald-400">Culture</span> of Global Arts
             </h2>
-            <p className="text-gray-400">Every message told a story</p>
+            <p className="text-gray-400">Every export built worldwide recognition</p>
           </motion.div>
 
           <div className="grid md:grid-cols-3 gap-6">
             {[
               {
-                title: 'The Morning Ritual',
-                emoji: '☀️',
-                message: 'GM po! ☺️',
-                description: 'Every day started with "Good Morning po!" Respect, even in 160 characters.',
-                color: 'from-yellow-500/20 to-orange-500/20 border-yellow-500/30'
-              },
-              {
-                title: 'Love Language',
-                emoji: '💕',
-                message: '143 means I ♥ U',
-                description: 'Codes became poetry. 143 (I Love You), 831 (8 letters, 3 words, 1 meaning).',
-                color: 'from-pink-500/20 to-red-500/20 border-pink-500/30'
-              },
-              {
-                title: 'The Check-In',
-                emoji: '📍',
-                message: 'Wer na u?',
-                description: '"Where are you na?" Because tracking apps didn\'t exist yet.',
-                color: 'from-blue-500/20 to-cyan-500/20 border-blue-500/30'
-              },
-              {
-                title: 'The Invitation',
-                emoji: '🎉',
-                message: 'Gig 2nyt! C u!',
-                description: 'Text abbreviations weren\'t lazy—they were efficient. And cool.',
-                color: 'from-purple-500/20 to-pink-500/20 border-purple-500/30'
-              },
-              {
-                title: 'The Apology',
-                emoji: '🙏',
-                message: 'Sry na po. Pls?',
-                description: 'Making peace via SMS. "Sorry na po" could fix everything.',
+                title: 'The Traditional Artists',
+                emoji: '🎨',
+                message: 'Creating Filipino arts',
+                description: 'Filipino traditional art creators.',
                 color: 'from-green-500/20 to-emerald-500/20 border-green-500/30'
               },
               {
-                title: 'The Forwarded Prayer',
-                emoji: '🙏',
-                message: 'Send 2 10 ppl 4 blessings',
-                description: 'Chain messages promising blessings. We all sent them, just in case.',
+                title: 'The Global Exhibitors',
+                emoji: '🌍',
+                message: 'Sharing Filipino culture worldwide',
+                description: 'Filipino cultural exhibition organizers.',
+                color: 'from-blue-500/20 to-indigo-500/20 border-blue-500/30'
+              },
+              {
+                title: 'The Cultural Entrepreneurs',
+                emoji: '💼',
+                message: 'Building cultural businesses',
+                description: 'Filipino cultural product entrepreneurs.',
+                color: 'from-purple-500/20 to-pink-500/20 border-purple-500/30'
+              },
+              {
+                title: 'The Cultural Ambassadors',
+                emoji: '🤝',
+                message: 'Representing Filipino culture',
+                description: 'Filipino cultural diplomatic representatives.',
+                color: 'from-yellow-500/20 to-orange-500/20 border-yellow-500/30'
+              },
+              {
+                title: 'The Art Innovators',
+                emoji: '✨',
+                message: 'Creating new cultural forms',
+                description: 'Filipino cultural innovation creators.',
+                color: 'from-red-500/20 to-pink-500/20 border-red-500/30'
+              },
+              {
+                title: 'The Future Culturalists',
+                emoji: '🔮',
+                message: 'Tomorrows cultural exports',
+                description: 'Next generation Filipino cultural creators.',
                 color: 'from-indigo-500/20 to-purple-500/20 border-indigo-500/30'
               }
             ].map((story, index) => (
@@ -366,7 +315,7 @@ export default function SMSRevolutionPage() {
         </div>
       </section>
 
-      {/* EDSA 2 */}
+      {/* Impact Section */}
       <section className="relative z-10 py-16 bg-gradient-to-b from-black to-green-950/20">
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -376,12 +325,16 @@ export default function SMSRevolutionPage() {
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <div className="aspect-video bg-gradient-to-br from-green-900/30 to-black rounded-xl border border-green-500/30 overflow-hidden relative">
+              <div className="aspect-video bg-gradient-to-br from-emerald-900/30 to-green-900/30 rounded-xl border border-emerald-500/30 overflow-hidden relative">
                 <img 
-                  src="/DigitalPinoy/technology/edsa2.jpg" 
-                  alt="EDSA 2 SMS mobilization"
-                  className="w-full h-full object-cover"
+                  src="/DigitalPinoy/images/culturalexports.png" 
+                  alt="Cultural exports cultural impact"
+                  className="w-full h-full object-cover opacity-80"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                <div className="absolute bottom-3 left-3 right-3">
+                  <p className="text-white text-xs">Cultural exports shaping global cultural exchange.</p>
+                </div>
               </div>
             </motion.div>
 
@@ -392,80 +345,30 @@ export default function SMSRevolutionPage() {
               viewport={{ once: true }}
             >
               <div className="flex items-center gap-2 mb-4">
-                <Zap className="w-5 h-5 text-yellow-400" />
-                <span className="text-yellow-400 font-semibold text-sm">January 2001</span>
+                <Heart className="w-5 h-5 text-emerald-400" />
+                <span className="text-emerald-400 font-semibold text-sm">Cultural Impact</span>
               </div>
               <h2 className="text-3xl font-bold text-white mb-4">
-                The Text Message That <span className="text-yellow-400">Toppled a President</span>
+                Global <span className="text-emerald-400">Culture</span>
               </h2>
               <div className="space-y-3 text-gray-300 leading-relaxed">
-                <p className="text-yellow-300 font-semibold">
-                  "Go 2 EDSA. Wear blk."
+                <p>
+                  What was once considered local traditions became global cultural phenomena. 
+                  Cultural exports proved that Filipino arts could achieve worldwide recognition.
                 </p>
                 <p>
-                  One message. Millions of phones. A nation mobilized.
+                  From traditional arts to global recognition, from cultural economy to cultural diplomacy—cultural exports created new forms of global cultural exchange.
                 </p>
-                <p>
-                  EDSA 2 proved that SMS wasn't just for love letters and jokes. 
-                  It was a tool for <span className="text-white font-semibold">revolution</span>. Filipinos used text messages 
-                  to coordinate, organize, and overthrow a government.
-                </p>
-                <div className="bg-yellow-500/10 border-l-4 border-yellow-500 rounded-lg p-4 mt-4">
-                  <p className="text-yellow-300 font-semibold italic">
-                    "The first successful SMS-powered revolution in world history."
+                <div className="bg-emerald-500/10 border-l-4 border-emerald-500 rounded-lg p-4 mt-4">
+                  <p className="text-emerald-300 font-semibold italic">
+                    "We didn't just create art. We shared culture. We built recognition. We proved that Filipino arts could become global cultural exports."
                   </p>
-                  <p className="text-gray-400 text-xs mt-2">- International Media</p>
                 </div>
               </div>
             </motion.div>
           </div>
         </div>
       </section>
-
-      {/* Stats */}
-      <section className="relative z-10 py-16">
-        <div className="max-w-6xl mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="text-center mb-12"
-          >
-            <h2 className="text-3xl font-bold text-white mb-2">
-              By the <span className="text-green-400">Numbers</span>
-            </h2>
-          </motion.div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              { number: '350M', label: 'Texts per day', icon: MessageSquare, color: 'green' },
-              { number: '₱1', label: 'Cost per text', icon: Phone, color: 'emerald' },
-              { number: '160', label: 'Character limit', icon: TrendingUp, color: 'cyan' },
-              { number: '#1', label: 'World ranking', icon: Sparkles, color: 'yellow' }
-            ].map((stat, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, scale: 0.8 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ delay: index * 0.1, duration: 0.6 }}
-                viewport={{ once: true }}
-                className="bg-gradient-to-br from-green-900/20 to-black border border-green-500/30 rounded-xl p-6 text-center hover:border-green-500/60 transition-all"
-              >
-                {(() => {
-                  const IconComponent = stat.icon;
-                  return <IconComponent className={`w-8 h-8 text-${stat.color}-400 mx-auto mb-3`} />;
-                })()}
-                <div className={`text-3xl font-bold text-${stat.color}-400 mb-1`}>{stat.number}</div>
-                <div className="text-gray-400 text-sm">{stat.label}</div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Hidden audio element */}
-      <audio ref={audioRef} src="/DigitalPinoy/audios/3310sound.mp3" preload="auto" />
 
       {/* Legacy */}
       <section className="relative z-10 py-16 bg-gradient-to-b from-black to-green-950/30">
@@ -476,21 +379,20 @@ export default function SMSRevolutionPage() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <Heart className="w-12 h-12 text-green-400 mx-auto mb-4" />
+            <Package className="w-12 h-12 text-green-400 mx-auto mb-4" />
             <h2 className="text-3xl font-bold text-white mb-4">The Legacy Lives On</h2>
             <div className="space-y-3 text-gray-300 leading-relaxed">
               <p>
-                Today, we have Messenger, Viber, WhatsApp, and a thousand other ways to communicate. 
-                But none of them changed the Philippines quite like SMS did.
+                Today, cultural exports are remembered as global cultural exchange—the arts that connected Filipino culture with the world.
               </p>
               <p>
-                SMS taught us that <span className="text-green-400 font-semibold">words matter</span>. That creativity flourishes in constraints. 
-                That 160 characters is enough to say "I love you," "I'm sorry," or "Let's change the world."
+                Cultural exports taught us that <span className="text-green-400 font-semibold">art can become cultural diplomacy</span>. That traditions can connect. 
+                That Filipino culture could become global phenomenon.
               </p>
               <div className="bg-green-500/10 border border-green-500/30 rounded-xl p-6 mt-6">
                 <p className="text-lg text-green-300 font-semibold italic">
-                  "We didn't just text. We revolutionized communication. We toppled a president. 
-                  We fell in love. We made history—160 characters at a time."
+                  "We didn't just create art. We shared culture. We built recognition. 
+                  We proved that Filipino arts could become global cultural exports—one masterpiece at a time."
                 </p>
               </div>
             </div>
@@ -502,25 +404,34 @@ export default function SMSRevolutionPage() {
       <section className="relative z-10 py-8 border-t border-white/10">
         <div className="max-w-6xl mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <Link href="/timeline/technology">
+            <Link href="/timeline/globalization">
               <motion.button
                 whileHover={{ scale: 1.02, x: -3 }}
                 whileTap={{ scale: 0.98 }}
                 className="flex items-center gap-2 px-5 py-2 bg-green-900/30 border border-green-500/30 rounded-lg text-green-300 text-sm hover:bg-green-900/50 transition-all"
               >
                 <ArrowLeft className="w-4 h-4" />
-                Back to Technology Hall
+                Back to Globalization Hall
               </motion.button>
             </Link>
 
             <div className="flex gap-3">
-              <Link href="/timeline/technology/internet-cafe">
+              <Link href="/timeline/globalization/global-platforms">
                 <motion.button
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  className="px-5 py-2 bg-amber-900/30 border border-amber-500/30 rounded-lg text-amber-300 text-sm hover:bg-amber-900/50 transition-all"
+                  className="px-5 py-2 bg-blue-900/30 border border-blue-500/30 rounded-lg text-blue-300 text-sm hover:bg-blue-900/50 transition-all"
                 >
-                  Next: Internet Café Era →
+                  ← Previous: Global Platforms
+                </motion.button>
+              </Link>
+              <Link href="/timeline/globalization/cultural-mainstream">
+                <motion.button
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  className="px-5 py-2 bg-yellow-900/30 border border-yellow-500/30 rounded-lg text-yellow-300 text-sm hover:bg-yellow-900/50 transition-all"
+                >
+                  Next: Cultural Mainstream →
                 </motion.button>
               </Link>
             </div>

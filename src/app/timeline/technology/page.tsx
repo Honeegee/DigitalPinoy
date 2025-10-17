@@ -81,7 +81,7 @@ export default function TechnologyTimelinePage() {
             symbols={[
               {
                 id: 'sms-revolution',
-                title: 'SMS',
+                title: 'SMS Revolution',
                 subtitle: 'Text Capital of the World',
                 icon: MessageSquare,
                 color: 'bg-gradient-to-br from-green-900/30 to-emerald-900/30 border-green-500/30',

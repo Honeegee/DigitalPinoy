@@ -2,49 +2,24 @@
 
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { 
-  MessageSquare, 
-  Heart, 
-  Phone, 
-  Volume2, 
+  Globe, 
   ArrowLeft,
   Calendar,
-  Users,
-  TrendingUp,
-  Zap,
-  Clock,
+  Heart,
   Sparkles
 } from 'lucide-react';
 import Link from 'next/link';
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 
-export default function SMSRevolutionPage() {
+export default function DigitalEmpathyNetworksPage() {
   const containerRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start start", "end end"]
   });
 
-  const [playingSound, setPlayingSound] = useState(false);
-  const audioRef = useRef<HTMLAudioElement | null>(null);
-
   const heroY = useTransform(scrollYProgress, [0, 0.3], [0, 100]);
   const heroOpacity = useTransform(scrollYProgress, [0, 0.3], [1, 0]);
-
-  const playNotificationSound = () => {
-    if (audioRef.current) {
-      audioRef.current.currentTime = 0;
-      audioRef.current.play();
-      setPlayingSound(true);
-    }
-  };
-
-  const stopNotificationSound = () => {
-    if (audioRef.current) {
-      audioRef.current.pause();
-      audioRef.current.currentTime = 0;
-      setPlayingSound(false);
-    }
-  };
 
   return (
     <div ref={containerRef} className="min-h-screen bg-black">
@@ -67,7 +42,7 @@ export default function SMSRevolutionPage() {
             transition={{ duration: 1, type: "spring" }}
             className="w-20 h-20 mx-auto mb-6 rounded-2xl bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center shadow-2xl shadow-green-500/50"
           >
-            <MessageSquare className="w-10 h-10 text-white" />
+            <Globe className="w-10 h-10 text-white" />
           </motion.div>
 
           <motion.h1
@@ -76,7 +51,7 @@ export default function SMSRevolutionPage() {
             transition={{ delay: 0.3, duration: 0.8 }}
             className="text-5xl font-bold mb-4 bg-gradient-to-r from-green-400 via-emerald-400 to-green-500 bg-clip-text text-transparent"
           >
-            The SMS Revolution
+            Digital Empathy Networks
           </motion.h1>
 
           <motion.p
@@ -85,7 +60,7 @@ export default function SMSRevolutionPage() {
             transition={{ delay: 0.5, duration: 0.8 }}
             className="text-xl text-gray-300 mb-6"
           >
-            When 160 Characters Changed Everything
+            Global Emotional Connection: When Empathy Went Worldwide
           </motion.p>
 
           <motion.div
@@ -95,7 +70,7 @@ export default function SMSRevolutionPage() {
             className="inline-block px-6 py-3 bg-green-900/30 backdrop-blur-sm border border-green-500/50 rounded-full"
           >
             <p className="text-sm text-green-300 font-semibold">
-              2000-2010: The Texting Capital of the World
+              2030: The Age of Global Empathy
             </p>
           </motion.div>
 
@@ -131,49 +106,52 @@ export default function SMSRevolutionPage() {
             >
               <div className="flex items-center gap-2 mb-4">
                 <Calendar className="w-5 h-5 text-green-400" />
-                <span className="text-green-400 font-semibold text-sm">Year 2000</span>
+                <span className="text-green-400 font-semibold text-sm">Year 2030</span>
               </div>
               <h2 className="text-3xl font-bold text-white mb-4">
-                It Started with a <span className="text-green-400">Beep</span>
+                The <span className="text-green-400">Empathy Network</span> Revolution
               </h2>
               <div className="space-y-3 text-gray-300 leading-relaxed">
                 <p>
-                  Before Facebook, before Twitter, before Instagram—there was SMS. 
-                  A simple text message. 160 characters. That's all Filipinos needed 
-                  to revolutionize communication.
+                  Digital empathy networks weren't just platforms—they were global communities, 
+                  emotional bridges, and worldwide support systems.
                 </p>
                 <p>
-                  In the year 2000, something extraordinary happened. The Philippines 
-                  became the <span className="text-green-400 font-semibold">"Texting Capital of the World."</span> Not Silicon Valley. 
-                  Not Tokyo. Manila.
+                  What started as local support groups evolved into global emotional networks. 
+                  Filipino innovators proved that empathy could connect people across continents.
                 </p>
                 <div className="bg-green-900/20 border-l-4 border-green-500 rounded p-4 mt-4">
                   <p className="text-green-300 font-semibold">
-                    350 million text messages. Every. Single. Day.
+                    "From local to global—empathy became our worldwide connection."
                   </p>
                 </div>
               </div>
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, x: -50 }}
+              initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
+              className="relative"
             >
-              <div className="aspect-video bg-gradient-to-br from-green-900/30 to-black rounded-xl border border-green-500/30 overflow-hidden relative">
+              <div className="aspect-[4/3] bg-gradient-to-br from-green-900/30 to-emerald-900/30 rounded-xl border border-green-500/30 overflow-hidden">
                 <img 
-                  src="/DigitalPinoy/images/exhibits/edsa2-sms.jpg" 
-                  alt="EDSA 2 SMS mobilization"
-                  className="w-full h-full object-cover"
+                  src="/DigitalPinoy/images/empathynetwork.png" 
+                  alt="Digital empathy networks and global emotional connection"
+                  className="w-full h-full object-cover opacity-80"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                <div className="absolute bottom-3 left-3 right-3">
+                  <p className="text-white text-xs">Digital empathy networks creating global emotional connections.</p>
+                </div>
               </div>
             </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Nokia 3310 Section */}
+      {/* Empathy Network Showcase Section */}
       <section className="relative z-10 py-16 bg-black/50">
         <div className="max-w-6xl mx-auto px-4">
           <motion.div
@@ -184,13 +162,13 @@ export default function SMSRevolutionPage() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl font-bold text-white mb-2">
-              Meet the <span className="text-green-400">Legend</span>
+              The <span className="text-green-400">Empathy Network</span> Culture
             </h2>
-            <p className="text-gray-400">The phone that survived everything</p>
+            <p className="text-gray-400">Every network built global connection</p>
           </motion.div>
 
           <div className="grid lg:grid-cols-2 gap-8 items-center">
-            {/* Nokia 3310 Showcase */}
+            {/* Empathy Network Showcase */}
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
@@ -200,15 +178,10 @@ export default function SMSRevolutionPage() {
             >
               <div className="aspect-square bg-gradient-to-br from-green-500/20 to-emerald-500/20 rounded-2xl border border-green-500/40 p-8 backdrop-blur-sm">
                 <div className="w-full h-full bg-black/50 rounded-xl border border-green-500/30 flex items-center justify-center relative overflow-hidden">
-                  <div className="absolute inset-0 bg-[url('/DigitalPinoy/technology/3310.gif')] bg-contain bg-center bg-no-repeat opacity-90"></div>
-                  <button className="absolute inset-0 flex items-center justify-center group">
-                    <div className="w-16 h-16 rounded-full bg-green-500/80 backdrop-blur-sm flex items-center justify-center group-hover:scale-110 transition-transform">
-                      <Volume2 className="w-8 h-8 text-white" />
-                    </div>
-                  </button>
+                  <div className="absolute inset-0 bg-[url('/DigitalPinoy/images/empathynetwork.png')] bg-contain bg-center bg-no-repeat opacity-90"></div>
                   <div className="absolute bottom-3 left-3 right-3 text-center">
                     <p className="text-white text-xs bg-black/70 backdrop-blur-sm rounded-lg py-2 px-3">
-                      📹 3D Interactive Nokia 3310 Model
+                      🌍 Global Empathy
                     </p>
                   </div>
                 </div>
@@ -219,11 +192,11 @@ export default function SMSRevolutionPage() {
                 transition={{ duration: 3, repeat: Infinity }}
                 className="absolute -top-4 -right-4 bg-green-500 text-white px-4 py-2 rounded-full shadow-lg font-bold text-sm"
               >
-                Indestructible!
+                Global!
               </motion.div>
             </motion.div>
 
-            {/* Nokia 3310 Details */}
+            {/* Empathy Network Details */}
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -231,14 +204,14 @@ export default function SMSRevolutionPage() {
               viewport={{ once: true }}
               className="space-y-4"
             >
-              <h3 className="text-2xl font-bold text-white mb-4">Nokia 3310</h3>
+              <h3 className="text-2xl font-bold text-white mb-4">The Art of Global Empathy</h3>
               
               <div className="space-y-3">
                 {[
-                  { icon: '🔋', title: 'Battery Life', desc: '7 days standby. Charge once a week!' },
-                  { icon: '💪', title: 'Durability', desc: 'Dropped 100 times? Still works.' },
-                  { icon: '🎮', title: 'Snake II', desc: 'The only game you needed.' },
-                  { icon: '⚡', title: 'T9 Texting', desc: 'Master the art of predictive text.' },
+                  { icon: '🌍', title: 'Global Connection', desc: 'Connecting emotions worldwide' },
+                  { icon: '💝', title: 'Cross-Cultural Empathy', desc: 'Understanding across cultures' },
+                  { icon: '🤝', title: 'International Support', desc: 'Global emotional support systems' },
+                  { icon: '🛡️', title: 'Worldwide Community', desc: 'Building global emotional networks' },
                 ].map((feature, index) => (
                   <motion.div
                     key={index}
@@ -256,35 +229,12 @@ export default function SMSRevolutionPage() {
                   </motion.div>
                 ))}
               </div>
-
-              {/* Sound Buttons */}
-              <div className="flex gap-3 mt-6">
-                <motion.button
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                  onClick={playNotificationSound}
-                  className="flex-1 px-4 py-3 bg-gradient-to-r from-green-500 to-emerald-600 rounded-lg text-white font-semibold text-sm flex items-center justify-center gap-2 hover:from-green-600 hover:to-emerald-700 transition-all"
-                >
-                  <Volume2 className={`w-4 h-4 ${playingSound ? 'animate-pulse' : ''}`} />
-                  {playingSound ? 'Playing...' : 'Play Nokia Tune'}
-                </motion.button>
-                
-                <motion.button
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                  onClick={stopNotificationSound}
-                  className="px-4 py-3 bg-gradient-to-r from-red-500 to-red-600 rounded-lg text-white font-semibold text-sm flex items-center justify-center gap-2 hover:from-red-600 hover:to-red-700 transition-all"
-                >
-                  <div className="w-4 h-4 bg-white rounded-sm"></div>
-                  Stop
-                </motion.button>
-              </div>
             </motion.div>
           </div>
         </div>
       </section>
 
-      {/* How Filipinos Used SMS */}
+      {/* Empathy Network Culture */}
       <section className="relative z-10 py-16">
         <div className="max-w-6xl mx-auto px-4">
           <motion.div
@@ -295,53 +245,53 @@ export default function SMSRevolutionPage() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl font-bold text-white mb-2">
-              How We <span className="text-green-400">Texted</span>
+              The <span className="text-emerald-400">Culture</span> of Global Empathy
             </h2>
-            <p className="text-gray-400">Every message told a story</p>
+            <p className="text-gray-400">Every network built worldwide emotional bonds</p>
           </motion.div>
 
           <div className="grid md:grid-cols-3 gap-6">
             {[
               {
-                title: 'The Morning Ritual',
-                emoji: '☀️',
-                message: 'GM po! ☺️',
-                description: 'Every day started with "Good Morning po!" Respect, even in 160 characters.',
-                color: 'from-yellow-500/20 to-orange-500/20 border-yellow-500/30'
-              },
-              {
-                title: 'Love Language',
-                emoji: '💕',
-                message: '143 means I ♥ U',
-                description: 'Codes became poetry. 143 (I Love You), 831 (8 letters, 3 words, 1 meaning).',
-                color: 'from-pink-500/20 to-red-500/20 border-pink-500/30'
-              },
-              {
-                title: 'The Check-In',
-                emoji: '📍',
-                message: 'Wer na u?',
-                description: '"Where are you na?" Because tracking apps didn\'t exist yet.',
-                color: 'from-blue-500/20 to-cyan-500/20 border-blue-500/30'
-              },
-              {
-                title: 'The Invitation',
-                emoji: '🎉',
-                message: 'Gig 2nyt! C u!',
-                description: 'Text abbreviations weren\'t lazy—they were efficient. And cool.',
-                color: 'from-purple-500/20 to-pink-500/20 border-purple-500/30'
-              },
-              {
-                title: 'The Apology',
-                emoji: '🙏',
-                message: 'Sry na po. Pls?',
-                description: 'Making peace via SMS. "Sorry na po" could fix everything.',
+                title: 'The Global Connectors',
+                emoji: '🌍',
+                message: 'Empathy knows no borders',
+                description: 'Building worldwide emotional networks.',
                 color: 'from-green-500/20 to-emerald-500/20 border-green-500/30'
               },
               {
-                title: 'The Forwarded Prayer',
-                emoji: '🙏',
-                message: 'Send 2 10 ppl 4 blessings',
-                description: 'Chain messages promising blessings. We all sent them, just in case.',
+                title: 'The Cultural Bridges',
+                emoji: '🤝',
+                message: 'Understanding across cultures',
+                description: 'Creating cross-cultural empathy.',
+                color: 'from-blue-500/20 to-indigo-500/20 border-blue-500/30'
+              },
+              {
+                title: 'The International Supporters',
+                emoji: '💝',
+                message: 'Global emotional support',
+                description: 'Providing worldwide emotional care.',
+                color: 'from-purple-500/20 to-pink-500/20 border-purple-500/30'
+              },
+              {
+                title: 'The Worldwide Listeners',
+                emoji: '👂',
+                message: 'Hearing hearts worldwide',
+                description: 'Listening across continents.',
+                color: 'from-yellow-500/20 to-orange-500/20 border-yellow-500/30'
+              },
+              {
+                title: 'The Global Healers',
+                emoji: '🩹',
+                message: 'Healing hearts globally',
+                description: 'Providing worldwide emotional healing.',
+                color: 'from-red-500/20 to-pink-500/20 border-red-500/30'
+              },
+              {
+                title: 'The Future Empaths',
+                emoji: '🔮',
+                message: 'Tomorrows global empathy',
+                description: 'Developing next-gen emotional networks.',
                 color: 'from-indigo-500/20 to-purple-500/20 border-indigo-500/30'
               }
             ].map((story, index) => (
@@ -366,7 +316,7 @@ export default function SMSRevolutionPage() {
         </div>
       </section>
 
-      {/* EDSA 2 */}
+      {/* Impact Section */}
       <section className="relative z-10 py-16 bg-gradient-to-b from-black to-green-950/20">
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -376,12 +326,16 @@ export default function SMSRevolutionPage() {
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <div className="aspect-video bg-gradient-to-br from-green-900/30 to-black rounded-xl border border-green-500/30 overflow-hidden relative">
+              <div className="aspect-video bg-gradient-to-br from-emerald-900/30 to-green-900/30 rounded-xl border border-emerald-500/30 overflow-hidden relative">
                 <img 
-                  src="/DigitalPinoy/technology/edsa2.jpg" 
-                  alt="EDSA 2 SMS mobilization"
-                  className="w-full h-full object-cover"
+                  src="/DigitalPinoy/images/social.png" 
+                  alt="Digital empathy networks impact"
+                  className="w-full h-full object-cover opacity-80"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                <div className="absolute bottom-3 left-3 right-3">
+                  <p className="text-white text-xs">Digital empathy networks shaping global emotional culture.</p>
+                </div>
               </div>
             </motion.div>
 
@@ -392,80 +346,30 @@ export default function SMSRevolutionPage() {
               viewport={{ once: true }}
             >
               <div className="flex items-center gap-2 mb-4">
-                <Zap className="w-5 h-5 text-yellow-400" />
-                <span className="text-yellow-400 font-semibold text-sm">January 2001</span>
+                <Heart className="w-5 h-5 text-emerald-400" />
+                <span className="text-emerald-400 font-semibold text-sm">Cultural Impact</span>
               </div>
               <h2 className="text-3xl font-bold text-white mb-4">
-                The Text Message That <span className="text-yellow-400">Toppled a President</span>
+                Global <span className="text-emerald-400">Empathy</span>
               </h2>
               <div className="space-y-3 text-gray-300 leading-relaxed">
-                <p className="text-yellow-300 font-semibold">
-                  "Go 2 EDSA. Wear blk."
+                <p>
+                  What was once considered local support became global connection. 
+                  Filipino innovators proved that empathy could bridge continents and cultures.
                 </p>
                 <p>
-                  One message. Millions of phones. A nation mobilized.
+                  From global connection to cross-cultural understanding, from international support to worldwide community—empathy networks created new forms of global emotional connection.
                 </p>
-                <p>
-                  EDSA 2 proved that SMS wasn't just for love letters and jokes. 
-                  It was a tool for <span className="text-white font-semibold">revolution</span>. Filipinos used text messages 
-                  to coordinate, organize, and overthrow a government.
-                </p>
-                <div className="bg-yellow-500/10 border-l-4 border-yellow-500 rounded-lg p-4 mt-4">
-                  <p className="text-yellow-300 font-semibold italic">
-                    "The first successful SMS-powered revolution in world history."
+                <div className="bg-emerald-500/10 border-l-4 border-emerald-500 rounded-lg p-4 mt-4">
+                  <p className="text-emerald-300 font-semibold italic">
+                    "We didn't just create networks. We created global empathy. We built worldwide connections. We proved that Filipino innovation could connect hearts across the world."
                   </p>
-                  <p className="text-gray-400 text-xs mt-2">- International Media</p>
                 </div>
               </div>
             </motion.div>
           </div>
         </div>
       </section>
-
-      {/* Stats */}
-      <section className="relative z-10 py-16">
-        <div className="max-w-6xl mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="text-center mb-12"
-          >
-            <h2 className="text-3xl font-bold text-white mb-2">
-              By the <span className="text-green-400">Numbers</span>
-            </h2>
-          </motion.div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              { number: '350M', label: 'Texts per day', icon: MessageSquare, color: 'green' },
-              { number: '₱1', label: 'Cost per text', icon: Phone, color: 'emerald' },
-              { number: '160', label: 'Character limit', icon: TrendingUp, color: 'cyan' },
-              { number: '#1', label: 'World ranking', icon: Sparkles, color: 'yellow' }
-            ].map((stat, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, scale: 0.8 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ delay: index * 0.1, duration: 0.6 }}
-                viewport={{ once: true }}
-                className="bg-gradient-to-br from-green-900/20 to-black border border-green-500/30 rounded-xl p-6 text-center hover:border-green-500/60 transition-all"
-              >
-                {(() => {
-                  const IconComponent = stat.icon;
-                  return <IconComponent className={`w-8 h-8 text-${stat.color}-400 mx-auto mb-3`} />;
-                })()}
-                <div className={`text-3xl font-bold text-${stat.color}-400 mb-1`}>{stat.number}</div>
-                <div className="text-gray-400 text-sm">{stat.label}</div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Hidden audio element */}
-      <audio ref={audioRef} src="/DigitalPinoy/audios/3310sound.mp3" preload="auto" />
 
       {/* Legacy */}
       <section className="relative z-10 py-16 bg-gradient-to-b from-black to-green-950/30">
@@ -476,21 +380,20 @@ export default function SMSRevolutionPage() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <Heart className="w-12 h-12 text-green-400 mx-auto mb-4" />
+            <Globe className="w-12 h-12 text-green-400 mx-auto mb-4" />
             <h2 className="text-3xl font-bold text-white mb-4">The Legacy Lives On</h2>
             <div className="space-y-3 text-gray-300 leading-relaxed">
               <p>
-                Today, we have Messenger, Viber, WhatsApp, and a thousand other ways to communicate. 
-                But none of them changed the Philippines quite like SMS did.
+                Today, digital empathy networks are remembered as Filipino global connection—the technology that made empathy worldwide.
               </p>
               <p>
-                SMS taught us that <span className="text-green-400 font-semibold">words matter</span>. That creativity flourishes in constraints. 
-                That 160 characters is enough to say "I love you," "I'm sorry," or "Let's change the world."
+                Empathy networks taught us that <span className="text-green-400 font-semibold">hearts can connect globally</span>. That emotions can bridge cultures. 
+                That Filipino innovation could create worldwide emotional networks.
               </p>
               <div className="bg-green-500/10 border border-green-500/30 rounded-xl p-6 mt-6">
                 <p className="text-lg text-green-300 font-semibold italic">
-                  "We didn't just text. We revolutionized communication. We toppled a president. 
-                  We fell in love. We made history—160 characters at a time."
+                  "We didn't just create networks. We created global empathy. We built worldwide connections. 
+                  We proved that Filipino innovation could connect hearts across the world—one network at a time."
                 </p>
               </div>
             </div>
@@ -502,27 +405,30 @@ export default function SMSRevolutionPage() {
       <section className="relative z-10 py-8 border-t border-white/10">
         <div className="max-w-6xl mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <Link href="/timeline/technology">
+            <Link href="/timeline/emotions">
               <motion.button
                 whileHover={{ scale: 1.02, x: -3 }}
                 whileTap={{ scale: 0.98 }}
                 className="flex items-center gap-2 px-5 py-2 bg-green-900/30 border border-green-500/30 rounded-lg text-green-300 text-sm hover:bg-green-900/50 transition-all"
               >
                 <ArrowLeft className="w-4 h-4" />
-                Back to Technology Hall
+                Back to Emotions Hall
               </motion.button>
             </Link>
 
             <div className="flex gap-3">
-              <Link href="/timeline/technology/internet-cafe">
+              <Link href="/timeline/emotions/neuro-tech-interfaces">
                 <motion.button
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  className="px-5 py-2 bg-amber-900/30 border border-amber-500/30 rounded-lg text-amber-300 text-sm hover:bg-amber-900/50 transition-all"
+                  className="px-5 py-2 bg-indigo-900/30 border border-indigo-500/30 rounded-lg text-indigo-300 text-sm hover:bg-indigo-900/50 transition-all"
                 >
-                  Next: Internet Café Era →
+                  ← Previous: Neuro-Tech
                 </motion.button>
               </Link>
+              <div className="px-5 py-2 bg-gray-900/30 border border-gray-500/30 rounded-lg text-gray-400 text-sm">
+                The Future Awaits
+              </div>
             </div>
           </div>
         </div>

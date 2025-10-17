@@ -79,78 +79,78 @@ export default function FloatingSymbols({ symbols, className = '', onSymbolClick
             }}
             whileTap={{ scale: 0.95 }}
           >
-            <div
-              className="relative cursor-pointer"
-              onClick={() => onSymbolClick?.(symbol.id)}
-            >
-              {/* 3D Floating Icon Container - No Square */}
-              <motion.div
-                className="relative"
-                style={{
-                  transformStyle: 'preserve-3d',
-                  perspective: '1000px'
-                }}
-                whileHover={{
-                  rotateY: 5,
-                  rotateX: 5,
-                }}
+            <Link href={symbol.href}>
+              <div
+                className="relative cursor-pointer"
+                onClick={() => onSymbolClick?.(symbol.id)}
               >
-                {/* Icon/Image - No Background */}
+                {/* 3D Floating Icon Container - No Square */}
                 <motion.div
                   className="relative"
+                  style={{
+                    transformStyle: 'preserve-3d',
+                    perspective: '1000px'
+                  }}
                   whileHover={{
-                    scale: 1.3,
+                    rotateY: 5,
+                    rotateX: 5,
                   }}
                 >
-                  {symbol.imagePath ? (
-                    // Display the actual image when imagePath is provided - No background
-                    <div className="w-40 h-40 transform translate-z-30">
-                      <img
-                        src={symbol.imagePath}
-                        alt={symbol.title}
-                        className="w-full h-full object-contain"
-                      />
-                    </div>
-                  ) : (
-                    // Current placeholder with icon - Bigger, no background
-                    <div className="w-40 h-40 flex items-center justify-center transform translate-z-30">
-                      <IconComponent className="w-24 h-24 text-white" />
-                    </div>
-                  )}
-
-
-                  {/* Hover Glow Effect */}
+                  {/* Icon/Image - No Background */}
                   <motion.div
-                    className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent rounded-full opacity-0 group-hover:opacity-100"
-                    initial={{ scale: 0 }}
-                    whileHover={{ scale: 1 }}
+                    className="relative"
+                    whileHover={{
+                      scale: 1.3,
+                    }}
+                  >
+                    {symbol.imagePath ? (
+                      // Display the actual image when imagePath is provided - No background
+                      <div className="w-40 h-40 transform translate-z-30">
+                        <img
+                          src={symbol.imagePath}
+                          alt={symbol.title}
+                          className="w-full h-full object-contain"
+                        />
+                      </div>
+                    ) : (
+                      // Current placeholder with icon - Bigger, no background
+                      <div className="w-40 h-40 flex items-center justify-center transform translate-z-30">
+                        <IconComponent className="w-24 h-24 text-white" />
+                      </div>
+                    )}
+
+                    {/* Hover Glow Effect */}
+                    <motion.div
+                      className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent rounded-full opacity-0 group-hover:opacity-100"
+                      initial={{ scale: 0 }}
+                      whileHover={{ scale: 1 }}
+                      transition={{ duration: 0.3 }}
+                    />
+                  </motion.div>
+
+                  {/* Title - Positioned below icon */}
+                  <motion.h3
+                    className="text-white font-bold text-base text-center mt-4 px-3 leading-tight transform translate-z-20"
+                    animate={{
+                      opacity: [0.8, 1, 0.8],
+                    }}
+                    transition={{
+                      duration: 2,
+                      repeat: Infinity,
+                    }}
+                  >
+                    {symbol.title}
+                  </motion.h3>
+
+                  {/* 3D Shadow Effect */}
+                  <motion.div
+                    className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-24 h-3 bg-black/40 blur-lg rounded-full opacity-0 group-hover:opacity-60"
+                    whileHover={{ scale: 1.1 }}
                     transition={{ duration: 0.3 }}
                   />
                 </motion.div>
-
-                {/* Title - Positioned below icon */}
-                <motion.h3
-                  className="text-white font-bold text-base text-center mt-4 px-3 leading-tight transform translate-z-20"
-                  animate={{
-                    opacity: [0.8, 1, 0.8],
-                  }}
-                  transition={{
-                    duration: 2,
-                    repeat: Infinity,
-                  }}
-                >
-                  {symbol.title}
-                </motion.h3>
-
-                {/* 3D Shadow Effect */}
-                <motion.div
-                  className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-24 h-3 bg-black/40 blur-lg rounded-full opacity-0 group-hover:opacity-60"
-                  whileHover={{ scale: 1.1 }}
-                  transition={{ duration: 0.3 }}
-                />
-              </motion.div>
-
-            </div>
+              </div>
+            </Link>
           </motion.div>
         );
       })}
