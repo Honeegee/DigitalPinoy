@@ -27,6 +27,11 @@ export const metadata: Metadata = {
   description: "A virtual museum celebrating the Philippines' digital culture from 2000-2010. Experience Friendster profiles, internet cafés, teleseryes, OPM music, and more.",
   keywords: "Philippines, digital culture, 2000s, museum, Friendster, OPM, teleserye, nostalgia",
   authors: [{ name: "Digital Pinoy Team" }],
+  icons: {
+    icon: '/images/dgLogo.png',
+    shortcut: '/images/dgLogo.png',
+    apple: '/images/dgLogo.png',
+  },
   openGraph: {
     title: "Digital Pinoy: Philippine Pop Culture 2000–2010",
     description: "Step into our digital time machine and relive the decade that shaped Filipino digital identity",

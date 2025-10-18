@@ -36,7 +36,7 @@ const SnakeGame = () => {
     const gridSize = 20;
     const tileCount = canvas.width / gridSize;
 
-    let snake = [{ x: 10, y: 10 }];
+    const snake = [{ x: 10, y: 10 }];
     let food = { x: 15, y: 15 };
     let dx = 0;
     let dy = 0;
@@ -160,9 +160,9 @@ const PongGame = () => {
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
-    let ball = { x: 200, y: 200, dx: 3, dy: 3, radius: 8 };
-    let playerPaddle = { x: 10, y: 150, width: 10, height: 80, dy: 0 };
-    let computerPaddle = { x: 380, y: 150, width: 10, height: 80 };
+    const ball = { x: 200, y: 200, dx: 3, dy: 3, radius: 8 };
+    const playerPaddle = { x: 10, y: 150, width: 10, height: 80, dy: 0 };
+    const computerPaddle = { x: 380, y: 150, width: 10, height: 80 };
 
     const draw = () => {
       ctx.fillStyle = '#000';
@@ -306,9 +306,9 @@ const BrickBreakerGame = () => {
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
-    let ball = { x: 200, y: 350, dx: 4, dy: -4, radius: 8 };
-    let paddle = { x: 150, y: 380, width: 100, height: 10, dx: 0 };
-    let bricks: { x: number; y: number; status: number }[][] = [];
+    const ball = { x: 200, y: 350, dx: 4, dy: -4, radius: 8 };
+    const paddle = { x: 150, y: 380, width: 100, height: 10, dx: 0 };
+    const bricks: { x: number; y: number; status: number }[][] = [];
     let currentScore = 0;
     let currentLives = 3;
 

@@ -26,7 +26,7 @@ const SnakeGame = () => {
 
     const gridSize = 10;
     const tileCount = 24;
-    let snake = [{ x: 12, y: 12 }];
+    const snake = [{ x: 12, y: 12 }];
     let food = { x: 15, y: 15 };
     directionRef.current = { dx: 1, dy: 0 };  // Start moving right
     nextDirectionRef.current = { dx: 1, dy: 0 };  // Buffer for next direction
@@ -590,7 +590,7 @@ const SpaceImpactGame = () => {
     let currentScore = 0;
     let currentLives = 3;
     let enemySpawnTimer = 0;
-    let starfield: { x: number; y: number; speed: number }[] = [];
+    const starfield: { x: number; y: number; speed: number }[] = [];
     let powerLevel = 1;
 
     // Initialize starfield
