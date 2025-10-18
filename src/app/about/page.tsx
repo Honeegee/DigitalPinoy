@@ -43,32 +43,6 @@ export default function AboutPage() {
     }
   ];
 
-  const milestones = [
-    {
-      year: '2025',
-      title: 'Digital Pinoy Museum Founded',
-      description: 'Born from a collective longing to preserve the unique Filipino digital culture of the early 2000s',
-      icon: '🚀'
-    },
-    {
-      year: '2000-2010',
-      title: 'The Golden Era',
-      description: 'The decade we celebrate - when Filipinos first embraced digital technology and made it uniquely ours',
-      icon: '✨'
-    },
-    {
-      year: '2003',
-      title: 'Friendster Revolution',
-      description: 'The moment that defined a generation of Filipino digital natives',
-      icon: '👥'
-    },
-    {
-      year: '2001',
-      title: 'Text Capital of the World',
-      description: 'When the Philippines became the global leader in SMS messaging',
-      icon: '📱'
-    }
-  ];
 
   return (
     <div
@@ -172,62 +146,6 @@ export default function AboutPage() {
         </div>
       </div>
 
-      {/* Timeline Section */}
-      <div className="relative z-10 py-16">
-        <div className="max-w-4xl mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-4xl font-bold text-white mb-4">Our Journey</h2>
-            <p className="text-gray-400">Key moments in preserving Filipino digital heritage</p>
-          </motion.div>
-
-          <div className="relative">
-            {/* Timeline Line */}
-            <div className="absolute left-8 top-0 bottom-0 w-1 bg-gradient-to-b from-cyan-500 via-purple-500 to-pink-500 rounded-full"></div>
-
-            {/* Timeline Events */}
-            <div className="space-y-12">
-              {milestones.map((milestone, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, x: -50 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
-                  className="relative flex items-start gap-6"
-                >
-                  {/* Timeline Dot */}
-                  <div className="relative z-10">
-                    <motion.div
-                      whileHover={{ scale: 1.2 }}
-                      className="w-16 h-16 rounded-full bg-gradient-to-br from-cyan-500 to-purple-500 flex items-center justify-center text-2xl border-4 border-white shadow-lg"
-                    >
-                      {milestone.icon}
-                    </motion.div>
-                  </div>
-
-                  {/* Event Content */}
-                  <motion.div
-                    whileHover={{ scale: 1.02 }}
-                    className="flex-1 bg-gradient-to-r from-white/5 to-purple-50/5 rounded-lg p-6 backdrop-blur-sm border border-white/10"
-                  >
-                    <div className="flex items-center gap-3 mb-3">
-                      <span className="text-2xl font-bold text-cyan-400">
-                        {milestone.year}
-                      </span>
-                      <h4 className="text-xl font-bold text-white">{milestone.title}</h4>
-                    </div>
-                    <p className="text-gray-300 leading-relaxed">{milestone.description}</p>
-                  </motion.div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
 
       {/* Team Section */}
       <div className="relative z-10 py-16">

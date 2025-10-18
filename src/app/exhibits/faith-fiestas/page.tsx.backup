@@ -1,0 +1,334 @@
+'use client';
+
+import { useState } from 'react';
+import { motion } from 'framer-motion';
+import { ArrowLeft, Smartphone, Play, Gamepad2, Trophy } from 'lucide-react';
+import Link from 'next/link';
+
+interface MobileGame {
+  id: string;
+  title: string;
+  phone: string;
+  year: string;
+  description: string;
+  videoId: string;
+  icon: string;
+  color: string;
+  memories: string[];
+}
+
+// YouTube Embed Component
+const YouTubeGameEmbed = ({ videoId, title }: { videoId: string; title: string }) => {
+  return (
+    <div className="relative aspect-video rounded-lg overflow-hidden border-4 border-gray-700 shadow-2xl">
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/50 z-10 pointer-events-none"></div>
+      <iframe
+        className="w-full h-full"
+        src={`https://www.youtube.com/embed/${videoId}?rel=0`}
+        title={title}
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+      <div className="absolute bottom-2 left-2 z-20 bg-black/70 backdrop-blur-sm px-3 py-1 rounded text-xs text-green-400 font-mono pointer-events-none">
+        {title}
+      </div>
+    </div>
+  );
+};
+
+export default function MobileGamesExhibit() {
+  const [selectedGame, setSelectedGame] = useState<MobileGame | null>(null);
+
+  const mobileGames: MobileGame[] = [
+    {
+      id: 'snake',
+      title: 'Snake / Snake II',
+      phone: 'Nokia 3310 / 6110',
+      year: '1997-2000',
+      description: 'The legendary game that came pre-installed on Nokia phones. Eat dots, grow longer, don\'t hit the walls or yourself. High scores were badges of honor.',
+      videoId: 'IvmUz70vJKQ',
+      icon: '🐍',
+      color: 'from-green-600 to-emerald-600',
+      memories: [
+        'Playing during class breaks',
+        'Competing for high scores with friends',
+        'The frustration of hitting your own tail',
+        'Watching the snake get impossibly long'
+      ]
+    },
+    {
+      id: 'bounce',
+      title: 'Bounce',
+      phone: 'Nokia Series 40',
+      year: '2000-2002',
+      description: 'Guide the red ball through obstacles, collecting rings and avoiding spikes. One of Nokia\'s most beloved games with addictive physics-based gameplay.',
+      videoId: 'XyLLn3uFF6I',
+      icon: '🔴',
+      color: 'from-red-600 to-orange-600',
+      memories: [
+        'Timing perfect jumps',
+        'Collecting all the rings',
+        'The satisfying bounce sound',
+        'Playing during commutes'
+      ]
+    },
+    {
+      id: 'space-impact',
+      title: 'Space Impact',
+      phone: 'Nokia 3310 / 3330',
+      year: '2000',
+      description: 'Side-scrolling space shooter where you pilot a ship, collect power-ups, and blast enemies. The ultimate time-killer with increasing difficulty.',
+      videoId: 'XMGhkD3k_eE',
+      icon: '🚀',
+      color: 'from-blue-600 to-cyan-600',
+      memories: [
+        'Collecting weapon upgrades',
+        'Boss battles that took forever',
+        'Playing with sound off during class',
+        'Memorizing enemy patterns'
+      ]
+    },
+    {
+      id: 'diamond-rush',
+      title: 'Diamond Rush',
+      phone: 'Nokia N-Gage / Java phones',
+      year: '2005',
+      description: 'Platformer adventure game where you collect diamonds in ancient temples. Featured multiple worlds with Indiana Jones-style gameplay.',
+      videoId: 'yXTLjNj7KnY',
+      icon: '💎',
+      color: 'from-purple-600 to-pink-600',
+      memories: [
+        'Exploring ancient temples',
+        'Avoiding traps and enemies',
+        'Finding secret areas',
+        'The addictive level progression'
+      ]
+    },
+    {
+      id: 'prince-persia',
+      title: 'Prince of Persia',
+      phone: 'Java-enabled phones',
+      year: '2004',
+      description: 'Mobile version of the classic platformer. Navigate through dungeons, fight enemies, and save the princess with parkour-style moves.',
+      videoId: 'OG9iTQvKQH4',
+      icon: '⚔️',
+      color: 'from-yellow-600 to-amber-600',
+      memories: [
+        'Smooth parkour animations on tiny screen',
+        'Challenging combat system',
+        'Time-travel mechanics',
+        'Feeling like a pro gamer on a phone'
+      ]
+    },
+    {
+      id: 'racing-fever',
+      title: 'Asphalt Urban GT / Racing',
+      phone: 'Nokia N-Gage / Java phones',
+      year: '2004-2006',
+      description: 'High-speed racing games that brought console-quality graphics to mobile. Drift through city streets and compete for the best lap times.',
+      videoId: 'bV0dpmt5pzI',
+      icon: '🏎️',
+      color: 'from-indigo-600 to-blue-600',
+      memories: [
+        'Realistic graphics for a phone',
+        'Drifting around corners',
+        'Unlocking new cars',
+        'Showing off to friends'
+      ]
+    }
+  ];
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-slate-800 to-gray-900">
+      {/* Nostalgic Mobile Phone Header */}
+      <div className="bg-gradient-to-r from-blue-900 via-green-900 to-blue-900 border-b-4 border-green-500 relative overflow-hidden">
+        {/* Animated Signal Bars */}
+        <div className="absolute top-4 right-4">
+          <div className="flex gap-1 items-end">
+            {[1, 2, 3, 4, 5].map((i) => (
+              <motion.div
+                key={i}
+                initial={{ height: `${i * 20}%` }}
+                animate={{ opacity: [0.3, 1, 0.3] }}
+                transition={{ duration: 2, repeat: Infinity, delay: i * 0.2 }}
+                className="w-2 bg-green-400 rounded-sm"
+                style={{ height: `${i * 20}%`, maxHeight: '20px' }}
+              />
+            ))}
+          </div>
+        </div>
+
+        <div className="max-w-6xl mx-auto px-4 py-8">
+          <Link href="/" className="inline-flex items-center gap-2 text-green-400 hover:text-white mb-4">
+            <ArrowLeft className="w-4 h-4" />
+            Back to Museum
+          </Link>
+
+          <div className="text-center">
+            <motion.div
+              initial={{ scale: 0 }}
+              animate={{ scale: 1 }}
+              transition={{ type: "spring", duration: 0.8 }}
+              className="inline-block mb-4"
+            >
+              <Smartphone className="w-16 h-16 text-green-400 mx-auto" />
+            </motion.div>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-2" style={{ textShadow: '0 0 20px rgba(74, 222, 128, 0.5)' }}>
+              MOBILE GAMES HALL
+            </h1>
+            <p className="text-green-400 text-lg mb-2">Nokia, Java, & Classic Mobile Gaming (2000-2010)</p>
+            <p className="text-gray-300 text-sm">When ₱5 load lasted a week and Snake was life</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 py-12">
+        {/* Intro Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="mb-12 text-center"
+        >
+          <div className="bg-gradient-to-r from-green-900/50 to-blue-900/50 border-2 border-green-500/40 rounded-xl p-6 backdrop-blur-sm">
+            <div className="text-5xl mb-4">📱</div>
+            <h2 className="text-2xl font-bold text-white mb-3">The Golden Age of Mobile Gaming</h2>
+            <p className="text-gray-300 max-w-3xl mx-auto">
+              Before smartphones, before app stores, there was Snake on Nokia 3310. These simple games kept us entertained
+              during class breaks, commutes, and waiting in line. Monochrome screens, beeping sounds, and high scores written
+              on paper—this was mobile gaming at its purest.
+            </p>
+          </div>
+        </motion.div>
+
+        {/* Featured Game Display */}
+        {selectedGame && (
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            className="mb-12"
+          >
+            <div className={`bg-gradient-to-br ${selectedGame.color} rounded-2xl border-4 border-white/20 p-8 shadow-2xl`}>
+              <div className="grid md:grid-cols-2 gap-8 items-center mb-6">
+                <div>
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="text-6xl">{selectedGame.icon}</div>
+                    <div>
+                      <h3 className="text-3xl font-bold text-white">{selectedGame.title}</h3>
+                      <p className="text-white/80">{selectedGame.phone}</p>
+                      <p className="text-white/60 text-sm">{selectedGame.year}</p>
+                    </div>
+                  </div>
+                  <p className="text-white text-lg mb-6">{selectedGame.description}</p>
+                  <div className="bg-black/30 rounded-lg p-4">
+                    <h4 className="text-white font-bold mb-2">Memories:</h4>
+                    <ul className="space-y-1">
+                      {selectedGame.memories.map((memory, idx) => (
+                        <li key={idx} className="text-white/90 text-sm flex items-start gap-2">
+                          <span className="text-yellow-400">✦</span>
+                          {memory}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+                <div>
+                  <YouTubeGameEmbed videoId={selectedGame.videoId} title={selectedGame.title} />
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        )}
+
+        {/* Games Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+          {mobileGames.map((game, index) => (
+            <motion.div
+              key={game.id}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.1 }}
+              whileHover={{ y: -5 }}
+              onClick={() => setSelectedGame(game)}
+              className={`cursor-pointer bg-gradient-to-br ${game.color} rounded-xl border-2 ${
+                selectedGame?.id === game.id ? 'border-yellow-400 ring-4 ring-yellow-400/50' : 'border-white/20'
+              } p-6 shadow-xl hover:shadow-2xl transition-all`}
+            >
+              <div className="text-center">
+                <div className="text-5xl mb-3">{game.icon}</div>
+                <h4 className="text-xl font-bold text-white mb-2">{game.title}</h4>
+                <p className="text-white/80 text-sm mb-2">{game.phone}</p>
+                <p className="text-white/60 text-xs mb-4">{game.year}</p>
+                <p className="text-white/90 text-sm mb-4 line-clamp-2">{game.description}</p>
+                <button className="bg-white/20 hover:bg-white/30 text-white px-4 py-2 rounded-lg text-sm font-semibold flex items-center gap-2 mx-auto transition-colors">
+                  <Play className="w-4 h-4" />
+                  Watch Gameplay
+                </button>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+
+        {/* Classic Phones Showcase */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mb-12"
+        >
+          <div className="bg-gradient-to-r from-gray-800 to-gray-900 rounded-xl border-2 border-gray-700 p-8">
+            <h3 className="text-2xl font-bold text-white mb-6 text-center flex items-center justify-center gap-2">
+              <Smartphone className="w-6 h-6 text-green-400" />
+              Legendary Gaming Phones
+            </h3>
+            <div className="grid md:grid-cols-4 gap-6">
+              {[
+                { name: 'Nokia 3310', year: '2000', game: 'Snake II', color: 'text-green-400' },
+                { name: 'Nokia N-Gage', year: '2003', game: 'Gaming Phone', color: 'text-blue-400' },
+                { name: 'Sony Ericsson K750i', year: '2005', game: 'Java Games', color: 'text-purple-400' },
+                { name: 'Nokia 6600', year: '2003', game: 'Symbian Games', color: 'text-orange-400' }
+              ].map((phone, idx) => (
+                <div key={idx} className="bg-gray-700/50 rounded-lg p-4 text-center border border-gray-600 hover:border-gray-500 transition-colors">
+                  <div className="text-4xl mb-2">📱</div>
+                  <h4 className={`font-bold ${phone.color} mb-1`}>{phone.name}</h4>
+                  <p className="text-gray-400 text-xs mb-1">{phone.year}</p>
+                  <p className="text-gray-300 text-sm">{phone.game}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Nostalgia Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="bg-gradient-to-r from-blue-900/50 to-green-900/50 border-2 border-blue-500/40 rounded-xl p-8 text-center"
+        >
+          <div className="text-5xl mb-4">🎮📱</div>
+          <h3 className="text-2xl font-bold text-white mb-4">Remember When...</h3>
+          <div className="grid md:grid-cols-3 gap-4 text-left">
+            {[
+              'Games came pre-installed and we cherished every single one',
+              'We memorized friend\'s high scores and competed endlessly',
+              'Monochrome screens and beeping sounds were peak gaming',
+              'We played during class with the phone hidden under the desk',
+              'Battery lasted days, not hours, even while gaming',
+              'We shared game tips and tricks via text messages'
+            ].map((memory, idx) => (
+              <div key={idx} className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                <p className="text-green-400 text-sm flex items-start gap-2">
+                  <span className="text-yellow-400 text-lg">✦</span>
+                  {memory}
+                </p>
+              </div>
+            ))}
+          </div>
+          <p className="text-white text-lg mt-6 italic">
+            "Before app stores, before touchscreens, we had Snake. And it was enough."
+          </p>
+        </motion.div>
+      </div>
+    </div>
+  );
+}

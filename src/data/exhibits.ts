@@ -12,16 +12,6 @@ export const exhibits: Exhibit[] = [
     color: '#FF6B35'
   },
   {
-    id: 'internet-cafe',
-    title: 'Internet Café / Gaming Arcade',
-    subtitle: 'The Digital Plaza',
-    description: 'Experience the sounds and games that filled our afternoons.',
-    image: '/images/internet-cafe.jpg',
-    category: 'gaming',
-    path: '/exhibits/internet-cafe',
-    color: '#0066CC'
-  },
-  {
     id: 'teleserye',
     title: 'Teleserye Living Room',
     subtitle: 'Family Bonding Time',
@@ -42,23 +32,13 @@ export const exhibits: Exhibit[] = [
     color: '#DAA520'
   },
   {
-    id: 'pacquiao',
-    title: 'Pacquiao Arena',
-    subtitle: 'National Pride',
-    description: 'Experience the fights that united the Philippines.',
-    image: '/images/pacquiao-arena.jpg',
-    category: 'sports',
-    path: '/exhibits/pacquiao',
-    color: '#FF0000'
-  },
-  {
     id: 'faith-fiestas',
-    title: 'Faith, Fiestas & Rituals',
-    subtitle: 'Sacred Traditions',
-    description: 'Explore the spiritual life that grounded our communities.',
+    title: 'Mobile Games Arcade',
+    subtitle: 'Nokia & Classic Gaming',
+    description: 'Play real Nokia games from 2000-2010. Snake, Bounce, Space Impact and more!',
     image: '/images/faith-procession.jpg',
-    category: 'faith',
+    category: 'gaming',
     path: '/exhibits/faith-fiestas',
-    color: '#800080'
+    color: '#00FF00'
   }
 ];

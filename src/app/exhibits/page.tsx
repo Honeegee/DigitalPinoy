@@ -69,7 +69,7 @@ export default function ExhibitsPage() {
           >
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-              <span>6 Interactive Exhibits</span>
+              <span>4 Interactive Exhibits</span>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
@@ -100,7 +100,7 @@ export default function ExhibitsPage() {
         </motion.div>
 
         {/* Enhanced Exhibit Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {exhibits.map((exhibit, index) => (
             <motion.div
               key={exhibit.id}

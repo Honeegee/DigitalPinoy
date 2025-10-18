@@ -318,7 +318,7 @@ export default function Home() {
           </motion.div>
 
           {/* Exhibits Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {exhibits.map((exhibit, index) => (
               <motion.div
                 key={exhibit.id}
