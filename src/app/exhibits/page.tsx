@@ -298,6 +298,7 @@ function getExhibitEmoji(category: string): string {
     case 'music': return '🎵';
     case 'sports': return '🥊';
     case 'faith': return '⛪';
+    case 'gallery': return '🎨';
     default: return '💫';
   }
 }

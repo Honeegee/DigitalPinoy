@@ -32,13 +32,13 @@ export const exhibits: Exhibit[] = [
     color: '#DAA520'
   },
   {
-    id: 'faith-fiestas',
+    id: 'mobile-games-arcade',
     title: 'Mobile Games Arcade',
     subtitle: 'Nokia & Classic Gaming',
     description: 'Play real Nokia games from 2000-2010. Snake, Bounce, Space Impact and more!',
-    image: '/images/faith-procession.jpg',
+    image: '/images/mobilegame.png',
     category: 'gaming',
-    path: '/exhibits/faith-fiestas',
+    path: '/exhibits/mobile-games-arcade',
     color: '#00FF00'
   }
 ];

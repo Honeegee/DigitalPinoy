@@ -183,19 +183,22 @@ const SnakeGame = () => {
   };
 
   return (
-    <div className="relative inline-block">
-      {/* Nokia Phone Shell */}
-      <div className="bg-gray-800 p-6 rounded-2xl border-4 border-gray-900 shadow-2xl" style={{ width: '300px' }}>
+    <div className="relative inline-block transform hover:scale-105 transition-transform duration-300">
+      {/* Nokia Phone Shell with 3D effect */}
+      <div className="bg-gradient-to-br from-gray-700 via-gray-800 to-gray-900 p-6 rounded-3xl border-4 border-gray-950 shadow-2xl relative" style={{ width: '320px', boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.5), 0 0 30px rgba(34, 197, 94, 0.2)' }}>
+        {/* 3D Edge Effect */}
+        <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-white/5 to-transparent pointer-events-none"></div>
+
         {/* Phone Top */}
-        <div className="bg-gray-900 p-3 rounded-t-xl mb-3 text-center">
-          <div className="text-green-400 text-sm font-bold tracking-wider mb-1">NOKIA</div>
-          <div className="flex items-center justify-center gap-2">
+        <div className="bg-gradient-to-b from-gray-950 to-gray-900 p-4 rounded-2xl mb-3 text-center border border-gray-700/50 shadow-inner">
+          <div className="text-green-400 text-sm font-bold tracking-widest mb-2 drop-shadow-[0_0_8px_rgba(34,197,94,0.5)]">NOKIA</div>
+          <div className="flex items-center justify-center gap-3">
             <div className="flex gap-1">
               {[1,2,3,4,5].map(i => (
-                <div key={i} className="w-1 h-3 bg-green-400 rounded-sm" style={{ height: `${i*3}px` }}></div>
+                <div key={i} className="w-1.5 bg-green-400 rounded-sm shadow-[0_0_4px_rgba(34,197,94,0.8)]" style={{ height: `${i*3}px` }}></div>
               ))}
             </div>
-            <div className="text-green-400 text-xs">100%</div>
+            <div className="text-green-400 text-xs font-mono">100%</div>
           </div>
         </div>
 
@@ -247,48 +250,48 @@ const SnakeGame = () => {
         </div>
 
         {/* Nokia Keypad */}
-        <div className="mt-4 grid grid-cols-3 gap-2 px-4">
-          <button className="bg-gray-700 rounded-lg p-3 text-white font-bold hover:bg-gray-600 active:bg-green-600 transition-colors">1</button>
+        <div className="mt-4 grid grid-cols-3 gap-2 px-2">
+          <button className="bg-gradient-to-b from-gray-600 to-gray-700 rounded-xl p-3 text-white font-bold hover:from-gray-500 hover:to-gray-600 active:from-green-600 active:to-green-700 transition-all shadow-lg border border-gray-600/50 hover:scale-105">1</button>
           <button
             onClick={() => handleDirectionClick(0, -1)}
-            className="bg-gray-700 rounded-lg p-3 text-white font-bold hover:bg-gray-600 active:bg-green-600 transition-colors"
+            className="bg-gradient-to-b from-gray-600 to-gray-700 rounded-xl p-3 text-white font-bold hover:from-gray-500 hover:to-gray-600 active:from-green-600 active:to-green-700 transition-all shadow-lg border border-gray-600/50 hover:scale-105"
           >
-            2<br/><span className="text-xs text-gray-400">↑</span>
+            2<br/><span className="text-xs text-green-400">↑</span>
           </button>
-          <button className="bg-gray-700 rounded-lg p-3 text-white font-bold hover:bg-gray-600 active:bg-green-600 transition-colors">3</button>
+          <button className="bg-gradient-to-b from-gray-600 to-gray-700 rounded-xl p-3 text-white font-bold hover:from-gray-500 hover:to-gray-600 active:from-green-600 active:to-green-700 transition-all shadow-lg border border-gray-600/50 hover:scale-105">3</button>
 
           <button
             onClick={() => handleDirectionClick(-1, 0)}
-            className="bg-gray-700 rounded-lg p-3 text-white font-bold hover:bg-gray-600 active:bg-green-600 transition-colors"
+            className="bg-gradient-to-b from-gray-600 to-gray-700 rounded-xl p-3 text-white font-bold hover:from-gray-500 hover:to-gray-600 active:from-green-600 active:to-green-700 transition-all shadow-lg border border-gray-600/50 hover:scale-105"
           >
-            4<br/><span className="text-xs text-gray-400">←</span>
+            4<br/><span className="text-xs text-green-400">←</span>
           </button>
-          <button className="bg-gray-700 rounded-lg p-3 text-white font-bold hover:bg-gray-600 active:bg-green-600 transition-colors">5</button>
+          <button className="bg-gradient-to-b from-gray-600 to-gray-700 rounded-xl p-3 text-white font-bold hover:from-gray-500 hover:to-gray-600 active:from-green-600 active:to-green-700 transition-all shadow-lg border border-gray-600/50 hover:scale-105">5</button>
           <button
             onClick={() => handleDirectionClick(1, 0)}
-            className="bg-gray-700 rounded-lg p-3 text-white font-bold hover:bg-gray-600 active:bg-green-600 transition-colors"
+            className="bg-gradient-to-b from-gray-600 to-gray-700 rounded-xl p-3 text-white font-bold hover:from-gray-500 hover:to-gray-600 active:from-green-600 active:to-green-700 transition-all shadow-lg border border-gray-600/50 hover:scale-105"
           >
-            6<br/><span className="text-xs text-gray-400">→</span>
+            6<br/><span className="text-xs text-green-400">→</span>
           </button>
 
-          <button className="bg-gray-700 rounded-lg p-3 text-white font-bold hover:bg-gray-600 active:bg-green-600 transition-colors">7</button>
+          <button className="bg-gradient-to-b from-gray-600 to-gray-700 rounded-xl p-3 text-white font-bold hover:from-gray-500 hover:to-gray-600 active:from-green-600 active:to-green-700 transition-all shadow-lg border border-gray-600/50 hover:scale-105">7</button>
           <button
             onClick={() => handleDirectionClick(0, 1)}
-            className="bg-gray-700 rounded-lg p-3 text-white font-bold hover:bg-gray-600 active:bg-green-600 transition-colors"
+            className="bg-gradient-to-b from-gray-600 to-gray-700 rounded-xl p-3 text-white font-bold hover:from-gray-500 hover:to-gray-600 active:from-green-600 active:to-green-700 transition-all shadow-lg border border-gray-600/50 hover:scale-105"
           >
-            8<br/><span className="text-xs text-gray-400">↓</span>
+            8<br/><span className="text-xs text-green-400">↓</span>
           </button>
-          <button className="bg-gray-700 rounded-lg p-3 text-white font-bold hover:bg-gray-600 active:bg-green-600 transition-colors">9</button>
+          <button className="bg-gradient-to-b from-gray-600 to-gray-700 rounded-xl p-3 text-white font-bold hover:from-gray-500 hover:to-gray-600 active:from-green-600 active:to-green-700 transition-all shadow-lg border border-gray-600/50 hover:scale-105">9</button>
 
-          <button className="bg-gray-700 rounded-lg p-3 text-white font-bold hover:bg-gray-600 active:bg-green-600 transition-colors">*</button>
-          <button className="bg-gray-700 rounded-lg p-3 text-white font-bold hover:bg-gray-600 active:bg-green-600 transition-colors">0</button>
-          <button className="bg-gray-700 rounded-lg p-3 text-white font-bold hover:bg-gray-600 active:bg-green-600 transition-colors">#</button>
+          <button className="bg-gradient-to-b from-gray-600 to-gray-700 rounded-xl p-3 text-white font-bold hover:from-gray-500 hover:to-gray-600 active:from-green-600 active:to-green-700 transition-all shadow-lg border border-gray-600/50 hover:scale-105">*</button>
+          <button className="bg-gradient-to-b from-gray-600 to-gray-700 rounded-xl p-3 text-white font-bold hover:from-gray-500 hover:to-gray-600 active:from-green-600 active:to-green-700 transition-all shadow-lg border border-gray-600/50 hover:scale-105">0</button>
+          <button className="bg-gradient-to-b from-gray-600 to-gray-700 rounded-xl p-3 text-white font-bold hover:from-gray-500 hover:to-gray-600 active:from-green-600 active:to-green-700 transition-all shadow-lg border border-gray-600/50 hover:scale-105">#</button>
         </div>
 
         {/* Control Instructions */}
-        <div className="mt-4 text-center text-green-400 text-xs">
-          <p>Use keypad: 2↑ 4← 6→ 8↓</p>
-          <p className="text-gray-500">Click number buttons or use keyboard</p>
+        <div className="mt-4 text-center text-green-300 text-xs bg-black/30 rounded-lg p-3 border border-green-500/30">
+          <p className="font-semibold mb-1">Controls: 2↑ 4← 6→ 8↓</p>
+          <p className="text-gray-400">Click buttons or use Arrow Keys</p>
         </div>
       </div>
     </div>
@@ -484,8 +487,10 @@ const BounceGame = () => {
   };
 
   return (
-    <div className="relative inline-block">
-      <div className="bg-red-900 p-6 rounded-2xl border-4 border-red-950 shadow-2xl" style={{ width: '340px' }}>
+    <div className="relative inline-block transform hover:scale-105 transition-transform duration-300">
+      <div className="bg-gradient-to-br from-red-700 via-red-800 to-red-950 p-6 rounded-3xl border-4 border-red-950 shadow-2xl relative" style={{ width: '360px', boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.5), 0 0 30px rgba(239, 68, 68, 0.2)' }}>
+        {/* 3D Edge Effect */}
+        <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-white/5 to-transparent pointer-events-none"></div>
         <div className="bg-gray-900 p-3 rounded-t-xl mb-3 text-center">
           <div className="text-red-400 text-sm font-bold tracking-wider">NOKIA - BOUNCE</div>
         </div>
@@ -852,8 +857,10 @@ const SpaceImpactGame = () => {
   };
 
   return (
-    <div className="relative inline-block">
-      <div className="bg-blue-900 p-6 rounded-2xl border-4 border-blue-950 shadow-2xl" style={{ width: '360px' }}>
+    <div className="relative inline-block transform hover:scale-105 transition-transform duration-300">
+      <div className="bg-gradient-to-br from-blue-700 via-blue-800 to-blue-950 p-6 rounded-3xl border-4 border-blue-950 shadow-2xl relative" style={{ width: '380px', boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.5), 0 0 30px rgba(59, 130, 246, 0.2)' }}>
+        {/* 3D Edge Effect */}
+        <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-white/5 to-transparent pointer-events-none"></div>
         <div className="bg-gray-900 p-3 rounded-t-xl mb-3 text-center">
           <div className="text-blue-400 text-sm font-bold tracking-wider">NOKIA - SPACE IMPACT</div>
         </div>
@@ -943,6 +950,13 @@ const SpaceImpactGame = () => {
 // Main Component
 export default function MobileGamesExhibit() {
   const [selectedGame, setSelectedGame] = useState<string | null>(null);
+  const [reactions, setReactions] = useState([
+    { emoji: '🎮', count: 1847, label: 'Addicted' },
+    { emoji: '🐍', count: 2134, label: 'Snake Pro' },
+    { emoji: '🚀', count: 992, label: 'Space Ace' },
+    { emoji: '🔴', count: 1543, label: 'Bounce Master' },
+    { emoji: '📱', count: 876, label: 'Nokia Fan' }
+  ]);
 
   const games = [
     {
@@ -974,123 +988,429 @@ export default function MobileGamesExhibit() {
     }
   ];
 
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-slate-800 to-gray-900">
-      {/* Header */}
-      <div className="bg-gradient-to-r from-green-900 via-blue-900 to-purple-900 border-b-4 border-green-500">
-        <div className="max-w-7xl mx-auto px-4 py-8">
-          <Link href="/" className="inline-flex items-center gap-2 text-green-400 hover:text-white mb-6">
-            <ArrowLeft className="w-5 h-5" />
-            Back to Museum
-          </Link>
+  const liveComments = [
+    { user: 'SnakeMaster2003', comment: 'Grabe yung high score ko!!! 284 points!!! 🐍', time: '1 min ago' },
+    { user: 'NokiaLover', comment: 'Nakakamiss yung mga games na to!!! 💚', time: '2 min ago' },
+    { user: 'BouncePro', comment: 'Ang hirap ng level 5 sa Bounce!!! 😭', time: '3 min ago' },
+    { user: 'SpaceImpactFan', comment: 'Sino nakakaalala ng cheat codes? 🚀', time: '4 min ago' },
+    { user: 'ClassicGamer', comment: 'Walang kupas ang Nokia games!!!', time: '5 min ago' }
+  ];
 
-          <div className="text-center">
-            <motion.div
-              initial={{ scale: 0 }}
-              animate={{ scale: 1 }}
-              transition={{ type: "spring", duration: 0.8 }}
-              className="mb-4"
-            >
-              <Smartphone className="w-20 h-20 text-green-400 mx-auto" />
-            </motion.div>
-            <h1 className="text-5xl md:text-6xl font-bold text-white mb-4">
-              MOBILE GAMES ARCADE
-            </h1>
-            <p className="text-green-400 text-xl mb-2">Nokia & Classic Mobile Gaming (2000-2010)</p>
-            <p className="text-gray-300">When ₱5 load lasted a week and Snake was life</p>
-          </div>
-        </div>
+  const addReaction = (index: number) => {
+    setReactions(prev => prev.map((reaction, i) =>
+      i === index ? { ...reaction, count: reaction.count + 1 } : reaction
+    ));
+  };
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-green-950 via-blue-950 to-purple-950 relative overflow-hidden">
+      {/* Animated Background Pattern */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute top-0 left-0 w-96 h-96 bg-green-500 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-500 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute top-1/2 left-1/2 w-96 h-96 bg-purple-500 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
       </div>
 
-      {/* Main Content */}
-      <div className="max-w-7xl mx-auto px-4 py-12">
-        {/* Intro */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="text-center mb-12"
-        >
-          <div className="bg-gradient-to-r from-green-900/40 to-blue-900/40 border-2 border-green-500/30 rounded-xl p-8">
-            <div className="text-6xl mb-4">📱🎮</div>
-            <h2 className="text-3xl font-bold text-white mb-4">Play Real Nokia Games!</h2>
-            <p className="text-gray-300 text-lg max-w-3xl mx-auto">
-              Before smartphones, before app stores, these simple games kept us entertained for hours.
-              Click on any game below to start playing these authentic recreations of Nokia classics!
-            </p>
-          </div>
-        </motion.div>
+      {/* Header */}
+      <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        className="bg-gradient-to-r from-black/70 via-black/60 to-black/70 backdrop-blur-xl py-8 border-b border-green-500/30 relative z-10"
+      >
+        <div className="max-w-6xl mx-auto px-4">
+          <Link href="/" className="inline-flex items-center gap-2 text-green-400 hover:text-green-300 mb-6 transition-all hover:gap-3 group">
+            <ArrowLeft className="w-5 h-5 group-hover:scale-110 transition-transform" />
+            <span className="font-semibold">Back to Museum</span>
+          </Link>
 
-        {/* Selected Game Display */}
-        {selectedGame && (
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            className="mb-12 flex justify-center"
-          >
-            {selectedGame === 'snake' && <SnakeGame />}
-            {selectedGame === 'bounce' && <BounceGame />}
-            {selectedGame === 'space-impact' && <SpaceImpactGame />}
-          </motion.div>
-        )}
+          <div className="flex flex-col md:flex-row justify-between items-start gap-6">
+            <div className="flex-1">
+              <motion.h1
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.2 }}
+                className="font-serif text-4xl md:text-5xl bg-gradient-to-r from-green-300 via-blue-300 to-purple-300 bg-clip-text text-transparent mb-4 leading-tight"
+              >
+                Mobile Games Arcade
+              </motion.h1>
+              <motion.p
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.3 }}
+                className="text-green-200 text-lg max-w-2xl leading-relaxed"
+              >
+                Step back into the golden age of mobile gaming. Play authentic Nokia classics that defined a generation!
+              </motion.p>
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.4 }}
+                className="mt-4 flex gap-4 flex-wrap"
+              >
+                <div className="bg-green-500/20 border border-green-400/30 px-4 py-2 rounded-full text-green-300 text-sm font-medium backdrop-blur-sm">
+                  🎮 3 Classic Games
+                </div>
+                <div className="bg-blue-500/20 border border-blue-400/30 px-4 py-2 rounded-full text-blue-300 text-sm font-medium backdrop-blur-sm">
+                  📱 100% Authentic
+                </div>
+              </motion.div>
+            </div>
 
-        {/* Game Selection */}
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
-          {games.map((game, idx) => (
             <motion.div
-              key={game.id}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: idx * 0.1 }}
-              whileHover={{ y: -5 }}
-              onClick={() => setSelectedGame(game.id)}
-              className={`cursor-pointer bg-gradient-to-br ${game.color} rounded-xl border-2 ${
-                selectedGame === game.id ? 'border-yellow-400 ring-4 ring-yellow-400/50' : 'border-white/20'
-              } p-6 shadow-xl hover:shadow-2xl transition-all`}
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.3 }}
+              className="text-right text-white bg-gradient-to-br from-green-600/20 to-blue-600/20 p-6 rounded-2xl border border-green-400/30 backdrop-blur-sm"
             >
-              <div className="text-center">
-                <div className="text-6xl mb-4">{game.icon}</div>
-                <h3 className="text-2xl font-bold text-white mb-2">{game.title}</h3>
-                <p className="text-white/80 text-sm mb-1">{game.phone}</p>
-                <p className="text-white/60 text-xs mb-4">{game.year}</p>
-                <p className="text-white/90 mb-6">{game.description}</p>
-                <button className="bg-white/20 hover:bg-white/30 text-white px-6 py-3 rounded-lg font-semibold flex items-center gap-2 mx-auto transition-colors">
-                  <Play className="w-5 h-5" />
-                  {selectedGame === game.id ? 'Playing Now' : 'Play Game'}
+              <div className="flex items-center gap-3 text-green-300 mb-3">
+                <Smartphone className="w-6 h-6" />
+                <span className="font-semibold text-lg">Classic Gaming Era</span>
+              </div>
+              <div className="text-3xl font-mono bg-gradient-to-r from-green-300 to-blue-300 bg-clip-text text-transparent font-bold">
+                2000-2010
+              </div>
+              <div className="text-sm text-gray-300 mt-2">The Nokia Legacy</div>
+            </motion.div>
+          </div>
+        </div>
+      </motion.div>
+
+      <div className="max-w-6xl mx-auto px-4 py-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          {/* Game Player Area */}
+          <div className="lg:col-span-2">
+            {/* Selected Game Display */}
+            {selectedGame && (
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="bg-black rounded-xl overflow-hidden shadow-2xl mb-6"
+              >
+                <div className="bg-gray-900 p-4 flex justify-center">
+                  {selectedGame === 'snake' && <SnakeGame />}
+                  {selectedGame === 'bounce' && <BounceGame />}
+                  {selectedGame === 'space-impact' && <SpaceImpactGame />}
+                </div>
+              </motion.div>
+            )}
+
+            {/* Game Description */}
+            {selectedGame && (
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-md rounded-2xl p-8 text-white mb-6 border border-white/20 shadow-2xl"
+              >
+                <div className="flex justify-between items-start mb-6">
+                  <div className="flex-1">
+                    <div className="flex items-center gap-3 mb-3">
+                      <span className="text-4xl">{games.find(g => g.id === selectedGame)?.icon}</span>
+                      <h3 className="text-2xl font-bold bg-gradient-to-r from-green-300 to-blue-300 bg-clip-text text-transparent">
+                        {games.find(g => g.id === selectedGame)?.title}
+                      </h3>
+                    </div>
+                    <p className="text-green-300 text-sm font-semibold mb-1">📱 {games.find(g => g.id === selectedGame)?.phone}</p>
+                    <p className="text-gray-200 text-base mt-3 leading-relaxed">{games.find(g => g.id === selectedGame)?.description}</p>
+                  </div>
+                  <div className="text-right ml-6">
+                    <div className="bg-gradient-to-br from-green-500/20 to-blue-500/20 px-4 py-2 rounded-xl border border-green-400/30">
+                      <div className="text-3xl font-mono font-bold bg-gradient-to-r from-green-300 to-blue-300 bg-clip-text text-transparent">
+                        {games.find(g => g.id === selectedGame)?.year}
+                      </div>
+                      <div className="text-yellow-400 text-sm mt-1 drop-shadow-[0_0_8px_rgba(234,179,8,0.5)]">⭐ Classic</div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Live Reactions */}
+                <div className="border-t border-white/30 pt-5">
+                  <h4 className="font-bold text-lg mb-4 flex items-center gap-2">
+                    <span className="text-2xl">🎮</span>
+                    <span className="bg-gradient-to-r from-green-300 to-purple-300 bg-clip-text text-transparent">Live Reactions</span>
+                  </h4>
+                  <div className="flex gap-3 flex-wrap">
+                    {reactions.map((reaction, index) => (
+                      <motion.button
+                        key={index}
+                        whileHover={{ scale: 1.15, rotate: [0, -10, 10, 0] }}
+                        whileTap={{ scale: 0.9 }}
+                        onClick={() => addReaction(index)}
+                        className="bg-gradient-to-br from-white/20 to-white/10 hover:from-white/30 hover:to-white/20 px-5 py-3 rounded-full transition-all flex items-center gap-2 border border-white/20 hover:border-white/40 shadow-lg hover:shadow-xl"
+                      >
+                        <span className="text-2xl">{reaction.emoji}</span>
+                        <div className="text-left">
+                          <div className="text-white font-bold text-sm">{reaction.count}</div>
+                          <div className="text-gray-300 text-xs">{reaction.label}</div>
+                        </div>
+                      </motion.button>
+                    ))}
+                  </div>
+                </div>
+              </motion.div>
+            )}
+
+            {/* Game Selection */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md rounded-2xl p-8 border border-white/20 shadow-2xl"
+            >
+              <h3 className="text-white font-bold text-xl mb-6 flex items-center gap-3 bg-gradient-to-r from-green-300 to-blue-300 bg-clip-text text-transparent">
+                <span className="text-3xl">📱</span>
+                Classic Nokia Games
+              </h3>
+
+              <div className="grid grid-cols-1 gap-4">
+                {games.map((game, index) => (
+                  <motion.div
+                    key={game.id}
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: index * 0.1 }}
+                    whileHover={{ scale: 1.03, y: -4 }}
+                    whileTap={{ scale: 0.98 }}
+                    onClick={() => setSelectedGame(game.id)}
+                    className={`p-5 rounded-2xl cursor-pointer transition-all duration-300 ${
+                      selectedGame === game.id
+                        ? 'bg-gradient-to-br from-green-500/30 to-blue-500/30 border-2 border-green-400 shadow-[0_0_30px_rgba(34,197,94,0.3)]'
+                        : 'bg-gradient-to-br from-white/10 to-white/5 hover:from-white/20 hover:to-white/10 border-2 border-white/10 hover:border-white/30'
+                    }`}
+                  >
+                    <div className="flex gap-5 items-center">
+                      <div className={`text-5xl transform transition-transform ${selectedGame === game.id ? 'scale-110' : ''}`}>
+                        {game.icon}
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <div className="flex justify-between items-start mb-2">
+                          <h4 className="text-white font-bold text-lg truncate pr-2">{game.title}</h4>
+                          <span className="text-yellow-400 text-lg flex-shrink-0 drop-shadow-[0_0_8px_rgba(234,179,8,0.5)]">⭐</span>
+                        </div>
+                        <p className="text-green-300 text-sm mb-2 font-medium">{game.phone}</p>
+                        <div className="flex justify-between items-center">
+                          <span className="text-blue-300 text-sm font-mono bg-blue-500/20 px-2 py-1 rounded">{game.year}</span>
+                          <span className="text-purple-300 text-xs bg-purple-500/20 px-2 py-1 rounded">Classic</span>
+                        </div>
+                      </div>
+                    </div>
+                    {selectedGame === game.id && (
+                      <motion.div
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: 'auto' }}
+                        className="mt-4 pt-4 border-t border-white/20"
+                      >
+                        <p className="text-gray-200 text-sm">{game.description}</p>
+                        <div className="mt-3 flex items-center gap-2">
+                          <Play className="w-4 h-4 text-green-400" />
+                          <span className="text-green-300 text-xs font-semibold">Now Playing</span>
+                        </div>
+                      </motion.div>
+                    )}
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
+          </div>
+
+          {/* Sidebar */}
+          <div className="lg:col-span-1 space-y-6 relative z-10">
+            {/* Live Comments */}
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: 1, x: 0 }}
+              className="bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-md rounded-2xl p-6 border border-white/20 shadow-2xl"
+            >
+              <h3 className="text-white font-bold text-xl mb-5 flex items-center gap-3">
+                <span className="text-2xl animate-pulse">💬</span>
+                <span className="bg-gradient-to-r from-green-300 to-blue-300 bg-clip-text text-transparent">Live Comments</span>
+              </h3>
+
+              <div className="space-y-3 max-h-80 overflow-y-auto pr-2 custom-scrollbar">
+                {liveComments.map((comment, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: index * 0.1 }}
+                    whileHover={{ scale: 1.02, x: 4 }}
+                    className="bg-gradient-to-r from-white/10 to-white/5 p-4 rounded-xl border border-white/10 hover:border-green-400/50 transition-all"
+                  >
+                    <div className="flex justify-between items-start mb-2">
+                      <span className="text-green-300 text-sm font-semibold flex items-center gap-2">
+                        <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+                        {comment.user}
+                      </span>
+                      <span className="text-gray-400 text-xs bg-black/30 px-2 py-1 rounded">{comment.time}</span>
+                    </div>
+                    <p className="text-white text-sm leading-relaxed">{comment.comment}</p>
+                  </motion.div>
+                ))}
+              </div>
+
+              <div className="mt-5 flex gap-2">
+                <input
+                  type="text"
+                  placeholder="Share your high score..."
+                  className="flex-1 bg-white/10 text-white placeholder-gray-400 px-4 py-3 rounded-xl outline-none text-sm border border-white/20 focus:border-green-400 focus:bg-white/15 transition-all"
+                />
+                <button className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-500 hover:to-green-600 px-6 py-3 rounded-xl text-white text-sm font-semibold transition-all shadow-lg hover:shadow-green-500/50 hover:scale-105">
+                  Send
                 </button>
               </div>
             </motion.div>
-          ))}
+
+            {/* Quick Stats */}
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.2 }}
+              className="bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-md rounded-2xl p-6 border border-white/20 shadow-2xl"
+            >
+              <h3 className="text-white font-bold text-xl mb-5 flex items-center gap-3">
+                <span className="text-2xl">📊</span>
+                <span className="bg-gradient-to-r from-green-300 to-blue-300 bg-clip-text text-transparent">Quick Stats</span>
+              </h3>
+
+              <div className="space-y-3">
+                {[
+                  { label: 'Total Games Played', value: '2,847', emoji: '🎮', color: 'from-green-500 to-emerald-500' },
+                  { label: 'High Score (Snake)', value: '284', emoji: '🐍', color: 'from-yellow-500 to-orange-500' },
+                  { label: 'Active Players', value: '156', emoji: '👥', color: 'from-blue-500 to-cyan-500' },
+                  { label: 'Nokia Phones Used', value: '3.2M', emoji: '📱', color: 'from-purple-500 to-pink-500' }
+                ].map((stat, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, x: 20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: 0.3 + index * 0.1 }}
+                    whileHover={{ scale: 1.05, x: 4 }}
+                    className={`flex items-center justify-between bg-gradient-to-r ${stat.color} bg-opacity-10 p-4 rounded-xl border border-white/20 hover:border-white/40 transition-all shadow-lg`}
+                  >
+                    <div className="flex items-center gap-3">
+                      <span className="text-2xl">{stat.emoji}</span>
+                      <span className="text-white text-sm font-medium">{stat.label}</span>
+                    </div>
+                    <span className="text-green-300 font-bold text-lg bg-black/30 px-3 py-1 rounded-lg">{stat.value}</span>
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
+          </div>
         </div>
 
-        {/* Nostalgia Section */}
+        {/* Historical Context */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="bg-gradient-to-r from-purple-900/40 to-blue-900/40 border-2 border-purple-500/30 rounded-xl p-8 text-center"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.5 }}
+          className="mt-8 bg-gradient-to-br from-black/70 via-black/60 to-black/70 backdrop-blur-xl rounded-3xl p-8 text-white border border-green-500/30 shadow-2xl relative z-10 overflow-hidden"
         >
-          <div className="text-5xl mb-4">💚📱</div>
-          <h3 className="text-3xl font-bold text-white mb-6">Remember When...</h3>
-          <div className="grid md:grid-cols-3 gap-6 text-left mb-6">
-            {[
-              'Snake was the only game we needed',
-              'Monochrome screens were high-tech',
-              'Phone batteries lasted for days',
-              'We competed for high scores during class',
-              'Every Nokia came with amazing games',
-              'These games were free and pre-installed'
-            ].map((memory, idx) => (
-              <div key={idx} className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                <p className="text-green-400 flex items-start gap-2">
-                  <span className="text-yellow-400 text-xl">✦</span>
-                  {memory}
-                </p>
-              </div>
-            ))}
+          {/* Decorative elements */}
+          <div className="absolute top-0 right-0 w-64 h-64 bg-green-500/10 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 left-0 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl"></div>
+
+          <div className="relative z-10">
+            <h3 className="font-serif text-3xl mb-6 bg-gradient-to-r from-green-300 via-blue-300 to-purple-300 bg-clip-text text-transparent flex items-center gap-3">
+              <span className="text-4xl">📱</span>
+              The Golden Age of Mobile Gaming (2000-2010)
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.6 }}
+                className="bg-gradient-to-br from-green-500/20 to-emerald-500/10 p-6 rounded-2xl border border-green-400/30"
+              >
+                <h4 className="font-bold text-green-300 mb-4 text-lg flex items-center gap-2">
+                  <span className="text-2xl">🌟</span>
+                  Cultural Impact
+                </h4>
+                <ul className="space-y-2 text-gray-200">
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-400 mt-1">▸</span>
+                    <span>Defined mobile entertainment before smartphones</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-400 mt-1">▸</span>
+                    <span>Created shared gaming experiences in schools</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-400 mt-1">▸</span>
+                    <span>Made Nokia the undisputed mobile king</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-400 mt-1">▸</span>
+                    <span>Inspired a generation of casual gamers</span>
+                  </li>
+                </ul>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.7 }}
+                className="bg-gradient-to-br from-blue-500/20 to-cyan-500/10 p-6 rounded-2xl border border-blue-400/30"
+              >
+                <h4 className="font-bold text-blue-300 mb-4 text-lg flex items-center gap-2">
+                  <span className="text-2xl">🎮</span>
+                  Iconic Games
+                </h4>
+                <ul className="space-y-2 text-gray-200">
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">▸</span>
+                    <span>Snake II (Nokia 3310)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">▸</span>
+                    <span>Bounce (Nokia Series 40)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">▸</span>
+                    <span>Space Impact (Nokia 3310)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">▸</span>
+                    <span>Pairs II (Nokia 5110)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">▸</span>
+                    <span>Rapid Roll (Nokia 3510)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">▸</span>
+                    <span>Beach Rally (Nokia N-Gage)</span>
+                  </li>
+                </ul>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.8 }}
+                className="bg-gradient-to-br from-purple-500/20 to-pink-500/10 p-6 rounded-2xl border border-purple-400/30"
+              >
+                <h4 className="font-bold text-purple-300 mb-4 text-lg flex items-center gap-2">
+                  <span className="text-2xl">👥</span>
+                  Social Phenomena
+                </h4>
+                <ul className="space-y-2 text-gray-200">
+                  <li className="flex items-start gap-2">
+                    <span className="text-purple-400 mt-1">▸</span>
+                    <span>High score competitions in class</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-purple-400 mt-1">▸</span>
+                    <span>Phone passing during breaks</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-purple-400 mt-1">▸</span>
+                    <span>Snake addiction warnings</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-purple-400 mt-1">▸</span>
+                    <span>Battery life as gaming currency</span>
+                  </li>
+                </ul>
+              </motion.div>
+            </div>
           </div>
-          <p className="text-white text-xl italic">
-            "Before app stores and touchscreens, mobile gaming was pure, simple, and unforgettable."
-          </p>
         </motion.div>
       </div>
     </div>

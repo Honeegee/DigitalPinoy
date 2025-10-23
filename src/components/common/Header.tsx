@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import { useState } from 'react';
 import { usePathname } from 'next/navigation';
-import { Menu, X, Home, Clock, Map, BookOpen, MessageCircle, Heart } from 'lucide-react';
+import { Menu, X, Home, Clock, Map, BookOpen, MessageCircle, Heart, Image } from 'lucide-react';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,7 +13,7 @@ export default function Header() {
   const navItems = [
     { href: '/', label: 'Home', icon: <Home className="w-4 h-4" /> },
     { href: '/timeline', label: 'Timeline', icon: <Clock className="w-4 h-4" /> },
-    { href: '/steep-analysis', label: 'Then and Now', icon: <MessageCircle className="w-4 h-4" /> },
+    { href: '/gallery', label: 'Gallery', icon: <Image className="w-4 h-4" /> },
     { href: '/exhibits', label: 'Exhibits', icon: <Map className="w-4 h-4" /> },
     { href: '/about', label: 'About', icon: <Heart className="w-4 h-4" /> }
   ];

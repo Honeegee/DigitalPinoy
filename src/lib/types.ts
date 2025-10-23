@@ -12,7 +12,7 @@ export interface Exhibit {
   subtitle: string;
   description: string;
   image: string;
-  category: 'social' | 'entertainment' | 'music' | 'sports' | 'faith' | 'global' | 'gaming';
+  category: 'social' | 'entertainment' | 'music' | 'sports' | 'faith' | 'global' | 'gaming' | 'gallery';
   path: string;
   color: string;
 }

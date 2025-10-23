@@ -158,13 +158,27 @@ export default function Home() {
               </motion.button>
             </Link>
 
+            <Link href="/gallery">
+              <motion.button
+                whileHover={{ scale: 1.1, boxShadow: '0 0 30px rgba(168, 85, 247, 0.5)' }}
+                whileTap={{ scale: 0.95 }}
+                className="group relative px-8 py-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold rounded-lg overflow-hidden"
+              >
+                <div className="absolute inset-0 bg-gradient-to-r from-purple-400 to-pink-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="relative flex items-center gap-3">
+                  <Map className="w-5 h-5" />
+                  <span>GALLERY</span>
+                </div>
+              </motion.button>
+            </Link>
+
             <Link href="/timeline">
               <motion.button
                 whileHover={{ scale: 1.1, boxShadow: '0 0 30px rgba(236, 72, 153, 0.5)' }}
                 whileTap={{ scale: 0.95 }}
-                className="group relative px-8 py-4 bg-gradient-to-r from-pink-500 to-purple-500 text-white font-bold rounded-lg overflow-hidden"
+                className="group relative px-8 py-4 bg-gradient-to-r from-pink-500 to-red-500 text-white font-bold rounded-lg overflow-hidden"
               >
-                <div className="absolute inset-0 bg-gradient-to-r from-pink-400 to-purple-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute inset-0 bg-gradient-to-r from-pink-400 to-red-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="relative flex items-center gap-3">
                   <Calendar className="w-5 h-5" />
                   <span>TIMELINE 2000-2010</span>
