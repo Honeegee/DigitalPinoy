@@ -144,7 +144,7 @@ export default function FriendsterEraPage() {
             >
               <div className="aspect-[4/3] bg-gradient-to-br from-purple-900/30 to-pink-900/30 rounded-xl border border-purple-500/30 overflow-hidden">
                 <img 
-                  src="/DigitalPinoy/images/friendster.png" 
+                  src="/DigitalPinoy/technology/friendster.jpg" 
                   alt="Classic Friendster profile"
                   className="w-full h-full object-cover opacity-80"
                 />
@@ -185,7 +185,7 @@ export default function FriendsterEraPage() {
             >
               <div className="aspect-square bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-2xl border border-purple-500/40 p-8 backdrop-blur-sm">
                 <div className="w-full h-full bg-black/50 rounded-xl border border-purple-500/30 flex items-center justify-center relative overflow-hidden">
-                  <div className="absolute inset-0 bg-[url('/DigitalPinoy/images/friendsterBackground.gif')] bg-contain bg-center bg-no-repeat opacity-90"></div>
+                  <div className="absolute inset-0 bg-[url('/DigitalPinoy/technology/friendster1.gif')] bg-contain bg-center bg-no-repeat opacity-90"></div>
                   <div className="absolute bottom-3 left-3 right-3 text-center">
                     <p className="text-white text-xs bg-black/70 backdrop-blur-sm rounded-lg py-2 px-3">
                       🎵 Animated Friendster Profile
@@ -335,7 +335,7 @@ export default function FriendsterEraPage() {
             >
               <div className="aspect-video bg-gradient-to-br from-pink-900/30 to-purple-900/30 rounded-xl border border-pink-500/30 overflow-hidden relative">
                 <img 
-                  src="/DigitalPinoy/images/friend1.jpg" 
+                  src="/DigitalPinoy/technology/frienster3.jpg" 
                   alt="Friendster social connections"
                   className="w-full h-full object-cover opacity-80"
                 />

@@ -141,7 +141,7 @@ export default function SocialMediaDominancePage() {
             >
               <div className="aspect-[4/3] bg-gradient-to-br from-blue-900/30 to-cyan-900/30 rounded-xl border border-blue-500/30 overflow-hidden">
                 <img 
-                  src="/DigitalPinoy/images/social.png" 
+                  src="/DigitalPinoy/technology/socialmedia.jpg" 
                   alt="Social media algorithms"
                   className="w-full h-full object-cover opacity-80"
                 />
@@ -182,7 +182,7 @@ export default function SocialMediaDominancePage() {
             >
               <div className="aspect-square bg-gradient-to-br from-blue-500/20 to-cyan-500/20 rounded-2xl border border-blue-500/40 p-8 backdrop-blur-sm">
                 <div className="w-full h-full bg-black/50 rounded-xl border border-blue-500/30 flex items-center justify-center relative overflow-hidden">
-                  <div className="absolute inset-0 bg-[url('/DigitalPinoy/images/social.png')] bg-contain bg-center bg-no-repeat opacity-90"></div>
+                  <div className="absolute inset-0 bg-[url('/DigitalPinoy/technology/social.gif')] bg-contain bg-center bg-no-repeat opacity-90"></div>
                   <div className="absolute bottom-3 left-3 right-3 text-center">
                     <p className="text-white text-xs bg-black/70 backdrop-blur-sm rounded-lg py-2 px-3">
                       📱 Social Media Ecosystem
@@ -332,7 +332,7 @@ export default function SocialMediaDominancePage() {
             >
               <div className="aspect-video bg-gradient-to-br from-cyan-900/30 to-blue-900/30 rounded-xl border border-cyan-500/30 overflow-hidden relative">
                 <img 
-                  src="/DigitalPinoy/images/mentalhealth.png" 
+                  src="/DigitalPinoy/technology/mentalsocial.jpg" 
                   alt="Social media impact on mental health"
                   className="w-full h-full object-cover opacity-80"
                 />

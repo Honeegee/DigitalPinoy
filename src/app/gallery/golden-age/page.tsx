@@ -270,7 +270,7 @@ export default function GoldenAgeGallery() {
         </motion.div>
       </div>
 
-      {/* Lightbox Modal with Carousel */}
+      {/* Modern Carousel Modal - No Scroll Design */}
       <AnimatePresence>
         {selectedImage && (
           <motion.div
@@ -278,90 +278,254 @@ export default function GoldenAgeGallery() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={closeLightbox}
-            className="fixed inset-0 bg-black/95 backdrop-blur-lg z-50 flex items-center justify-center p-4"
+            className="fixed inset-0 bg-black/98 backdrop-blur-2xl z-50 flex flex-col"
           >
-            {/* Close Button */}
-            <button
-              onClick={closeLightbox}
-              className="absolute top-6 right-6 w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-all z-10 border border-white/20"
-            >
-              <X className="w-6 h-6 text-white" />
-            </button>
+            {/* Top Bar - Compact */}
+            <div className="relative z-20 flex items-center justify-between px-4 md:px-6 py-3 bg-gradient-to-b from-black/80 to-transparent">
+              {/* Counter - Minimal */}
+              <div className="flex items-center gap-3">
+                <div className="bg-gradient-to-r from-yellow-500/20 to-orange-500/20 backdrop-blur-xl px-4 py-2 rounded-xl border border-yellow-500/30">
+                  <span className="text-white font-bold text-sm">
+                    {selectedImageIndex + 1}
+                  </span>
+                  <span className="text-gray-400 mx-1.5 text-sm">/</span>
+                  <span className="text-gray-400 font-medium text-sm">{filteredImages.length}</span>
+                </div>
 
-            {/* Image Counter */}
-            <div className="absolute top-6 left-6 bg-black/60 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20 z-10">
-              <span className="text-white font-semibold text-sm">
-                {selectedImageIndex + 1} / {filteredImages.length}
-              </span>
+                {/* Progress bar - Compact */}
+                <div className="hidden lg:flex items-center gap-1.5">
+                  {filteredImages.map((_, idx) => (
+                    <motion.div
+                      key={idx}
+                      className={`h-1 rounded-full transition-all duration-300 cursor-pointer ${
+                        idx === selectedImageIndex
+                          ? 'w-8 bg-gradient-to-r from-yellow-400 to-orange-400'
+                          : idx < selectedImageIndex
+                          ? 'w-6 bg-yellow-600/50'
+                          : 'w-4 bg-gray-700'
+                      }`}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setSelectedImageIndex(idx);
+                        setSelectedImage(filteredImages[idx]);
+                      }}
+                    />
+                  ))}
+                </div>
+              </div>
+
+              {/* Actions - Compact */}
+              <div className="flex items-center gap-2">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                  }}
+                  className="w-9 h-9 rounded-xl bg-gradient-to-br from-white/10 to-white/5 hover:from-white/20 hover:to-white/10 flex items-center justify-center transition-all border border-white/10 hover:border-red-500/50 group"
+                >
+                  <Heart className="w-4 h-4 text-white group-hover:text-red-400 transition-colors" />
+                </motion.button>
+
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                  }}
+                  className="w-9 h-9 rounded-xl bg-gradient-to-br from-white/10 to-white/5 hover:from-white/20 hover:to-white/10 flex items-center justify-center transition-all border border-white/10 hover:border-blue-500/50 group"
+                >
+                  <Share2 className="w-4 h-4 text-white group-hover:text-blue-400 transition-colors" />
+                </motion.button>
+
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                  }}
+                  className="w-9 h-9 rounded-xl bg-gradient-to-br from-white/10 to-white/5 hover:from-white/20 hover:to-white/10 flex items-center justify-center transition-all border border-white/10 hover:border-yellow-500/50 group"
+                >
+                  <Download className="w-4 h-4 text-white group-hover:text-yellow-400 transition-colors" />
+                </motion.button>
+
+                <div className="w-px h-6 bg-white/20 mx-1"></div>
+
+                <motion.button
+                  whileHover={{ scale: 1.05, rotate: 90 }}
+                  whileTap={{ scale: 0.95 }}
+                  onClick={closeLightbox}
+                  className="w-9 h-9 rounded-xl bg-gradient-to-br from-white/10 to-white/5 hover:from-red-500/20 hover:to-red-600/20 flex items-center justify-center transition-all border border-white/10 hover:border-red-500/50"
+                >
+                  <X className="w-5 h-5 text-white" />
+                </motion.button>
+              </div>
             </div>
 
-            {/* Previous Button */}
-            <button
-              onClick={(e) => {
-                e.stopPropagation();
-                goToPrevious();
-              }}
-              className="absolute left-6 top-1/2 -translate-y-1/2 w-14 h-14 rounded-full bg-yellow-600/80 hover:bg-yellow-500 flex items-center justify-center transition-all z-10 border-2 border-white/20 shadow-lg"
-            >
-              <ChevronLeft className="w-8 h-8 text-white" />
-            </button>
+            {/* Main Content Area - Maximized */}
+            <div className="flex-1 flex items-center justify-center px-2 relative min-h-0">
+              {/* Navigation Buttons - Minimal */}
+              <motion.button
+                whileHover={{ scale: 1.1, x: -5 }}
+                whileTap={{ scale: 0.9 }}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  goToPrevious();
+                }}
+                className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 rounded-lg bg-gradient-to-br from-yellow-500/90 to-orange-500/90 hover:from-yellow-400 hover:to-orange-400 backdrop-blur-xl flex items-center justify-center transition-all z-20 border border-white/20 shadow-xl group"
+              >
+                <ChevronLeft className="w-5 h-5 md:w-6 md:h-6 text-white group-hover:scale-110 transition-transform" />
+              </motion.button>
 
-            {/* Next Button */}
-            <button
-              onClick={(e) => {
-                e.stopPropagation();
-                goToNext();
-              }}
-              className="absolute right-6 top-1/2 -translate-y-1/2 w-14 h-14 rounded-full bg-yellow-600/80 hover:bg-yellow-500 flex items-center justify-center transition-all z-10 border-2 border-white/20 shadow-lg"
-            >
-              <ChevronRight className="w-8 h-8 text-white" />
-            </button>
+              <motion.button
+                whileHover={{ scale: 1.1, x: 5 }}
+                whileTap={{ scale: 0.9 }}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  goToNext();
+                }}
+                className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 rounded-lg bg-gradient-to-br from-yellow-500/90 to-orange-500/90 hover:from-yellow-400 hover:to-orange-400 backdrop-blur-xl flex items-center justify-center transition-all z-20 border border-white/20 shadow-xl group"
+              >
+                <ChevronRight className="w-5 h-5 md:w-6 md:h-6 text-white group-hover:scale-110 transition-transform" />
+              </motion.button>
 
-            <motion.div
-              key={selectedImageIndex}
-              initial={{ scale: 0.9, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.9, opacity: 0 }}
-              onClick={(e) => e.stopPropagation()}
-              className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl overflow-hidden max-w-5xl w-full border border-yellow-500/30 shadow-2xl max-h-[90vh] overflow-y-auto"
-            >
-              {/* Image */}
-              <div className="aspect-video bg-gradient-to-br from-yellow-500/20 to-orange-500/20 flex items-center justify-center relative">
-                <ImageIcon className="w-32 h-32 text-white/30" />
-              </div>
-
-              {/* Info */}
-              <div className="p-8">
-                <div className="flex items-start justify-between mb-4">
-                  <div className="flex-1">
-                    <h2 className="text-3xl font-bold text-white mb-2">{selectedImage.title}</h2>
-                    <p className="text-gray-300 text-lg mb-4">{selectedImage.description}</p>
-                    <div className="flex items-center gap-3">
-                      <span className="bg-yellow-500/30 px-4 py-2 rounded-lg text-yellow-300 font-semibold">
-                        Year: {selectedImage.year}
-                      </span>
-                      <span className="bg-orange-500/30 px-4 py-2 rounded-lg text-orange-300 font-semibold">
-                        {selectedImage.category}
-                      </span>
+              {/* Image Card - Full Focus */}
+              <motion.div
+                key={selectedImageIndex}
+                initial={{ scale: 0.95, opacity: 0, x: 100 }}
+                animate={{ scale: 1, opacity: 1, x: 0 }}
+                exit={{ scale: 0.95, opacity: 0, x: -100 }}
+                transition={{
+                  type: "spring",
+                  stiffness: 260,
+                  damping: 25,
+                  opacity: { duration: 0.25 }
+                }}
+                onClick={(e) => e.stopPropagation()}
+                className="relative w-full max-w-6xl h-[calc(100vh-180px)] max-h-[700px]"
+              >
+                <div className="relative w-full h-full bg-gradient-to-br from-gray-900/95 to-black/95 backdrop-blur-2xl rounded-xl overflow-hidden border border-yellow-500/30 shadow-2xl">
+                  {/* Image Container with Overlay */}
+                  <div className="relative w-full h-full bg-gradient-to-br from-yellow-500/10 to-orange-500/10 flex items-center justify-center overflow-hidden">
+                    {/* Animated Background Pattern */}
+                    <div className="absolute inset-0 opacity-5">
+                      <div className="absolute inset-0" style={{
+                        backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)',
+                        backgroundSize: '40px 40px'
+                      }}></div>
                     </div>
+
+                    <motion.div
+                      initial={{ scale: 1.2, opacity: 0 }}
+                      animate={{ scale: 1, opacity: 1 }}
+                      transition={{ duration: 0.5 }}
+                      className="absolute inset-0 bg-gradient-to-br from-yellow-500/20 via-transparent to-orange-500/20"
+                    />
+                    <ImageIcon className="w-32 h-32 md:w-40 md:h-40 text-white/20 relative z-10" />
+                    {/* Uncomment when you have actual images */}
+                    {/* <Image
+                      src={selectedImage.src}
+                      alt={selectedImage.title}
+                      fill
+                      className="object-contain p-2"
+                    /> */}
+
+                    {/* Top Overlay - Compact Info */}
+                    <motion.div
+                      initial={{ y: -20, opacity: 0 }}
+                      animate={{ y: 0, opacity: 1 }}
+                      transition={{ delay: 0.2, duration: 0.3 }}
+                      className="absolute top-0 left-0 right-0 bg-gradient-to-b from-black/90 via-black/60 to-transparent backdrop-blur-md p-4 md:p-5"
+                    >
+                      <div className="flex items-start justify-between gap-3">
+                        <div className="flex-1 min-w-0">
+                          <h2 className="text-xl md:text-2xl font-bold text-white mb-1 bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent truncate">
+                            {selectedImage.title}
+                          </h2>
+                          <p className="text-gray-300 text-xs md:text-sm leading-relaxed line-clamp-1">
+                            {selectedImage.description}
+                          </p>
+                        </div>
+
+                        {/* Badges - Compact */}
+                        <div className="flex gap-2 flex-shrink-0">
+                          <motion.div
+                            initial={{ scale: 0, rotate: -180 }}
+                            animate={{ scale: 1, rotate: 0 }}
+                            transition={{ delay: 0.2, type: "spring" }}
+                            className="bg-gradient-to-br from-yellow-500 to-orange-600 px-3 py-1 rounded-lg shadow-lg"
+                          >
+                            <span className="text-white font-bold text-xs">{selectedImage.year}</span>
+                          </motion.div>
+
+                          <motion.div
+                            initial={{ scale: 0, rotate: 180 }}
+                            animate={{ scale: 1, rotate: 0 }}
+                            transition={{ delay: 0.3, type: "spring" }}
+                            className="bg-gradient-to-br from-orange-500 to-red-600 px-3 py-1 rounded-lg shadow-lg hidden md:block"
+                          >
+                            <span className="text-white font-bold text-xs whitespace-nowrap">{selectedImage.category}</span>
+                          </motion.div>
+                        </div>
+                      </div>
+                    </motion.div>
                   </div>
                 </div>
+              </motion.div>
+            </div>
 
-                <div className="flex items-center gap-3">
-                  <button className="flex-1 bg-gradient-to-r from-yellow-600 to-orange-600 hover:from-yellow-500 hover:to-orange-500 px-6 py-3 rounded-xl text-white font-semibold transition-all flex items-center justify-center gap-2">
-                    <Download className="w-5 h-5" />
-                    Download
-                  </button>
-                  <button className="flex-1 bg-white/10 hover:bg-white/20 px-6 py-3 rounded-xl text-white font-semibold transition-all flex items-center justify-center gap-2 border border-white/20">
-                    <Share2 className="w-5 h-5" />
-                    Share
-                  </button>
-                  <button className="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-all border border-white/20">
-                    <Heart className="w-5 h-5 text-white" />
-                  </button>
+            {/* Bottom Thumbnail Strip - Minimal */}
+            <div className="relative z-20 px-2 md:px-4 py-2 bg-gradient-to-t from-black/70 to-transparent">
+              <div className="max-w-6xl mx-auto">
+                <div className="flex items-center justify-center gap-1.5 md:gap-2 overflow-x-auto scrollbar-hide">
+                  {filteredImages.map((img, idx) => (
+                    <motion.button
+                      key={img.id}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setSelectedImageIndex(idx);
+                        setSelectedImage(filteredImages[idx]);
+                      }}
+                      whileHover={{ scale: 1.1, y: -2 }}
+                      whileTap={{ scale: 0.95 }}
+                      className={`relative flex-shrink-0 rounded-lg overflow-hidden transition-all border-2 ${
+                        idx === selectedImageIndex
+                          ? 'border-yellow-400 shadow-lg shadow-yellow-500/50 w-16 h-16 md:w-18 md:h-18'
+                          : 'border-white/10 hover:border-white/30 w-12 h-12 md:w-14 md:h-14 opacity-60 hover:opacity-100'
+                      }`}
+                    >
+                      <div className="w-full h-full bg-gradient-to-br from-yellow-500/20 to-orange-500/20 flex items-center justify-center">
+                        <ImageIcon className={`${idx === selectedImageIndex ? 'w-6 h-6 md:w-7 md:h-7' : 'w-4 h-4 md:w-5 md:h-5'} text-white/40 transition-all`} />
+                        {/* Uncomment when you have actual images */}
+                        {/* <Image
+                          src={img.src}
+                          alt={img.title}
+                          fill
+                          className="object-cover"
+                        /> */}
+                      </div>
+
+                      {/* Active Indicator */}
+                      {idx === selectedImageIndex && (
+                        <motion.div
+                          layoutId="activeThumb"
+                          className="absolute inset-0 bg-gradient-to-t from-yellow-500/20 to-transparent"
+                        />
+                      )}
+
+                      {/* Thumbnail Number - Only on active */}
+                      {idx === selectedImageIndex && (
+                        <div className="absolute bottom-0.5 right-0.5 bg-yellow-500 px-1.5 py-0.5 rounded backdrop-blur-sm">
+                          <span className="text-white font-bold text-[9px] md:text-[10px]">
+                            {idx + 1}
+                          </span>
+                        </div>
+                      )}
+                    </motion.button>
+                  ))}
                 </div>
               </div>
-            </motion.div>
+            </div>
           </motion.div>
         )}
       </AnimatePresence>

@@ -163,8 +163,8 @@ export default function SMSRevolutionPage() {
             >
               <div className="aspect-video bg-gradient-to-br from-green-900/30 to-black rounded-xl border border-green-500/30 overflow-hidden relative">
                 <img 
-                  src="/DigitalPinoy/images/exhibits/edsa2-sms.jpg" 
-                  alt="EDSA 2 SMS mobilization"
+                  src="/DigitalPinoy/technology/texting.jpg" 
+                  alt="Texting Capital of the World"
                   className="w-full h-full object-cover"
                 />
               </div>

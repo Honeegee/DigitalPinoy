@@ -201,7 +201,7 @@ export default function YahooMessengerPage() {
             >
               <div className="aspect-square bg-gradient-to-br from-yellow-500/20 to-orange-500/20 rounded-2xl border border-yellow-500/40 p-8 backdrop-blur-sm">
                 <div className="w-full h-full bg-black/50 rounded-xl border border-yellow-500/30 flex items-center justify-center relative overflow-hidden">
-                  <div className="absolute inset-0 bg-[url('/DigitalPinoy/images/ym.png')] bg-contain bg-center bg-no-repeat opacity-90"></div>
+                  <div className="absolute inset-0 bg-[url('/DigitalPinoy/technology/yahoo.jpg')] bg-contain bg-center bg-no-repeat opacity-90"></div>
                   <button className="absolute inset-0 flex items-center justify-center group">
                     <div className="w-16 h-16 rounded-full bg-yellow-500/80 backdrop-blur-sm flex items-center justify-center group-hover:scale-110 transition-transform">
                       <Volume2 className="w-8 h-8 text-white" />
@@ -368,7 +368,7 @@ export default function YahooMessengerPage() {
       </section>
 
       {/* Hidden audio element */}
-      <audio ref={audioRef} src="/DigitalPinoy/audios/3310sound.mp3" preload="auto" />
+      <audio ref={audioRef} src="/DigitalPinoy/audios/yahoo.mp3" preload="auto" />
 
       {/* Legacy */}
       <section className="relative z-10 py-16 bg-gradient-to-b from-black to-yellow-950/30">

@@ -263,26 +263,6 @@ export default function GalleryPage() {
               </motion.div>
             ))}
           </div>
-
-          {/* Bottom CTA */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1.2 }}
-            className="mt-16 text-center"
-          >
-            <div className="bg-gradient-to-r from-purple-500/10 via-pink-500/10 to-blue-500/10 backdrop-blur-xl rounded-3xl p-8 border border-purple-500/30 max-w-3xl mx-auto">
-              <h3 className="text-white text-2xl font-bold mb-3">
-                Contribute Your Memories
-              </h3>
-              <p className="text-gray-300 mb-6">
-                Have nostalgic photos from the 2000s-2010s? Share them with the community!
-              </p>
-              <button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 px-8 py-4 rounded-xl text-white font-bold transition-all shadow-lg hover:shadow-purple-500/50 hover:scale-105">
-                Submit Your Photos
-              </button>
-            </div>
-          </motion.div>
         </div>
       </div>
     </div>

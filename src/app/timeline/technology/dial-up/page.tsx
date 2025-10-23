@@ -160,7 +160,7 @@ export default function DialUpPage() {
             >
               <div className="aspect-[4/3] bg-gradient-to-br from-blue-900/30 to-cyan-900/30 rounded-xl border border-blue-500/30 overflow-hidden">
                 <img 
-                  src="/DigitalPinoy/images/dialup.png" 
+                  src="/DigitalPinoy/technology/dialup.jpg" 
                   alt="Dial-up modem connection"
                   className="w-full h-full object-cover opacity-80"
                 />
@@ -368,7 +368,7 @@ export default function DialUpPage() {
       </section>
 
       {/* Hidden audio element */}
-      <audio ref={audioRef} src="/DigitalPinoy/audios/3310sound.mp3" preload="auto" />
+      <audio ref={audioRef} src="/DigitalPinoy/audios/dialup.mp3" preload="auto" />
 
       {/* Legacy */}
       <section className="relative z-10 py-16 bg-gradient-to-b from-black to-blue-950/30">
