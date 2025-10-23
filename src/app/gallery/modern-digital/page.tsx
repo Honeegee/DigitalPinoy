@@ -56,7 +56,150 @@ const galleryImages = [
     year: '2023',
     category: 'Technology'
   },
-  // Add more images here...
+  {
+    id: 7,
+    src: '/DigitalPinoy/images/gallery/modern-digital/reels-1.jpg',
+    title: 'Instagram Reels',
+    description: 'Short-form video content everywhere',
+    year: '2020',
+    category: 'Social Media'
+  },
+  {
+    id: 8,
+    src: '/DigitalPinoy/images/gallery/modern-digital/podcast-1.jpg',
+    title: 'Podcast Culture',
+    description: 'Everyone starts a podcast',
+    year: '2019',
+    category: 'Entertainment'
+  },
+  {
+    id: 9,
+    src: '/DigitalPinoy/images/gallery/modern-digital/vlog-1.jpg',
+    title: 'Vlogging',
+    description: 'Daily vlogs and lifestyle content',
+    year: '2018',
+    category: 'Social Media'
+  },
+  {
+    id: 10,
+    src: '/DigitalPinoy/images/gallery/modern-digital/gcash-1.jpg',
+    title: 'Digital Wallets',
+    description: 'GCash and PayMaya become essential',
+    year: '2020',
+    category: 'Technology'
+  },
+  {
+    id: 11,
+    src: '/DigitalPinoy/images/gallery/modern-digital/streaming-1.jpg',
+    title: 'Game Streaming',
+    description: 'Facebook Gaming and streaming culture',
+    year: '2019',
+    category: 'Entertainment'
+  },
+  {
+    id: 12,
+    src: '/DigitalPinoy/images/gallery/modern-digital/online-class-1.jpg',
+    title: 'Online Classes',
+    description: 'Education goes remote',
+    year: '2020',
+    category: 'Technology'
+  },
+  {
+    id: 13,
+    src: '/DigitalPinoy/images/gallery/modern-digital/foodpanda-1.jpg',
+    title: 'Food Delivery Apps',
+    description: 'GrabFood and Foodpanda convenience',
+    year: '2019',
+    category: 'Technology'
+  },
+  {
+    id: 14,
+    src: '/DigitalPinoy/images/gallery/modern-digital/amongus-1.jpg',
+    title: 'Among Us',
+    description: 'Mobile gaming phenomenon',
+    year: '2020',
+    category: 'Entertainment'
+  },
+  {
+    id: 15,
+    src: '/DigitalPinoy/images/gallery/modern-digital/messenger-rooms-1.jpg',
+    title: 'Messenger Rooms',
+    description: 'Virtual hangouts and celebrations',
+    year: '2020',
+    category: 'Communication'
+  },
+  {
+    id: 16,
+    src: '/DigitalPinoy/images/gallery/modern-digital/spotify-1.jpg',
+    title: 'Music Streaming',
+    description: 'Spotify playlists for every mood',
+    year: '2018',
+    category: 'Entertainment'
+  },
+  {
+    id: 17,
+    src: '/DigitalPinoy/images/gallery/modern-digital/esports-1.jpg',
+    title: 'Esports Scene',
+    description: 'Professional gaming leagues grow',
+    year: '2021',
+    category: 'Entertainment'
+  },
+  {
+    id: 18,
+    src: '/DigitalPinoy/images/gallery/modern-digital/wfh-1.jpg',
+    title: 'Work From Home',
+    description: 'Remote work becomes the norm',
+    year: '2020',
+    category: 'Technology'
+  },
+  {
+    id: 19,
+    src: '/DigitalPinoy/images/gallery/modern-digital/canva-1.jpg',
+    title: 'DIY Design',
+    description: 'Everyone becomes a designer with Canva',
+    year: '2019',
+    category: 'Technology'
+  },
+  {
+    id: 20,
+    src: '/DigitalPinoy/images/gallery/modern-digital/memes-1.jpg',
+    title: 'Meme Culture',
+    description: 'Filipino memes go viral worldwide',
+    year: '2021',
+    category: 'Social Media'
+  },
+  {
+    id: 21,
+    src: '/DigitalPinoy/images/gallery/modern-digital/shopee-1.jpg',
+    title: 'Online Shopping',
+    description: 'Shopee and Lazada become daily habits',
+    year: '2020',
+    category: 'Technology'
+  },
+  {
+    id: 22,
+    src: '/DigitalPinoy/images/gallery/modern-digital/nft-1.jpg',
+    title: 'NFTs & Crypto',
+    description: 'Digital assets and blockchain hype',
+    year: '2021',
+    category: 'Technology'
+  },
+  {
+    id: 23,
+    src: '/DigitalPinoy/images/gallery/modern-digital/ai-art-1.jpg',
+    title: 'AI Art Generation',
+    description: 'Midjourney and DALL-E creations',
+    year: '2023',
+    category: 'Technology'
+  },
+  {
+    id: 24,
+    src: '/DigitalPinoy/images/gallery/modern-digital/youtube-shorts-1.jpg',
+    title: 'YouTube Shorts',
+    description: 'Short-form video competition heats up',
+    year: '2021',
+    category: 'Social Media'
+  }
 ];
 
 export default function ModernDigitalGallery() {

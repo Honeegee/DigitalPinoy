@@ -56,7 +56,118 @@ const galleryImages = [
     year: '2005',
     category: 'Photography'
   },
-  // Add more images here...
+  {
+    id: 7,
+    src: '/DigitalPinoy/images/gallery/early-digital/mp3-player-1.jpg',
+    title: 'MP3 Players',
+    description: 'Portable MP3 players with 128MB storage',
+    year: '2003',
+    category: 'Technology'
+  },
+  {
+    id: 8,
+    src: '/DigitalPinoy/images/gallery/early-digital/myx-1.jpg',
+    title: 'MYX Channel',
+    description: 'Recording music videos from MYX to VHS',
+    year: '2002',
+    category: 'Entertainment'
+  },
+  {
+    id: 9,
+    src: '/DigitalPinoy/images/gallery/early-digital/mirc-1.jpg',
+    title: 'mIRC Chatrooms',
+    description: 'Internet relay chat and ASL conversations',
+    year: '2004',
+    category: 'Communication'
+  },
+  {
+    id: 10,
+    src: '/DigitalPinoy/images/gallery/early-digital/vcd-1.jpg',
+    title: 'VCD Collection',
+    description: 'Video CDs from Quiapo and Greenhills',
+    year: '2003',
+    category: 'Entertainment'
+  },
+  {
+    id: 11,
+    src: '/DigitalPinoy/images/gallery/early-digital/ragnarok-1.jpg',
+    title: 'Ragnarok Online',
+    description: 'Computer shop nights playing RO',
+    year: '2003',
+    category: 'Gaming'
+  },
+  {
+    id: 12,
+    src: '/DigitalPinoy/images/gallery/early-digital/polyphonic-1.jpg',
+    title: 'Polyphonic Ringtones',
+    description: 'Downloaded ringtones via WAP',
+    year: '2004',
+    category: 'Technology'
+  },
+  {
+    id: 13,
+    src: '/DigitalPinoy/images/gallery/early-digital/friendster-2.jpg',
+    title: 'Friendster Testimonials',
+    description: 'Trading testimonials with friends',
+    year: '2004',
+    category: 'Social Media'
+  },
+  {
+    id: 14,
+    src: '/DigitalPinoy/images/gallery/early-digital/dial-up-1.jpg',
+    title: 'Dial-up Internet',
+    description: 'The sound of connecting to the internet',
+    year: '2002',
+    category: 'Technology'
+  },
+  {
+    id: 15,
+    src: '/DigitalPinoy/images/gallery/early-digital/print-shop-1.jpg',
+    title: 'Print Shop Banners',
+    description: 'Making banners and greeting cards',
+    year: '2003',
+    category: 'Technology'
+  },
+  {
+    id: 16,
+    src: '/DigitalPinoy/images/gallery/early-digital/limewire-1.jpg',
+    title: 'LimeWire Downloads',
+    description: 'Downloading music and risking viruses',
+    year: '2004',
+    category: 'Entertainment'
+  },
+  {
+    id: 17,
+    src: '/DigitalPinoy/images/gallery/early-digital/gameboy-1.jpg',
+    title: 'Game Boy Advance',
+    description: 'Portable gaming before smartphones',
+    year: '2003',
+    category: 'Gaming'
+  },
+  {
+    id: 18,
+    src: '/DigitalPinoy/images/gallery/early-digital/floppy-1.jpg',
+    title: 'Floppy Disks',
+    description: '1.44MB of storage heaven',
+    year: '2002',
+    category: 'Technology'
+  },
+  {
+    id: 19,
+    src: '/DigitalPinoy/images/gallery/early-digital/cs-1.jpg',
+    title: 'Counter-Strike',
+    description: 'LAN parties at computer shops',
+    year: '2004',
+    category: 'Gaming'
+  },
+  {
+    id: 20,
+    src: '/DigitalPinoy/images/gallery/early-digital/nokia-3315-1.jpg',
+    title: 'Nokia 3315',
+    description: 'Snake game champion',
+    year: '2002',
+    category: 'Technology'
+  }
 ];
 
 export default function EarlyDigitalGallery() {

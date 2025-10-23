@@ -56,7 +56,134 @@ const galleryImages = [
     year: '2015',
     category: 'Communication'
   },
-  // Add more images here...
+  {
+    id: 7,
+    src: '/DigitalPinoy/images/gallery/smartphone-era/temple-run-1.jpg',
+    title: 'Temple Run',
+    description: 'Mobile gaming goes mainstream',
+    year: '2012',
+    category: 'Entertainment'
+  },
+  {
+    id: 8,
+    src: '/DigitalPinoy/images/gallery/smartphone-era/candy-crush-1.jpg',
+    title: 'Candy Crush',
+    description: 'Everyone asking for extra lives',
+    year: '2013',
+    category: 'Entertainment'
+  },
+  {
+    id: 9,
+    src: '/DigitalPinoy/images/gallery/smartphone-era/duckface-1.jpg',
+    title: 'Duck Face Selfies',
+    description: 'The infamous duck face pose',
+    year: '2012',
+    category: 'Photography'
+  },
+  {
+    id: 10,
+    src: '/DigitalPinoy/images/gallery/smartphone-era/ootd-1.jpg',
+    title: '#OOTD Culture',
+    description: 'Outfit of the Day posts everywhere',
+    year: '2014',
+    category: 'Social Media'
+  },
+  {
+    id: 11,
+    src: '/DigitalPinoy/images/gallery/smartphone-era/flappy-bird-1.jpg',
+    title: 'Flappy Bird',
+    description: 'The most frustrating game ever',
+    year: '2014',
+    category: 'Entertainment'
+  },
+  {
+    id: 12,
+    src: '/DigitalPinoy/images/gallery/smartphone-era/vine-1.jpg',
+    title: 'Vine Videos',
+    description: '6-second videos that launched careers',
+    year: '2013',
+    category: 'Social Media'
+  },
+  {
+    id: 13,
+    src: '/DigitalPinoy/images/gallery/smartphone-era/waze-1.jpg',
+    title: 'Waze Navigation',
+    description: 'Community-based traffic navigation',
+    year: '2014',
+    category: 'Technology'
+  },
+  {
+    id: 14,
+    src: '/DigitalPinoy/images/gallery/smartphone-era/snapchat-1.jpg',
+    title: 'Snapchat Filters',
+    description: 'Dog filters and face swaps',
+    year: '2015',
+    category: 'Social Media'
+  },
+  {
+    id: 15,
+    src: '/DigitalPinoy/images/gallery/smartphone-era/aldub-1.jpg',
+    title: '#AlDub Phenomenon',
+    description: 'The social media love team',
+    year: '2015',
+    category: 'Entertainment'
+  },
+  {
+    id: 16,
+    src: '/DigitalPinoy/images/gallery/smartphone-era/clash-clans-1.jpg',
+    title: 'Clash of Clans',
+    description: 'Building villages and raiding',
+    year: '2013',
+    category: 'Entertainment'
+  },
+  {
+    id: 17,
+    src: '/DigitalPinoy/images/gallery/smartphone-era/4g-1.jpg',
+    title: '4G/LTE Launch',
+    description: 'Faster mobile internet arrives',
+    year: '2012',
+    category: 'Technology'
+  },
+  {
+    id: 18,
+    src: '/DigitalPinoy/images/gallery/smartphone-era/viber-1.jpg',
+    title: 'Viber Messaging',
+    description: 'Free calls and messages via Viber',
+    year: '2013',
+    category: 'Communication'
+  },
+  {
+    id: 19,
+    src: '/DigitalPinoy/images/gallery/smartphone-era/groupfie-1.jpg',
+    title: 'Groufie',
+    description: 'Group selfies become a thing',
+    year: '2014',
+    category: 'Photography'
+  },
+  {
+    id: 20,
+    src: '/DigitalPinoy/images/gallery/smartphone-era/powerbank-1.jpg',
+    title: 'Power Banks',
+    description: 'Essential for heavy smartphone users',
+    year: '2013',
+    category: 'Technology'
+  },
+  {
+    id: 21,
+    src: '/DigitalPinoy/images/gallery/smartphone-era/netflix-1.jpg',
+    title: 'Netflix Arrives',
+    description: 'Streaming comes to the Philippines',
+    year: '2016',
+    category: 'Entertainment'
+  },
+  {
+    id: 22,
+    src: '/DigitalPinoy/images/gallery/smartphone-era/line-stickers-1.jpg',
+    title: 'LINE Stickers',
+    description: 'Cute stickers for messaging',
+    year: '2012',
+    category: 'Communication'
+  }
 ];
 
 export default function SmartphoneEraGallery() {

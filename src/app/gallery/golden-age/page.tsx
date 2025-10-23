@@ -56,7 +56,134 @@ const galleryImages = [
     year: '2007',
     category: 'Technology'
   },
-  // Add more images here...
+  {
+    id: 7,
+    src: '/DigitalPinoy/images/gallery/golden-age/ipod-1.jpg',
+    title: 'iPod Nano',
+    description: 'The coolest MP3 player to have',
+    year: '2008',
+    category: 'Technology'
+  },
+  {
+    id: 8,
+    src: '/DigitalPinoy/images/gallery/golden-age/bluetooth-1.jpg',
+    title: 'Bluetooth Sharing',
+    description: 'Sharing files via Bluetooth in malls',
+    year: '2007',
+    category: 'Communication'
+  },
+  {
+    id: 9,
+    src: '/DigitalPinoy/images/gallery/golden-age/blog-1.jpg',
+    title: 'Personal Blogs',
+    description: 'Blogspot and Multiply blog posts',
+    year: '2009',
+    category: 'Social Media'
+  },
+  {
+    id: 10,
+    src: '/DigitalPinoy/images/gallery/golden-age/dvd-marathon-1.jpg',
+    title: 'DVD Box Sets',
+    description: 'Complete TV series on bootleg DVDs',
+    year: '2008',
+    category: 'Entertainment'
+  },
+  {
+    id: 11,
+    src: '/DigitalPinoy/images/gallery/golden-age/dota-1.jpg',
+    title: 'DOTA Allstars',
+    description: 'Defense of the Ancients at computer shops',
+    year: '2007',
+    category: 'Gaming'
+  },
+  {
+    id: 12,
+    src: '/DigitalPinoy/images/gallery/golden-age/flip-phone-1.jpg',
+    title: 'Flip Phones',
+    description: 'The satisfying snap of closing a flip phone',
+    year: '2006',
+    category: 'Technology'
+  },
+  {
+    id: 13,
+    src: '/DigitalPinoy/images/gallery/golden-age/ym-status-1.jpg',
+    title: 'YM Away Messages',
+    description: 'Deep philosophical status messages',
+    year: '2008',
+    category: 'Communication'
+  },
+  {
+    id: 14,
+    src: '/DigitalPinoy/images/gallery/golden-age/usb-1.jpg',
+    title: 'USB Flash Drives',
+    description: '1GB flash drives with chains',
+    year: '2007',
+    category: 'Technology'
+  },
+  {
+    id: 15,
+    src: '/DigitalPinoy/images/gallery/golden-age/multiply-blog-1.jpg',
+    title: 'Multiply Layouts',
+    description: 'Customizing your Multiply page',
+    year: '2009',
+    category: 'Social Media'
+  },
+  {
+    id: 16,
+    src: '/DigitalPinoy/images/gallery/golden-age/digital-camera-1.jpg',
+    title: 'Point and Shoot',
+    description: 'Compact digital cameras everywhere',
+    year: '2008',
+    category: 'Photography'
+  },
+  {
+    id: 17,
+    src: '/DigitalPinoy/images/gallery/golden-age/mms-1.jpg',
+    title: 'MMS Messages',
+    description: 'Sending photo messages via MMS',
+    year: '2007',
+    category: 'Communication'
+  },
+  {
+    id: 18,
+    src: '/DigitalPinoy/images/gallery/golden-age/torrents-1.jpg',
+    title: 'Torrenting',
+    description: 'Downloading via BitTorrent overnight',
+    year: '2009',
+    category: 'Entertainment'
+  },
+  {
+    id: 19,
+    src: '/DigitalPinoy/images/gallery/golden-age/special-force-1.jpg',
+    title: 'Special Force',
+    description: 'The Filipino FPS game craze',
+    year: '2008',
+    category: 'Gaming'
+  },
+  {
+    id: 20,
+    src: '/DigitalPinoy/images/gallery/golden-age/photobooth-1.jpg',
+    title: 'Photo Booth',
+    description: 'Sticker photos at malls',
+    year: '2009',
+    category: 'Photography'
+  },
+  {
+    id: 21,
+    src: '/DigitalPinoy/images/gallery/golden-age/psp-1.jpg',
+    title: 'PlayStation Portable',
+    description: 'Handheld gaming on the PSP',
+    year: '2007',
+    category: 'Gaming'
+  },
+  {
+    id: 22,
+    src: '/DigitalPinoy/images/gallery/golden-age/external-hdd-1.jpg',
+    title: 'External Hard Drive',
+    description: 'Sharing movies via external HDDs',
+    year: '2009',
+    category: 'Technology'
+  }
 ];
 
 export default function GoldenAgeGallery() {
