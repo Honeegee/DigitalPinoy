@@ -136,9 +136,9 @@ export default function PacquiaoPridePage() {
               viewport={{ once: true }}
               className="relative"
             >
-              <div className="aspect-[4/3] bg-gradient-to-br from-red-900/30 to-orange-900/30 rounded-xl border border-red-500/30 overflow-hidden">
-                <img 
-                  src="/DigitalPinoy/images/pacquiao.png" 
+              <div className="aspect-[4/3] bg-gradient-to-br from-red-900/30 to-orange-900/30 rounded-xl border border-red-500/30 overflow-hidden relative">
+                <img
+                  src="/DigitalPinoy/emotions/pacquiao1.jpg"
                   alt="Manny Pacquiao national pride"
                   className="w-full h-full object-cover opacity-80"
                 />
@@ -146,6 +146,11 @@ export default function PacquiaoPridePage() {
                 <div className="absolute bottom-3 left-3 right-3">
                   <p className="text-white text-xs">Pacquiao fights uniting Filipino households nationwide.</p>
                 </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  Filipinos take Pacquiao loss hard, demand rematch. (n.d.). Reuters. https://www.reuters.com/article/sports/filipinos-take-pacquiao-loss-hard-demand-rematch-idUSKBN0NO040/
+                </p>
               </div>
             </motion.div>
           </div>
@@ -179,13 +184,18 @@ export default function PacquiaoPridePage() {
             >
               <div className="aspect-square bg-gradient-to-br from-red-500/20 to-orange-500/20 rounded-2xl border border-red-500/40 p-8 backdrop-blur-sm">
                 <div className="w-full h-full bg-black/50 rounded-xl border border-red-500/30 flex items-center justify-center relative overflow-hidden">
-                  <div className="absolute inset-0 bg-[url('/DigitalPinoy/images/pacquiao.png')] bg-contain bg-center bg-no-repeat opacity-90"></div>
+                  <div className="absolute inset-0 bg-[url('/DigitalPinoy/emotions/pac2.jpg')] bg-contain bg-center bg-no-repeat opacity-90"></div>
                   <div className="absolute bottom-3 left-3 right-3 text-center">
                     <p className="text-white text-xs bg-black/70 backdrop-blur-sm rounded-lg py-2 px-3">
                       🥊 National Pride
                     </p>
                   </div>
                 </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  Pacman Pacquiao gives Filipinos reason to cheer. (2009, December 16). NPR. https://www.npr.org/2009/12/16/121482903/pacman-pacquiao-gives-filipinos-reason-to-cheer
+                </p>
               </div>
 
               <motion.div
@@ -328,8 +338,8 @@ export default function PacquiaoPridePage() {
               viewport={{ once: true }}
             >
               <div className="aspect-video bg-gradient-to-br from-orange-900/30 to-red-900/30 rounded-xl border border-orange-500/30 overflow-hidden relative">
-                <img 
-                  src="/DigitalPinoy/images/culturalexports.png" 
+                <img
+                  src="/DigitalPinoy/emotions/pac3.jpg"
                   alt="Pacquiao cultural impact"
                   className="w-full h-full object-cover opacity-80"
                 />
@@ -337,6 +347,11 @@ export default function PacquiaoPridePage() {
                 <div className="absolute bottom-3 left-3 right-3">
                   <p className="text-white text-xs">Pacquiao shaping Filipino national identity and pride.</p>
                 </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  Manny Pacquiao. (n.d.). Pinterest. https://ph.pinterest.com/pin/574771971166796148
+                </p>
               </div>
             </motion.div>
 

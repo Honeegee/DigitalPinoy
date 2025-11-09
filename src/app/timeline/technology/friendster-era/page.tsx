@@ -142,9 +142,9 @@ export default function FriendsterEraPage() {
               viewport={{ once: true }}
               className="relative"
             >
-              <div className="aspect-[4/3] bg-gradient-to-br from-purple-900/30 to-pink-900/30 rounded-xl border border-purple-500/30 overflow-hidden">
-                <img 
-                  src="/DigitalPinoy/technology/friendster.jpg" 
+              <div className="aspect-[4/3] bg-gradient-to-br from-purple-900/30 to-pink-900/30 rounded-xl border border-purple-500/30 overflow-hidden relative">
+                <img
+                  src="/DigitalPinoy/technology/friendster.jpg"
                   alt="Classic Friendster profile"
                   className="w-full h-full object-cover opacity-80"
                 />
@@ -152,6 +152,11 @@ export default function FriendsterEraPage() {
                 <div className="absolute bottom-3 left-3 right-3">
                   <p className="text-white text-xs">The iconic blue interface that defined early social networking.</p>
                 </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  The evolution of social media: A timeline of how it started and where it's heading. (n.d.). Buro 24/7. https://www.buro247.my/lifestyle/technology/the-evolution-of-social-media-a-timeline-of-how-it-started-and-where-its-heading.html
+                </p>
               </div>
             </motion.div>
           </div>
@@ -185,13 +190,18 @@ export default function FriendsterEraPage() {
             >
               <div className="aspect-square bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-2xl border border-purple-500/40 p-8 backdrop-blur-sm">
                 <div className="w-full h-full bg-black/50 rounded-xl border border-purple-500/30 flex items-center justify-center relative overflow-hidden">
-                  <div className="absolute inset-0 bg-[url('/DigitalPinoy/technology/friendster1.gif')] bg-contain bg-center bg-no-repeat opacity-90"></div>
+                  <div className="absolute inset-0 bg-[url('/DigitalPinoy/technology/friendster2.jpg')] bg-contain bg-center bg-no-repeat opacity-90"></div>
                   <div className="absolute bottom-3 left-3 right-3 text-center">
                     <p className="text-white text-xs bg-black/70 backdrop-blur-sm rounded-lg py-2 px-3">
                       🎵 Animated Friendster Profile
                     </p>
                   </div>
                 </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  Friendster Profile Interface. (n.d.). DeviantArt. https://www.deviantart.com/dsoulanna/art/Friendster-Profile-Interface-78277578
+                </p>
               </div>
 
               <motion.div
@@ -334,8 +344,8 @@ export default function FriendsterEraPage() {
               viewport={{ once: true }}
             >
               <div className="aspect-video bg-gradient-to-br from-pink-900/30 to-purple-900/30 rounded-xl border border-pink-500/30 overflow-hidden relative">
-                <img 
-                  src="/DigitalPinoy/technology/frienster3.jpg" 
+                <img
+                  src="/DigitalPinoy/technology/frienster3.jpg"
                   alt="Friendster social connections"
                   className="w-full h-full object-cover opacity-80"
                 />
@@ -343,6 +353,11 @@ export default function FriendsterEraPage() {
                 <div className="absolute bottom-3 left-3 right-3">
                   <p className="text-white text-xs">Where high school friends became digital connections.</p>
                 </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  Friendster Was the Best Social Media Site Ever. (n.d.). Vice. https://www.vice.com/en/article/friendster-was-the-best-social-media-site-ever-1
+                </p>
               </div>
             </motion.div>
 

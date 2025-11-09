@@ -162,11 +162,16 @@ export default function SMSRevolutionPage() {
               viewport={{ once: true }}
             >
               <div className="aspect-video bg-gradient-to-br from-green-900/30 to-black rounded-xl border border-green-500/30 overflow-hidden relative">
-                <img 
-                  src="/DigitalPinoy/technology/texting.jpg" 
+                <img
+                  src="/DigitalPinoy/technology/texting.jpg"
                   alt="Texting Capital of the World"
                   className="w-full h-full object-cover"
                 />
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  Philippines still SMS texting capital. (2010). <em>GameOps</em>. http://www.gameops.net/2010/08/philippines-still-sms-texting-capital.html
+                </p>
               </div>
             </motion.div>
           </div>
@@ -212,6 +217,11 @@ export default function SMSRevolutionPage() {
                     </p>
                   </div>
                 </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  Nokia 3310 [GIF]. (n.d.). GIPHY. https://giphy.com/gifs/jJB6GOY0sh4Iv2tRSV
+                </p>
               </div>
 
               <motion.div
@@ -377,11 +387,16 @@ export default function SMSRevolutionPage() {
               viewport={{ once: true }}
             >
               <div className="aspect-video bg-gradient-to-br from-green-900/30 to-black rounded-xl border border-green-500/30 overflow-hidden relative">
-                <img 
-                  src="/DigitalPinoy/technology/edsa2.jpg" 
+                <img
+                  src="/DigitalPinoy/technology/edsa2.jpg"
                   alt="EDSA 2 SMS mobilization"
                   className="w-full h-full object-cover"
                 />
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  First Person: Why I joined the revolution—The girl of EDSA Dos [Video]. (n.d.). Rappler. https://www.rappler.com/voices/ispeak/first-person-why-i-joined-revolution-the-girl-edsa-dos-video
+                </p>
               </div>
             </motion.div>
 
@@ -464,6 +479,7 @@ export default function SMSRevolutionPage() {
         </div>
       </section>
 
+
       {/* Hidden audio element */}
       <audio ref={audioRef} src="/DigitalPinoy/audios/3310sound.mp3" preload="auto" />
 
@@ -480,16 +496,16 @@ export default function SMSRevolutionPage() {
             <h2 className="text-3xl font-bold text-white mb-4">The Legacy Lives On</h2>
             <div className="space-y-3 text-gray-300 leading-relaxed">
               <p>
-                Today, we have Messenger, Viber, WhatsApp, and a thousand other ways to communicate. 
+                Today, we have Messenger, Viber, WhatsApp, and a thousand other ways to communicate.
                 But none of them changed the Philippines quite like SMS did.
               </p>
               <p>
-                SMS taught us that <span className="text-green-400 font-semibold">words matter</span>. That creativity flourishes in constraints. 
+                SMS taught us that <span className="text-green-400 font-semibold">words matter</span>. That creativity flourishes in constraints.
                 That 160 characters is enough to say "I love you," "I'm sorry," or "Let's change the world."
               </p>
               <div className="bg-green-500/10 border border-green-500/30 rounded-xl p-6 mt-6">
                 <p className="text-lg text-green-300 font-semibold italic">
-                  "We didn't just text. We revolutionized communication. We toppled a president. 
+                  "We didn't just text. We revolutionized communication. We toppled a president.
                   We fell in love. We made history—160 characters at a time."
                 </p>
               </div>

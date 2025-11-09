@@ -137,9 +137,9 @@ export default function TeleseryeBondingPage() {
               viewport={{ once: true }}
               className="relative"
             >
-              <div className="aspect-[4/3] bg-gradient-to-br from-purple-900/30 to-pink-900/30 rounded-xl border border-purple-500/30 overflow-hidden">
-                <img 
-                  src="/DigitalPinoy/images/teleserye.png" 
+              <div className="aspect-[4/3] bg-gradient-to-br from-purple-900/30 to-pink-900/30 rounded-xl border border-purple-500/30 overflow-hidden relative">
+                <img
+                  src="/DigitalPinoy/emotions/teleserye.jpg"
                   alt="Teleserye family bonding and emotional connections"
                   className="w-full h-full object-cover opacity-80"
                 />
@@ -147,6 +147,11 @@ export default function TeleseryeBondingPage() {
                 <div className="absolute bottom-3 left-3 right-3">
                   <p className="text-white text-xs">Teleseryes creating emotional connections across Filipino households.</p>
                 </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  7 teleseryes we miss. (n.d.). PEP.ph. https://www.pep.ph/news/local/7-teleseryes-we-miss-adv-con
+                </p>
               </div>
             </motion.div>
           </div>
@@ -180,13 +185,18 @@ export default function TeleseryeBondingPage() {
             >
               <div className="aspect-square bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-2xl border border-purple-500/40 p-8 backdrop-blur-sm">
                 <div className="w-full h-full bg-black/50 rounded-xl border border-purple-500/30 flex items-center justify-center relative overflow-hidden">
-                  <div className="absolute inset-0 bg-[url('/DigitalPinoy/images/teleserye.png')] bg-contain bg-center bg-no-repeat opacity-90"></div>
+                  <div className="absolute inset-0 bg-[url('/DigitalPinoy/emotions/bondtime.jpg')] bg-contain bg-center bg-no-repeat opacity-90"></div>
                   <div className="absolute bottom-3 left-3 right-3 text-center">
                     <p className="text-white text-xs bg-black/70 backdrop-blur-sm rounded-lg py-2 px-3">
                       📺 Family Time
                     </p>
                   </div>
                 </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  Filipino telenovela culture: Lazy? (2011, September 29). iStorya Dista. https://www.istoryadista.net/2011/09/filipino-telenovela-culture-lazy.html
+                </p>
               </div>
 
               <motion.div
@@ -329,8 +339,8 @@ export default function TeleseryeBondingPage() {
               viewport={{ once: true }}
             >
               <div className="aspect-video bg-gradient-to-br from-pink-900/30 to-purple-900/30 rounded-xl border border-pink-500/30 overflow-hidden relative">
-                <img 
-                  src="/DigitalPinoy/images/culturalmainstream.png" 
+                <img
+                  src="/DigitalPinoy/emotions/teleserye3.jpg"
                   alt="Teleserye cultural impact"
                   className="w-full h-full object-cover opacity-80"
                 />
@@ -338,6 +348,11 @@ export default function TeleseryeBondingPage() {
                 <div className="absolute bottom-3 left-3 right-3">
                   <p className="text-white text-xs">Teleseryes shaping Filipino culture and emotional expression.</p>
                 </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  5 inspirational Kapamilya teleseryes that have taught us valuable life lessons. (n.d.). ABS-CBN. https://www.abs-cbn.com/articles-news/5-inspirational-kapamilya-teleseryes-that-have-taught-us-valuable-life-lessons-21935
+                </p>
               </div>
             </motion.div>
 

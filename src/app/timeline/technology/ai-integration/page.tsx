@@ -139,9 +139,9 @@ export default function AIIntegrationPage() {
               viewport={{ once: true }}
               className="relative"
             >
-              <div className="aspect-[4/3] bg-gradient-to-br from-blue-900/30 to-cyan-900/30 rounded-xl border border-blue-500/30 overflow-hidden">
-                <img 
-                  src="/DigitalPinoy/images/ai.png" 
+              <div className="aspect-[4/3] bg-gradient-to-br from-blue-900/30 to-cyan-900/30 rounded-xl border border-blue-500/30 overflow-hidden relative">
+                <img
+                  src="/DigitalPinoy/technology/Ai.jpg"
                   alt="AI integration and artificial intelligence"
                   className="w-full h-full object-cover opacity-80"
                 />
@@ -149,6 +149,11 @@ export default function AIIntegrationPage() {
                 <div className="absolute bottom-3 left-3 right-3">
                   <p className="text-white text-xs">AI transforming Filipino industries and creativity.</p>
                 </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  To limit the use of artificial intelligence (AI): The role of AI in Philippine creative industries. (n.d.). Medium. https://medium.com/@mdmdasas/to-limit-the-use-of-artificial-intelligence-ai-the-role-of-ai-in-philippine-creative-industries-eee1a47a643e
+                </p>
               </div>
             </motion.div>
           </div>
@@ -182,13 +187,18 @@ export default function AIIntegrationPage() {
             >
               <div className="aspect-square bg-gradient-to-br from-blue-500/20 to-cyan-500/20 rounded-2xl border border-blue-500/40 p-8 backdrop-blur-sm">
                 <div className="w-full h-full bg-black/50 rounded-xl border border-blue-500/30 flex items-center justify-center relative overflow-hidden">
-                  <div className="absolute inset-0 bg-[url('/DigitalPinoy/images/ai.png')] bg-contain bg-center bg-no-repeat opacity-90"></div>
+                  <div className="absolute inset-0 bg-[url('/DigitalPinoy/technology/ai.gif')] bg-contain bg-center bg-no-repeat opacity-90"></div>
                   <div className="absolute bottom-3 left-3 right-3 text-center">
                     <p className="text-white text-xs bg-black/70 backdrop-blur-sm rounded-lg py-2 px-3">
                       🤖 AI-Powered Future
                     </p>
                   </div>
                 </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  CBB Artificial Intelligence Chatbotbuilder [GIF]. (n.d.). GIPHY. https://giphy.com/gifs/ChatbotBuilder-cbb-artificial-intelligence-chatbotbuilder-13YPREdAEAHpCoo1SA
+                </p>
               </div>
 
               <motion.div
@@ -331,15 +341,20 @@ export default function AIIntegrationPage() {
               viewport={{ once: true }}
             >
               <div className="aspect-video bg-gradient-to-br from-cyan-900/30 to-blue-900/30 rounded-xl border border-cyan-500/30 overflow-hidden relative">
-                <img 
-                  src="/DigitalPinoy/images/emotionalAI.png" 
+                <img
+                  src="/DigitalPinoy/technology/aihealth.jpg"
                   alt="AI emotional intelligence"
                   className="w-full h-full object-cover opacity-80"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                 <div className="absolute bottom-3 left-3 right-3">
-                  <p className="text-white text-xs">AI understanding and responding to human emotions.</p>
+                  <p className="text-white text-xs">Filipino professionals using AI.</p>
                 </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  Coding bootcamp Philippines: PHL healthcare—The complete guide to using AI in the healthcare industry in Philippines in 2025. (n.d.). NuCamp. https://www.nucamp.co/blog/coding-bootcamp-philippines-phl-healthcare-the-complete-guide-to-using-ai-in-the-healthcare-industry-in-philippines-in-2025
+                </p>
               </div>
             </motion.div>
 

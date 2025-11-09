@@ -138,9 +138,9 @@ export default function FriendsterTestimonialsPage() {
               viewport={{ once: true }}
               className="relative"
             >
-              <div className="aspect-[4/3] bg-gradient-to-br from-pink-900/30 to-red-900/30 rounded-xl border border-pink-500/30 overflow-hidden">
-                <img 
-                  src="/DigitalPinoy/images/friendster.png" 
+              <div className="aspect-[4/3] bg-gradient-to-br from-pink-900/30 to-red-900/30 rounded-xl border border-pink-500/30 overflow-hidden relative">
+                <img
+                  src="/DigitalPinoy/emotions/testimonials.jpg"
                   alt="Friendster testimonials and digital romance"
                   className="w-full h-full object-cover opacity-80"
                 />
@@ -148,6 +148,11 @@ export default function FriendsterTestimonialsPage() {
                 <div className="absolute bottom-3 left-3 right-3">
                   <p className="text-white text-xs">Friendster profiles filled with heartfelt testimonials and messages.</p>
                 </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  The Friendster testimonial that we once loved is not dead. (n.d.). Medium. https://medium.com/@ragdefalcis/the-friendster-testimonial-that-we-once-loved-is-not-dead-ae31aaabb0af
+                </p>
               </div>
             </motion.div>
           </div>
@@ -181,13 +186,18 @@ export default function FriendsterTestimonialsPage() {
             >
               <div className="aspect-square bg-gradient-to-br from-pink-500/20 to-red-500/20 rounded-2xl border border-pink-500/40 p-8 backdrop-blur-sm">
                 <div className="w-full h-full bg-black/50 rounded-xl border border-pink-500/30 flex items-center justify-center relative overflow-hidden">
-                  <div className="absolute inset-0 bg-[url('/DigitalPinoy/images/friendster.png')] bg-contain bg-center bg-no-repeat opacity-90"></div>
+                  <div className="absolute inset-0 bg-[url('/DigitalPinoy/emotions/testimonials2.jpg')] bg-contain bg-center bg-no-repeat opacity-90"></div>
                   <div className="absolute bottom-3 left-3 right-3 text-center">
                     <p className="text-white text-xs bg-black/70 backdrop-blur-sm rounded-lg py-2 px-3">
-                      💌 Digital Love Letters
+                      💌 Friendster Testimonials
                     </p>
                   </div>
                 </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  Did you know that before Facebook took over, Friendster (2002-2009) was the social media platform that dominated the Philippines? (n.d.). Ddosage PH. https://www.facebook.com/DdosagePH/posts/did-you-know-that-before-facebook-took-over-friendster-20022009-was-the-social-m/764456433171546
+                </p>
               </div>
 
               <motion.div
@@ -330,8 +340,8 @@ export default function FriendsterTestimonialsPage() {
               viewport={{ once: true }}
             >
               <div className="aspect-video bg-gradient-to-br from-red-900/30 to-pink-900/30 rounded-xl border border-red-500/30 overflow-hidden relative">
-                <img 
-                  src="/DigitalPinoy/images/friendsterBackground.gif" 
+                <img
+                  src="/DigitalPinoy/emotions/friendster.jpg"
                   alt="Friendster emotional connections"
                   className="w-full h-full object-cover opacity-80"
                 />
@@ -339,6 +349,11 @@ export default function FriendsterTestimonialsPage() {
                 <div className="absolute bottom-3 left-3 right-3">
                   <p className="text-white text-xs">Friendster created lasting emotional connections and memories.</p>
                 </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  These were the social networking sites we used to love. (2019, June 28). Esquire Philippines. https://www.esquiremag.ph/culture/tech/these-were-the-social-networking-sites-we-used-to-love-a00293-20190628-lfrm
+                </p>
               </div>
             </motion.div>
 

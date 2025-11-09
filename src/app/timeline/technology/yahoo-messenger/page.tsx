@@ -158,9 +158,9 @@ export default function YahooMessengerPage() {
               viewport={{ once: true }}
               className="relative"
             >
-              <div className="aspect-[4/3] bg-gradient-to-br from-yellow-900/30 to-orange-900/30 rounded-xl border border-yellow-500/30 overflow-hidden">
-                <img 
-                  src="/DigitalPinoy/images/ym.png" 
+              <div className="aspect-[4/3] bg-gradient-to-br from-yellow-900/30 to-orange-900/30 rounded-xl border border-yellow-500/30 overflow-hidden relative">
+                <img
+                  src="/DigitalPinoy/images/ym.png"
                   alt="Yahoo Messenger interface"
                   className="w-full h-full object-cover opacity-80"
                 />
@@ -168,6 +168,11 @@ export default function YahooMessengerPage() {
                 <div className="absolute bottom-3 left-3 right-3">
                   <p className="text-white text-xs">The iconic purple interface that defined instant messaging.</p>
                 </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  Yahoo Messenger. (n.d.). TechSpot. https://www.techspot.com/article/2484-yahoo-messenger
+                </p>
               </div>
             </motion.div>
           </div>
@@ -213,6 +218,11 @@ export default function YahooMessengerPage() {
                     </p>
                   </div>
                 </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  [Photograph]. (n.d.). Facebook. https://www.facebook.com/photo.php?fbid=10157546565800131&id=239424060130&set=a.281620230130
+                </p>
               </div>
 
               <motion.div

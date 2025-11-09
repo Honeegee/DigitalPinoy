@@ -135,15 +135,17 @@ export default function GlobalPlatformsPage() {
               className="relative"
             >
               <div className="aspect-[4/3] bg-gradient-to-br from-blue-900/30 to-cyan-900/30 rounded-xl border border-blue-500/30 overflow-hidden">
-                <img 
-                  src="/DigitalPinoy/images/social.png" 
-                  alt="Global platforms digital infrastructure"
+                <img
+                  src="/DigitalPinoy/globalization/globalplatforms1.png"
+                  alt="Global platforms creating digital infrastructure and worldwide Filipino presence."
                   className="w-full h-full object-cover opacity-80"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                <div className="absolute bottom-3 left-3 right-3">
-                  <p className="text-white text-xs">Global platforms creating digital infrastructure and worldwide Filipino presence.</p>
-                </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  (n.d.). 10 examples of online platforms. Avada. https://avada.io/blog/10-examples-of-online-platforms
+                </p>
               </div>
             </motion.div>
           </div>
@@ -177,7 +179,7 @@ export default function GlobalPlatformsPage() {
             >
               <div className="aspect-square bg-gradient-to-br from-blue-500/20 to-cyan-500/20 rounded-2xl border border-blue-500/40 p-8 backdrop-blur-sm">
                 <div className="w-full h-full bg-black/50 rounded-xl border border-blue-500/30 flex items-center justify-center relative overflow-hidden">
-                  <div className="absolute inset-0 bg-[url('/DigitalPinoy/images/social.png')] bg-contain bg-center bg-no-repeat opacity-90"></div>
+                  <div className="absolute inset-0 bg-[url('/DigitalPinoy/globalization/globalplatforms2.png')] bg-contain bg-center bg-no-repeat opacity-90"></div>
                   <div className="absolute bottom-3 left-3 right-3 text-center">
                     <p className="text-white text-xs bg-black/70 backdrop-blur-sm rounded-lg py-2 px-3">
                       🌐 Digital Home
@@ -193,6 +195,11 @@ export default function GlobalPlatformsPage() {
               >
                 Connect!
               </motion.div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  (n.d.). Philippines social media craze: Survey finds 77% of Filipinos more engaging online than in real life. Asia News Network. https://asianews.network/philippines-social-media-craze-survey-finds-77-of-filipinos-more-engaging-online-than-in-real-life
+                </p>
+              </div>
             </motion.div>
 
             {/* Platform Details */}
@@ -326,15 +333,17 @@ export default function GlobalPlatformsPage() {
               viewport={{ once: true }}
             >
               <div className="aspect-video bg-gradient-to-br from-cyan-900/30 to-blue-900/30 rounded-xl border border-cyan-500/30 overflow-hidden relative">
-                <img 
-                  src="/DigitalPinoy/images/social.png" 
-                  alt="Global platforms cultural impact"
+                <img
+                  src="/DigitalPinoy/globalization/globalplatforms3.png"
+                  alt="Global platforms shaping digital infrastructure culture."
                   className="w-full h-full object-cover opacity-80"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                <div className="absolute bottom-3 left-3 right-3">
-                  <p className="text-white text-xs">Global platforms shaping digital infrastructure culture.</p>
-                </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  (2022, January 31). Pinoys spend most time online on social media. BusinessMirror. https://businessmirror.com.ph/2022/01/31/pinoys-spend-most-time-online-on-social-media
+                </p>
               </div>
             </motion.div>
 

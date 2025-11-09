@@ -139,9 +139,9 @@ export default function MobileGamingEsportsPage() {
               viewport={{ once: true }}
               className="relative"
             >
-              <div className="aspect-[4/3] bg-gradient-to-br from-purple-900/30 to-pink-900/30 rounded-xl border border-purple-500/30 overflow-hidden">
-                <img 
-                  src="/DigitalPinoy/technology/mobilegames1.jpg" 
+              <div className="aspect-[4/3] bg-gradient-to-br from-purple-900/30 to-pink-900/30 rounded-xl border border-purple-500/30 overflow-hidden relative">
+                <img
+                  src="/DigitalPinoy/technology/mobilegames1.jpg"
                   alt="Mobile gaming and eSports"
                   className="w-full h-full object-cover opacity-80"
                 />
@@ -149,6 +149,11 @@ export default function MobileGamingEsportsPage() {
                 <div className="absolute bottom-3 left-3 right-3">
                   <p className="text-white text-xs">Filipino gamers competing on the world stage.</p>
                 </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  Filipino gaming culture. (n.d.). GeekExtreme. https://www.geekextreme.com/filipino-gaming-culture
+                </p>
               </div>
             </motion.div>
           </div>
@@ -189,6 +194,11 @@ export default function MobileGamingEsportsPage() {
                     </p>
                   </div>
                 </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  Five most popular mobile games 2022. (2022). Nenow. https://nenow.in/article/five-most-popular-mobile-games-2022.html
+                </p>
               </div>
 
               <motion.div
@@ -331,8 +341,8 @@ export default function MobileGamingEsportsPage() {
               viewport={{ once: true }}
             >
               <div className="aspect-video bg-gradient-to-br from-pink-900/30 to-purple-900/30 rounded-xl border border-pink-500/30 overflow-hidden relative">
-                <img 
-                  src="/DigitalPinoy/technology/mobilegames3.jpg" 
+                <img
+                  src="/DigitalPinoy/technology/mobilegames3.jpg"
                   alt="Gaming community and support"
                   className="w-full h-full object-cover opacity-80"
                 />
@@ -340,6 +350,11 @@ export default function MobileGamingEsportsPage() {
                 <div className="absolute bottom-3 left-3 right-3">
                   <p className="text-white text-xs">Building communities and careers through gaming.</p>
                 </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  Ampverse's Minana eSports secures largest gaming creator Philippines, ChooXTV become brand ambassador & investor. (n.d.). Phil-IT. https://phil-it.org.ph/ampverses-minana-esports-secures-largest-gaming-creator-philippines-chooxtv-become-brand-ambassador-investor
+                </p>
               </div>
             </motion.div>
 

@@ -135,15 +135,17 @@ export default function KDramasPage() {
               className="relative"
             >
               <div className="aspect-[4/3] bg-gradient-to-br from-purple-900/30 to-pink-900/30 rounded-xl border border-purple-500/30 overflow-hidden">
-                <img 
-                  src="/DigitalPinoy/images/kdrama.png" 
-                  alt="K-Dramas cultural import"
+                <img
+                  src="/DigitalPinoy/globalization/kdrama1.png"
+                  alt="K-Dramas creating cultural connections and Filipino obsession."
                   className="w-full h-full object-cover opacity-80"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                <div className="absolute bottom-3 left-3 right-3">
-                  <p className="text-white text-xs">K-Dramas creating cultural connections and Filipino obsession.</p>
-                </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  (n.d.). Top K-drama to watch 2000-2015 (DramaBeans list). List Challenges. https://www.listchallenges.com/top-k-drama-to-watch-2000-2015-dramabeans-list
+                </p>
               </div>
             </motion.div>
           </div>
@@ -177,7 +179,7 @@ export default function KDramasPage() {
             >
               <div className="aspect-square bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-2xl border border-purple-500/40 p-8 backdrop-blur-sm">
                 <div className="w-full h-full bg-black/50 rounded-xl border border-purple-500/30 flex items-center justify-center relative overflow-hidden">
-                  <div className="absolute inset-0 bg-[url('/DigitalPinoy/images/kdrama.png')] bg-contain bg-center bg-no-repeat opacity-90"></div>
+                  <div className="absolute inset-0 bg-[url('/DigitalPinoy/globalization/kdrama2.png')] bg-contain bg-center bg-no-repeat opacity-90"></div>
                   <div className="absolute bottom-3 left-3 right-3 text-center">
                     <p className="text-white text-xs bg-black/70 backdrop-blur-sm rounded-lg py-2 px-3">
                       📺 Cultural Bridge
@@ -193,6 +195,11 @@ export default function KDramasPage() {
               >
                 Drama!
               </motion.div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  (2020, May 13). OG K-drama leading ladies of the 2000s. Preview.ph. https://www.preview.ph/culture/entertainment/og-k-drama-leading-ladies-2000s-a1984-20200513-lfrm
+                </p>
+              </div>
             </motion.div>
 
             {/* K-Drama Details */}
@@ -326,15 +333,17 @@ export default function KDramasPage() {
               viewport={{ once: true }}
             >
               <div className="aspect-video bg-gradient-to-br from-pink-900/30 to-purple-900/30 rounded-xl border border-pink-500/30 overflow-hidden relative">
-                <img 
-                  src="/DigitalPinoy/images/kdrama.png" 
-                  alt="K-Dramas cultural impact"
+                <img
+                  src="/DigitalPinoy/globalization/kdrama3.png"
+                  alt="K-Dramas shaping cultural globalization."
                   className="w-full h-full object-cover opacity-80"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                <div className="absolute bottom-3 left-3 right-3">
-                  <p className="text-white text-xs">K-Dramas shaping cultural globalization.</p>
-                </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  (2019, February 13). 11 classic K-dramas we wouldn't mind rewatching. Annyeongoppa. https://annyeongoppa.com/2019/02/13/11-classic-kdramas-we-wouldnt-mind-rewatching
+                </p>
               </div>
             </motion.div>
 

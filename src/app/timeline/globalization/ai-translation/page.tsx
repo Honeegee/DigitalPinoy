@@ -135,15 +135,17 @@ export default function AITranslationPage() {
               className="relative"
             >
               <div className="aspect-[4/3] bg-gradient-to-br from-purple-900/30 to-violet-900/30 rounded-xl border border-purple-500/30 overflow-hidden">
-                <img 
-                  src="/DigitalPinoy/images/ai.png" 
-                  alt="AI translation global communication"
+                <img
+                  src="/DigitalPinoy/globalization/aitranslate1.png"
+                  alt="AI translation creating global communication and cultural understanding."
                   className="w-full h-full object-cover opacity-80"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                <div className="absolute bottom-3 left-3 right-3">
-                  <p className="text-white text-xs">AI translation creating global communication and cultural understanding.</p>
-                </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  (n.d.). AI translator: Breaking language barriers and facilitating global communication. Data Science Society. https://www.datasciencesociety.net/ai-translator-breaking-language-barriers-and-facilitating-global-communication
+                </p>
               </div>
             </motion.div>
           </div>
@@ -177,7 +179,7 @@ export default function AITranslationPage() {
             >
               <div className="aspect-square bg-gradient-to-br from-purple-500/20 to-violet-500/20 rounded-2xl border border-purple-500/40 p-8 backdrop-blur-sm">
                 <div className="w-full h-full bg-black/50 rounded-xl border border-purple-500/30 flex items-center justify-center relative overflow-hidden">
-                  <div className="absolute inset-0 bg-[url('/DigitalPinoy/images/ai.png')] bg-contain bg-center bg-no-repeat opacity-90"></div>
+                  <div className="absolute inset-0 bg-[url('/DigitalPinoy/globalization/aitranslate2.png')] bg-contain bg-center bg-no-repeat opacity-90"></div>
                   <div className="absolute bottom-3 left-3 right-3 text-center">
                     <p className="text-white text-xs bg-black/70 backdrop-blur-sm rounded-lg py-2 px-3">
                       🌐 Language Bridge
@@ -193,6 +195,11 @@ export default function AITranslationPage() {
               >
                 Translate!
               </motion.div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  (n.d.). Top three pros and cons of using AI in medical translations. Language Scientific. https://www.languagescientific.com/top-three-pros-and-cons-of-using-ai-in-medical-translations
+                </p>
+              </div>
             </motion.div>
 
             {/* Translation Details */}
@@ -326,15 +333,17 @@ export default function AITranslationPage() {
               viewport={{ once: true }}
             >
               <div className="aspect-video bg-gradient-to-br from-violet-900/30 to-purple-900/30 rounded-xl border border-violet-500/30 overflow-hidden relative">
-                <img 
-                  src="/DigitalPinoy/images/ai.png" 
-                  alt="AI translation cultural impact"
+                <img
+                  src="/DigitalPinoy/globalization/aitranslate3.png"
+                  alt="AI translation shaping global communication culture."
                   className="w-full h-full object-cover opacity-80"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                <div className="absolute bottom-3 left-3 right-3">
-                  <p className="text-white text-xs">AI translation shaping global communication culture.</p>
-                </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  (n.d.). Top three pros and cons of using AI in medical translations. Language Scientific. https://www.languagescientific.com/top-three-pros-and-cons-of-using-ai-in-medical-translations
+                </p>
               </div>
             </motion.div>
 

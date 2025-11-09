@@ -135,15 +135,17 @@ export default function CulturalMainstreamPage() {
               className="relative"
             >
               <div className="aspect-[4/3] bg-gradient-to-br from-yellow-900/30 to-amber-900/30 rounded-xl border border-yellow-500/30 overflow-hidden">
-                <img 
-                  src="/DigitalPinoy/images/culturalmainstream.png" 
-                  alt="Cultural mainstream global acceptance"
+                <img
+                  src="/DigitalPinoy/globalization/culturalmainstream1.png"
+                  alt="Cultural mainstream creating global acceptance and worldwide integration."
                   className="w-full h-full object-cover opacity-80"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                <div className="absolute bottom-3 left-3 right-3">
-                  <p className="text-white text-xs">Cultural mainstream creating global acceptance and worldwide integration.</p>
-                </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  (n.d.). The history and future of Filipino pop from folk love songs to the P-pop wave. Billboard Philippines. https://billboardphilippines.com/culture/scenes/the-history-and-future-of-filipino-pop-from-folk-love-songs-to-the-p-pop-wave
+                </p>
               </div>
             </motion.div>
           </div>
@@ -177,7 +179,7 @@ export default function CulturalMainstreamPage() {
             >
               <div className="aspect-square bg-gradient-to-br from-yellow-500/20 to-amber-500/20 rounded-2xl border border-yellow-500/40 p-8 backdrop-blur-sm">
                 <div className="w-full h-full bg-black/50 rounded-xl border border-yellow-500/30 flex items-center justify-center relative overflow-hidden">
-                  <div className="absolute inset-0 bg-[url('/DigitalPinoy/images/culturalmainstream.png')] bg-contain bg-center bg-no-repeat opacity-90"></div>
+                  <div className="absolute inset-0 bg-[url('/DigitalPinoy/globalization/culturalmainstream2.png')] bg-contain bg-center bg-no-repeat opacity-90"></div>
                   <div className="absolute bottom-3 left-3 right-3 text-center">
                     <p className="text-white text-xs bg-black/70 backdrop-blur-sm rounded-lg py-2 px-3">
                       🌟 Global Trend
@@ -193,6 +195,11 @@ export default function CulturalMainstreamPage() {
               >
                 Trend!
               </motion.div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  (2025, June 9). Philippine national day at Expo 2025 Osaka celebrates a nation woven by culture, creativity and community. Great Travel Magazine. https://greattravelmagazine.com/2025/06/09/philippine-national-day-at-expo-2025-osaka-celebrates-a-nation-woven-by-culture-creativity-and-community
+                </p>
+              </div>
             </motion.div>
 
             {/* Mainstream Details */}
@@ -326,15 +333,17 @@ export default function CulturalMainstreamPage() {
               viewport={{ once: true }}
             >
               <div className="aspect-video bg-gradient-to-br from-amber-900/30 to-yellow-900/30 rounded-xl border border-amber-500/30 overflow-hidden relative">
-                <img 
-                  src="/DigitalPinoy/images/culturalmainstream.png" 
-                  alt="Cultural mainstream cultural impact"
+                <img
+                  src="/DigitalPinoy/globalization/culturalmainstream3.png"
+                  alt="Cultural mainstream shaping global acceptance culture."
                   className="w-full h-full object-cover opacity-80"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                <div className="absolute bottom-3 left-3 right-3">
-                  <p className="text-white text-xs">Cultural mainstream shaping global acceptance culture.</p>
-                </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  (2025, June 9). Philippine national day at Expo 2025 Osaka celebrates a nation woven by culture, creativity and community. Great Travel Magazine. https://greattravelmagazine.com/2025/06/09/philippine-national-day-at-expo-2025-osaka-celebrates-a-nation-woven-by-culture-creativity-and-community
+                </p>
               </div>
             </motion.div>
 

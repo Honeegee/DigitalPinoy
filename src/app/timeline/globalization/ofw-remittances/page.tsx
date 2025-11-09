@@ -136,15 +136,17 @@ export default function OFWRemittancesPage() {
               className="relative"
             >
               <div className="aspect-[4/3] bg-gradient-to-br from-green-900/30 to-emerald-900/30 rounded-xl border border-green-500/30 overflow-hidden">
-                <img 
-                  src="/DigitalPinoy/images/ofw.png" 
-                  alt="OFW remittances and economic globalization"
+                <img
+                  src="/DigitalPinoy/globalization/ofw1.png"
+                  alt="OFW remittances creating economic stability and global connections."
                   className="w-full h-full object-cover opacity-80"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                <div className="absolute bottom-3 left-3 right-3">
-                  <p className="text-white text-xs">OFW remittances creating economic stability and global connections.</p>
-                </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  (2025, August 16). OFW remittances hit 6-month high in June. The Philippine Star. https://www.philstar.com/business/2025/08/16/2465756/ofw-remittances-hit-6-month-high-june
+                </p>
               </div>
             </motion.div>
           </div>
@@ -178,13 +180,18 @@ export default function OFWRemittancesPage() {
             >
               <div className="aspect-square bg-gradient-to-br from-green-500/20 to-emerald-500/20 rounded-2xl border border-green-500/40 p-8 backdrop-blur-sm">
                 <div className="w-full h-full bg-black/50 rounded-xl border border-green-500/30 flex items-center justify-center relative overflow-hidden">
-                  <div className="absolute inset-0 bg-[url('/DigitalPinoy/images/ofw.png')] bg-contain bg-center bg-no-repeat opacity-90"></div>
+                  <div className="absolute inset-0 bg-[url('/DigitalPinoy/globalization/ofw2.png')] bg-contain bg-center bg-no-repeat opacity-90"></div>
                   <div className="absolute bottom-3 left-3 right-3 text-center">
                     <p className="text-white text-xs bg-black/70 backdrop-blur-sm rounded-lg py-2 px-3">
                       💰 Economic Love
                     </p>
                   </div>
                 </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  (2022, November 15). Remittances sustain growth, expats help ease inflation's sting. The Philippine Star. https://www.philstar.com/business/2022/11/15/2223976/remittances-sustain-growth-expats-help-ease-inflations-sting
+                </p>
               </div>
 
               <motion.div
@@ -327,15 +334,17 @@ export default function OFWRemittancesPage() {
               viewport={{ once: true }}
             >
               <div className="aspect-video bg-gradient-to-br from-emerald-900/30 to-green-900/30 rounded-xl border border-emerald-500/30 overflow-hidden relative">
-                <img 
-                  src="/DigitalPinoy/images/ofw.png" 
-                  alt="OFW remittances impact"
+                <img
+                  src="/DigitalPinoy/globalization/ofw3.png"
+                  alt="OFW remittances shaping economic globalization."
                   className="w-full h-full object-cover opacity-80"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                <div className="absolute bottom-3 left-3 right-3">
-                  <p className="text-white text-xs">OFW remittances shaping economic globalization.</p>
-                </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  (2022, November 15). Remittances sustain growth, expats help ease inflation's sting. The Philippine Star. https://www.philstar.com/business/2022/11/15/2223976/remittances-sustain-growth-expats-help-ease-inflations-sting
+                </p>
               </div>
             </motion.div>
 

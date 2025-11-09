@@ -239,7 +239,7 @@ export default function EmotionsTimelinePage() {
                 color: 'bg-gradient-to-br from-green-900/30 to-emerald-900/30 border-green-500/30',
                 href: '/timeline/emotions/digital-empathy-networks',
                 position: { x: 64, y: 5 },
-                imagePath: '/DigitalPinoy/images/empathynetwork.png'
+                imagePath: '/DigitalPinoy/images/empathy.png'
               }
             ]}
             className="mt-0"

@@ -139,9 +139,9 @@ export default function SocialMediaDominancePage() {
               viewport={{ once: true }}
               className="relative"
             >
-              <div className="aspect-[4/3] bg-gradient-to-br from-blue-900/30 to-cyan-900/30 rounded-xl border border-blue-500/30 overflow-hidden">
-                <img 
-                  src="/DigitalPinoy/technology/socialmedia.jpg" 
+              <div className="aspect-[4/3] bg-gradient-to-br from-blue-900/30 to-cyan-900/30 rounded-xl border border-blue-500/30 overflow-hidden relative">
+                <img
+                  src="/DigitalPinoy/technology/socialmedia.jpg"
                   alt="Social media algorithms"
                   className="w-full h-full object-cover opacity-80"
                 />
@@ -149,6 +149,11 @@ export default function SocialMediaDominancePage() {
                 <div className="absolute bottom-3 left-3 right-3">
                   <p className="text-white text-xs">Algorithms shaping our digital experiences and perceptions.</p>
                 </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  Social media best practices 2021. (2021). TrueLogic. https://www.truelogic.com.ph/blog/social-media-best-practices-2021
+                </p>
               </div>
             </motion.div>
           </div>
@@ -189,6 +194,11 @@ export default function SocialMediaDominancePage() {
                     </p>
                   </div>
                 </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  Instagram Facebook TikTok [GIF]. (n.d.). GIPHY. https://giphy.com/gifs/MockoFun-instagram-facebook-tiktok-azjux6zMBW3cWxK21P
+                </p>
               </div>
 
               <motion.div
@@ -331,8 +341,8 @@ export default function SocialMediaDominancePage() {
               viewport={{ once: true }}
             >
               <div className="aspect-video bg-gradient-to-br from-cyan-900/30 to-blue-900/30 rounded-xl border border-cyan-500/30 overflow-hidden relative">
-                <img 
-                  src="/DigitalPinoy/technology/mentalsocial.jpg" 
+                <img
+                  src="/DigitalPinoy/technology/mentalsocial.jpg"
                   alt="Social media impact on mental health"
                   className="w-full h-full object-cover opacity-80"
                 />
@@ -340,6 +350,11 @@ export default function SocialMediaDominancePage() {
                 <div className="absolute bottom-3 left-3 right-3">
                   <p className="text-white text-xs">The double-edged sword of social media influence.</p>
                 </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  Over 100 content creators gather at big influencer event to benefit 1K students. (2021, November 3). The Philippine Star. https://www.philstar.com/entertainment/2021/11/03/2138483/over-100-content-creators-gather-big-influencer-event-benefit-1k-students
+                </p>
               </div>
             </motion.div>
 

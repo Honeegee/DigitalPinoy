@@ -135,15 +135,17 @@ export default function PinoyBigBrotherPage() {
               className="relative"
             >
               <div className="aspect-[4/3] bg-gradient-to-br from-yellow-900/30 to-orange-900/30 rounded-xl border border-yellow-500/30 overflow-hidden">
-                <img 
-                  src="/DigitalPinoy/images/PBB.png" 
-                  alt="Pinoy Big Brother cultural export"
+                <img
+                  src="/DigitalPinoy/globalization/pbb1.png"
+                  alt="Pinoy Big Brother creating cultural exports and global Filipino representation."
                   className="w-full h-full object-cover opacity-80"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                <div className="absolute bottom-3 left-3 right-3">
-                  <p className="text-white text-xs">Pinoy Big Brother creating cultural exports and global Filipino representation.</p>
-                </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  (2019, August 13). Pinoy Big Brother and its memorable real-life drama. PEP.ph. https://www.pep.ph/peptionary/143496/pinoy-big-brother-and-its-memorable-real-life-drama-a738-20190813-lfrm
+                </p>
               </div>
             </motion.div>
           </div>
@@ -177,7 +179,7 @@ export default function PinoyBigBrotherPage() {
             >
               <div className="aspect-square bg-gradient-to-br from-yellow-500/20 to-orange-500/20 rounded-2xl border border-yellow-500/40 p-8 backdrop-blur-sm">
                 <div className="w-full h-full bg-black/50 rounded-xl border border-yellow-500/30 flex items-center justify-center relative overflow-hidden">
-                  <div className="absolute inset-0 bg-[url('/DigitalPinoy/images/PBB.png')] bg-contain bg-center bg-no-repeat opacity-90"></div>
+                  <div className="absolute inset-0 bg-[url('/DigitalPinoy/globalization/pbb2.png')] bg-contain bg-center bg-no-repeat opacity-90"></div>
                   <div className="absolute bottom-3 left-3 right-3 text-center">
                     <p className="text-white text-xs bg-black/70 backdrop-blur-sm rounded-lg py-2 px-3">
                       📺 Global Filipino
@@ -193,6 +195,11 @@ export default function PinoyBigBrotherPage() {
               >
                 PBB!
               </motion.div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  (n.d.). Pinoy Big Brother celebrates 20th anniversary with a historic collaboration. MSN. https://www.msn.com/en-ph/entertainment/entertainmentnews/pinoy-big-brother-celebrates-20th-anniversary-with-a-historic-collaboration/ar-AA1xWUF6
+                </p>
+              </div>
             </motion.div>
 
             {/* PBB Details */}
@@ -326,15 +333,17 @@ export default function PinoyBigBrotherPage() {
               viewport={{ once: true }}
             >
               <div className="aspect-video bg-gradient-to-br from-orange-900/30 to-yellow-900/30 rounded-xl border border-orange-500/30 overflow-hidden relative">
-                <img 
-                  src="/DigitalPinoy/images/PBB.png" 
-                  alt="Pinoy Big Brother cultural impact"
+                <img
+                  src="/DigitalPinoy/globalization/pbb3.png"
+                  alt="Pinoy Big Brother shaping cultural globalization."
                   className="w-full h-full object-cover opacity-80"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                <div className="absolute bottom-3 left-3 right-3">
-                  <p className="text-white text-xs">Pinoy Big Brother shaping cultural globalization.</p>
-                </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  (n.d.). Where to watch Pinoy Big Brother Double Up. Reddit. https://www.reddit.com/r/Philippines/comments/15xxvjn/where_to_watch_pinoy_big_brother_double_up_thank
+                </p>
               </div>
             </motion.div>
 
@@ -425,13 +434,13 @@ export default function PinoyBigBrotherPage() {
                   ← Previous: K-Dramas
                 </motion.button>
               </Link>
-              <Link href="/timeline/globalization/global-filipino-cuisine">
+              <Link href="/timeline/globalization/digital-creators">
                 <motion.button
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  className="px-5 py-2 bg-orange-900/30 border border-orange-500/30 rounded-lg text-orange-300 text-sm hover:bg-orange-900/50 transition-all"
+                  className="px-5 py-2 bg-purple-900/30 border border-purple-500/30 rounded-lg text-purple-300 text-sm hover:bg-purple-900/50 transition-all"
                 >
-                  Next: Filipino Cuisine →
+                  Next: Digital Creators →
                 </motion.button>
               </Link>
             </div>

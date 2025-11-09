@@ -136,15 +136,17 @@ export default function OnlineSupportCommunitiesPage() {
               className="relative"
             >
               <div className="aspect-[4/3] bg-gradient-to-br from-teal-900/30 to-cyan-900/30 rounded-xl border border-teal-500/30 overflow-hidden">
-                <img 
-                  src="/DigitalPinoy/images/OnlineSupport.png" 
-                  alt="Online support communities and digital empathy"
+                <img
+                  src="/DigitalPinoy/emotions/onlinesupport.png"
+                  alt="Online support communities creating digital empathy and connection."
                   className="w-full h-full object-cover opacity-80"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                <div className="absolute bottom-3 left-3 right-3">
-                  <p className="text-white text-xs">Online support communities creating digital empathy and connection.</p>
-                </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  (n.d.). Empowering the Philippines through digital innovation. Tarkie. https://www.tarkie.com/empowering-the-philippines-through-digital-innovation
+                </p>
               </div>
             </motion.div>
           </div>
@@ -178,7 +180,7 @@ export default function OnlineSupportCommunitiesPage() {
             >
               <div className="aspect-square bg-gradient-to-br from-teal-500/20 to-cyan-500/20 rounded-2xl border border-teal-500/40 p-8 backdrop-blur-sm">
                 <div className="w-full h-full bg-black/50 rounded-xl border border-teal-500/30 flex items-center justify-center relative overflow-hidden">
-                  <div className="absolute inset-0 bg-[url('/DigitalPinoy/images/OnlineSupport.png')] bg-contain bg-center bg-no-repeat opacity-90"></div>
+                  <div className="absolute inset-0 bg-[url('/DigitalPinoy/emotions/onlinesupport2.png')] bg-contain bg-center bg-no-repeat opacity-90"></div>
                   <div className="absolute bottom-3 left-3 right-3 text-center">
                     <p className="text-white text-xs bg-black/70 backdrop-blur-sm rounded-lg py-2 px-3">
                       🤝 Digital Empathy
@@ -194,6 +196,11 @@ export default function OnlineSupportCommunitiesPage() {
               >
                 Support!
               </motion.div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  (n.d.). Cyber wellness Philippines. AskSonnie. https://asksonnie.info/strengthen-and-strategize/cyber-wellness/cyber-wellness-philippines
+                </p>
+              </div>
             </motion.div>
 
             {/* Support Details */}
@@ -327,15 +334,17 @@ export default function OnlineSupportCommunitiesPage() {
               viewport={{ once: true }}
             >
               <div className="aspect-video bg-gradient-to-br from-cyan-900/30 to-teal-900/30 rounded-xl border border-cyan-500/30 overflow-hidden relative">
-                <img 
-                  src="/DigitalPinoy/images/social.png" 
-                  alt="Online support communities impact"
+                <img
+                  src="/DigitalPinoy/emotions/onlinesupport3.png"
+                  alt="Online support communities shaping digital empathy culture."
                   className="w-full h-full object-cover opacity-80"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                <div className="absolute bottom-3 left-3 right-3">
-                  <p className="text-white text-xs">Online support communities shaping digital empathy culture.</p>
-                </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  (n.d.). We think digital Philippines. Facebook. https://wethinkdigital.fb.com/ph/en-ph
+                </p>
               </div>
             </motion.div>
 

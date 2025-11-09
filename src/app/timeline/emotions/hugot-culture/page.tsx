@@ -135,9 +135,9 @@ export default function HugotCulturePage() {
               viewport={{ once: true }}
               className="relative"
             >
-              <div className="aspect-[4/3] bg-gradient-to-br from-blue-900/30 to-cyan-900/30 rounded-xl border border-blue-500/30 overflow-hidden">
-                <img 
-                  src="/DigitalPinoy/images/hugot.png" 
+              <div className="aspect-[4/3] bg-gradient-to-br from-blue-900/30 to-cyan-900/30 rounded-xl border border-blue-500/30 overflow-hidden relative">
+                <img
+                  src="/DigitalPinoy/emotions/hugot1.png"
                   alt="Hugot culture emotional expression"
                   className="w-full h-full object-cover opacity-80"
                 />
@@ -145,6 +145,11 @@ export default function HugotCulturePage() {
                 <div className="absolute bottom-3 left-3 right-3">
                   <p className="text-white text-xs">Hugot phrases and emotional expressions in Filipino culture.</p>
                 </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  Question: Identify this hugot line using Aristotle's theory of friendship. (n.d.). Aklat anni Tasyo. https://www.facebook.com/AklatanniTasyo/posts/question-identify-this-hugot-line-using-aristotles-theory-of-friendship/2333073576769556
+                </p>
               </div>
             </motion.div>
           </div>
@@ -178,13 +183,18 @@ export default function HugotCulturePage() {
             >
               <div className="aspect-square bg-gradient-to-br from-blue-500/20 to-cyan-500/20 rounded-2xl border border-blue-500/40 p-8 backdrop-blur-sm">
                 <div className="w-full h-full bg-black/50 rounded-xl border border-blue-500/30 flex items-center justify-center relative overflow-hidden">
-                  <div className="absolute inset-0 bg-[url('/DigitalPinoy/images/hugot.png')] bg-contain bg-center bg-no-repeat opacity-90"></div>
+                  <div className="absolute inset-0 bg-[url('/DigitalPinoy/emotions/hugot2.png')] bg-contain bg-center bg-no-repeat opacity-90"></div>
                   <div className="absolute bottom-3 left-3 right-3 text-center">
                     <p className="text-white text-xs bg-black/70 backdrop-blur-sm rounded-lg py-2 px-3">
                       💔 Emotional Wit
                     </p>
                   </div>
                 </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  10 hugot lines from Pinoy movies. (n.d.). SPOT.ph. https://www.spot.ph/entertainment/movies-music-tv/58622/10-hugot-lines-from-pinoy-movies
+                </p>
               </div>
 
               <motion.div
@@ -327,8 +337,8 @@ export default function HugotCulturePage() {
               viewport={{ once: true }}
             >
               <div className="aspect-video bg-gradient-to-br from-cyan-900/30 to-blue-900/30 rounded-xl border border-cyan-500/30 overflow-hidden relative">
-                <img 
-                  src="/DigitalPinoy/images/emogirl.jpg" 
+                <img
+                  src="/DigitalPinoy/emotions/hugot3.png"
                   alt="Hugot culture emotional expression"
                   className="w-full h-full object-cover opacity-80"
                 />
@@ -336,6 +346,11 @@ export default function HugotCulturePage() {
                 <div className="absolute bottom-3 left-3 right-3">
                   <p className="text-white text-xs">Hugot culture shaping Filipino emotional expression.</p>
                 </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  Hugot. (n.d.). Pinterest. https://ph.pinterest.com/maymayyammys/hugot
+                </p>
               </div>
             </motion.div>
 

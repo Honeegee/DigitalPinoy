@@ -136,15 +136,17 @@ export default function MentalHealthAwarenessPage() {
               className="relative"
             >
               <div className="aspect-[4/3] bg-gradient-to-br from-green-900/30 to-emerald-900/30 rounded-xl border border-green-500/30 overflow-hidden">
-                <img 
-                  src="/DigitalPinoy/images/mentalhealth.png" 
-                  alt="Mental health awareness and emotional wellness"
+                <img
+                  src="/DigitalPinoy/emotions/mentalH1.png"
+                  alt="Mental health awareness creating emotional wellness conversations."
                   className="w-full h-full object-cover opacity-80"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                <div className="absolute bottom-3 left-3 right-3">
-                  <p className="text-white text-xs">Mental health awareness creating emotional wellness conversations.</p>
-                </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  (n.d.). Mental health awareness creating emotional wellness conversations. Mental Health Philippines. https://mentalhealthph.org/05-20
+                </p>
               </div>
             </motion.div>
           </div>
@@ -178,7 +180,7 @@ export default function MentalHealthAwarenessPage() {
             >
               <div className="aspect-square bg-gradient-to-br from-green-500/20 to-emerald-500/20 rounded-2xl border border-green-500/40 p-8 backdrop-blur-sm">
                 <div className="w-full h-full bg-black/50 rounded-xl border border-green-500/30 flex items-center justify-center relative overflow-hidden">
-                  <div className="absolute inset-0 bg-[url('/DigitalPinoy/images/mentalhealth.png')] bg-contain bg-center bg-no-repeat opacity-90"></div>
+                  <div className="absolute inset-0 bg-[url('/DigitalPinoy/emotions/mentalH2.jpg')] bg-contain bg-center bg-no-repeat opacity-90"></div>
                   <div className="absolute bottom-3 left-3 right-3 text-center">
                     <p className="text-white text-xs bg-black/70 backdrop-blur-sm rounded-lg py-2 px-3">
                       🧠 Emotional Wellness
@@ -194,6 +196,11 @@ export default function MentalHealthAwarenessPage() {
               >
                 Care!
               </motion.div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  (n.d.). Mindful living: Incorporating self-care into your Filipino lifestyle. Bria. https://www.bria.com.ph/articles/blogs/mindful-living-incorporating-self-care-into-your-filipino-lifestyle
+                </p>
+              </div>
             </motion.div>
 
             {/* Mental Health Details */}
@@ -327,15 +334,17 @@ export default function MentalHealthAwarenessPage() {
               viewport={{ once: true }}
             >
               <div className="aspect-video bg-gradient-to-br from-emerald-900/30 to-green-900/30 rounded-xl border border-emerald-500/30 overflow-hidden relative">
-                <img 
-                  src="/DigitalPinoy/images/OnlineSupport.png" 
-                  alt="Mental health awareness impact"
+                <img
+                  src="/DigitalPinoy/emotions/mentalH3.png"
+                  alt="Mental health awareness shaping emotional wellness culture."
                   className="w-full h-full object-cover opacity-80"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                <div className="absolute bottom-3 left-3 right-3">
-                  <p className="text-white text-xs">Mental health awareness shaping emotional wellness culture.</p>
-                </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  (n.d.). Training programs for effective mental health support in Philippine schools. My Private Tutor Philippines. https://www.myprivatetutor.com.ph/blog/training-programs-for-effective-mental-health-support-in-philippine-schools
+                </p>
               </div>
             </motion.div>
 

@@ -139,9 +139,9 @@ export default function ContentCreationEconomyPage() {
               viewport={{ once: true }}
               className="relative"
             >
-              <div className="aspect-[4/3] bg-gradient-to-br from-orange-900/30 to-red-900/30 rounded-xl border border-orange-500/30 overflow-hidden">
-                <img 
-                  src="/DigitalPinoy/images/content.png" 
+              <div className="aspect-[4/3] bg-gradient-to-br from-orange-900/30 to-red-900/30 rounded-xl border border-orange-500/30 overflow-hidden relative">
+                <img
+                  src="/DigitalPinoy/technology/creatorRev.jpg"
                   alt="Content creation and digital entrepreneurship"
                   className="w-full h-full object-cover opacity-80"
                 />
@@ -149,6 +149,11 @@ export default function ContentCreationEconomyPage() {
                 <div className="absolute bottom-3 left-3 right-3">
                   <p className="text-white text-xs">Filipino creators building careers through digital content.</p>
                 </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  TikTok 3rd Annual Awards Philippines. (n.d.). Adobe Magazine. https://www.adobomagazine.com/advertising-awards/tiktok-3rd-annual-awards-philippines
+                </p>
               </div>
             </motion.div>
           </div>
@@ -182,13 +187,18 @@ export default function ContentCreationEconomyPage() {
             >
               <div className="aspect-square bg-gradient-to-br from-orange-500/20 to-red-500/20 rounded-2xl border border-orange-500/40 p-8 backdrop-blur-sm">
                 <div className="w-full h-full bg-black/50 rounded-xl border border-orange-500/30 flex items-center justify-center relative overflow-hidden">
-                  <div className="absolute inset-0 bg-[url('/DigitalPinoy/images/content.png')] bg-contain bg-center bg-no-repeat opacity-90"></div>
+                  <div className="absolute inset-0 bg-[url('/DigitalPinoy/technology/content.gif')] bg-contain bg-center bg-no-repeat opacity-90"></div>
                   <div className="absolute bottom-3 left-3 right-3 text-center">
                     <p className="text-white text-xs bg-black/70 backdrop-blur-sm rounded-lg py-2 px-3">
                       🎬 Content Creation Studio
                     </p>
                   </div>
                 </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  Fail YouTube [GIF]. (n.d.). GIPHY. https://giphy.com/gifs/fail-youtube-lW1KdE0faiQ8g
+                </p>
               </div>
 
               <motion.div
@@ -331,8 +341,8 @@ export default function ContentCreationEconomyPage() {
               viewport={{ once: true }}
             >
               <div className="aspect-video bg-gradient-to-br from-red-900/30 to-orange-900/30 rounded-xl border border-red-500/30 overflow-hidden relative">
-                <img 
-                  src="/DigitalPinoy/images/culturalexports.png" 
+                <img
+                  src="/DigitalPinoy/technology/ecommerce.jpg"
                   alt="Filipino content going global"
                   className="w-full h-full object-cover opacity-80"
                 />
@@ -340,6 +350,11 @@ export default function ContentCreationEconomyPage() {
                 <div className="absolute bottom-3 left-3 right-3">
                   <p className="text-white text-xs">Filipino creators making global impact.</p>
                 </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  12 Filipino influencers you need to hit the follow button on right now. (n.d.). Harper's Bazaar Singapore. https://www.harpersbazaar.com.sg/celebrity/12-filipino-influencers-you-need-to-hit-the-follow-button-on-right-now
+                </p>
               </div>
             </motion.div>
 

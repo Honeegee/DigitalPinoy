@@ -138,9 +138,9 @@ export default function HolographicCommunicationPage() {
               viewport={{ once: true }}
               className="relative"
             >
-              <div className="aspect-[4/3] bg-gradient-to-br from-cyan-900/30 to-blue-900/30 rounded-xl border border-cyan-500/30 overflow-hidden">
-                <img 
-                  src="/DigitalPinoy/images/hologram.png" 
+              <div className="aspect-[4/3] bg-gradient-to-br from-cyan-900/30 to-blue-900/30 rounded-xl border border-cyan-500/30 overflow-hidden relative">
+                <img
+                  src="/DigitalPinoy/technology/hologram.jpg"
                   alt="Holographic communication technology"
                   className="w-full h-full object-cover opacity-80"
                 />
@@ -148,6 +148,11 @@ export default function HolographicCommunicationPage() {
                 <div className="absolute bottom-3 left-3 right-3">
                   <p className="text-white text-xs">Holographic technology bringing people together across distances.</p>
                 </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  Will holographic video calls soon become part of our daily lives? (n.d.). Richard van Hooijdonk. https://blog.richardvanhooijdonk.com/en/will-holographic-video-calls-soon-become-part-of-our-daily-lives
+                </p>
               </div>
             </motion.div>
           </div>
@@ -181,13 +186,18 @@ export default function HolographicCommunicationPage() {
             >
               <div className="aspect-square bg-gradient-to-br from-cyan-500/20 to-blue-500/20 rounded-2xl border border-cyan-500/40 p-8 backdrop-blur-sm">
                 <div className="w-full h-full bg-black/50 rounded-xl border border-cyan-500/30 flex items-center justify-center relative overflow-hidden">
-                  <div className="absolute inset-0 bg-[url('/DigitalPinoy/images/hologram.png')] bg-contain bg-center bg-no-repeat opacity-90"></div>
+                  <div className="absolute inset-0 bg-[url('/DigitalPinoy/technology/hologramcall.jpg')] bg-contain bg-center bg-no-repeat opacity-90"></div>
                   <div className="absolute bottom-3 left-3 right-3 text-center">
                     <p className="text-white text-xs bg-black/70 backdrop-blur-sm rounded-lg py-2 px-3">
                       🌐 Holographic Call
                     </p>
                   </div>
                 </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  The future of holograms and the technology's potential impact on society. (n.d.). Leap. https://takeleap.com/blog/the-future-of-holograms-and-the-technology-s-potential-impact-on-society
+                </p>
               </div>
 
               <motion.div
@@ -330,8 +340,8 @@ export default function HolographicCommunicationPage() {
               viewport={{ once: true }}
             >
               <div className="aspect-video bg-gradient-to-br from-blue-900/30 to-cyan-900/30 rounded-xl border border-blue-500/30 overflow-hidden relative">
-                <img 
-                  src="/DigitalPinoy/images/OnlineSupport.png" 
+                <img
+                  src="/DigitalPinoy/technology/hologramglobe.jpg"
                   alt="Online support and connection"
                   className="w-full h-full object-cover opacity-80"
                 />
@@ -339,6 +349,11 @@ export default function HolographicCommunicationPage() {
                 <div className="absolute bottom-3 left-3 right-3">
                   <p className="text-white text-xs">Holographic technology connecting people globally.</p>
                 </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  Editorial: Why technology can be a catalyst for social good. (n.d.). Samsung. https://news.samsung.com/global/editorial-why-technology-can-be-a-catalyst-for-social-good
+                </p>
               </div>
             </motion.div>
 
@@ -429,9 +444,15 @@ export default function HolographicCommunicationPage() {
                   ← Previous: AI Companions
                 </motion.button>
               </Link>
-              <div className="px-5 py-2 bg-gray-900/30 border border-gray-500/30 rounded-lg text-gray-400 text-sm">
-                End of Technology Hall
-              </div>
+              <Link href="/timeline/emotions">
+                <motion.button
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  className="px-5 py-2 bg-emerald-900/30 border border-emerald-500/30 rounded-lg text-emerald-300 text-sm hover:bg-emerald-900/50 transition-all"
+                >
+                  Go to Emotions Hall →
+                </motion.button>
+              </Link>
             </div>
           </div>
         </div>

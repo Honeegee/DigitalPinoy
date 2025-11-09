@@ -135,15 +135,17 @@ export default function CulturalExportsPage() {
               className="relative"
             >
               <div className="aspect-[4/3] bg-gradient-to-br from-green-900/30 to-emerald-900/30 rounded-xl border border-green-500/30 overflow-hidden">
-                <img 
-                  src="/DigitalPinoy/images/culturalexports.png" 
-                  alt="Cultural exports global culture"
+                <img
+                  src="/DigitalPinoy/globalization/culturalexports1.png"
+                  alt="Cultural exports creating global cultural exchange and worldwide recognition."
                   className="w-full h-full object-cover opacity-80"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                <div className="absolute bottom-3 left-3 right-3">
-                  <p className="text-white text-xs">Cultural exports creating global cultural exchange and worldwide recognition.</p>
-                </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  (n.d.). Native arts and crafts. Fame+. https://fameplus.com/brands/nativeartsandcrafts
+                </p>
               </div>
             </motion.div>
           </div>
@@ -177,7 +179,7 @@ export default function CulturalExportsPage() {
             >
               <div className="aspect-square bg-gradient-to-br from-green-500/20 to-emerald-500/20 rounded-2xl border border-green-500/40 p-8 backdrop-blur-sm">
                 <div className="w-full h-full bg-black/50 rounded-xl border border-green-500/30 flex items-center justify-center relative overflow-hidden">
-                  <div className="absolute inset-0 bg-[url('/DigitalPinoy/images/culturalexports.png')] bg-contain bg-center bg-no-repeat opacity-90"></div>
+                  <div className="absolute inset-0 bg-[url('/DigitalPinoy/globalization/culturalexports2.png')] bg-contain bg-center bg-no-repeat opacity-90"></div>
                   <div className="absolute bottom-3 left-3 right-3 text-center">
                     <p className="text-white text-xs bg-black/70 backdrop-blur-sm rounded-lg py-2 px-3">
                       🎨 Cultural Art
@@ -193,6 +195,11 @@ export default function CulturalExportsPage() {
               >
                 Export!
               </motion.div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  (n.d.). About the Philippines. Muscat, Oman: Department of Foreign Affairs. https://muscatpe.dfa.gov.ph/about-the-philippines
+                </p>
+              </div>
             </motion.div>
 
             {/* Export Details */}
@@ -326,15 +333,17 @@ export default function CulturalExportsPage() {
               viewport={{ once: true }}
             >
               <div className="aspect-video bg-gradient-to-br from-emerald-900/30 to-green-900/30 rounded-xl border border-emerald-500/30 overflow-hidden relative">
-                <img 
-                  src="/DigitalPinoy/images/culturalexports.png" 
-                  alt="Cultural exports cultural impact"
+                <img
+                  src="/DigitalPinoy/globalization/culturalexports3.png"
+                  alt="Cultural exports shaping global cultural exchange."
                   className="w-full h-full object-cover opacity-80"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                <div className="absolute bottom-3 left-3 right-3">
-                  <p className="text-white text-xs">Cultural exports shaping global cultural exchange.</p>
-                </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  (n.d.). Filipino art exports [Google Images]. Google. Retrieved November 9, 2025, from https://www.google.com/search?q=filipino+art+exports
+                </p>
               </div>
             </motion.div>
 

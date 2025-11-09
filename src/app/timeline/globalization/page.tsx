@@ -90,7 +90,7 @@ export default function GlobalizationTimelinePage() {
                 icon: Sparkles,
                 color: 'bg-gradient-to-br from-blue-900/30 to-cyan-900/30 border-blue-500/30',
                 href: '/timeline/globalization/harry-potter-phenomenon',
-                position: { x: 5, y: 5 },
+                position: { x: 10, y: 5 },
                 imagePath: '/DigitalPinoy/images/harry.png'
               },
               {
@@ -100,7 +100,7 @@ export default function GlobalizationTimelinePage() {
                 icon: TrendingUp,
                 color: 'bg-gradient-to-br from-green-900/30 to-emerald-900/30 border-green-500/30',
                 href: '/timeline/globalization/ofw-remittances',
-                position: { x: 23, y: 5 },
+                position: { x: 30, y: 5 },
                 imagePath: '/DigitalPinoy/images/ofw.png'
               },
               {
@@ -110,7 +110,7 @@ export default function GlobalizationTimelinePage() {
                 icon: Camera,
                 color: 'bg-gradient-to-br from-purple-900/30 to-pink-900/30 border-purple-500/30',
                 href: '/timeline/globalization/k-dramas',
-                position: { x: 42, y: 5 },
+                position: { x: 50, y: 5 },
                 imagePath: '/DigitalPinoy/images/kdrama.png'
               },
               {
@@ -120,19 +120,9 @@ export default function GlobalizationTimelinePage() {
                 icon: Radio,
                 color: 'bg-gradient-to-br from-yellow-900/30 to-orange-900/30 border-yellow-500/30',
                 href: '/timeline/globalization/pinoy-big-brother',
-                position: { x: 61, y: 5 },
+                position: { x: 70, y: 5 },
                 imagePath: '/DigitalPinoy/images/PBB.png'
               },
-              {
-                id: 'global-filipino-cuisine',
-                title: 'Filipino Cuisine',
-                subtitle: 'Global Food Culture',
-                icon: Coffee,
-                color: 'bg-gradient-to-br from-orange-900/30 to-red-900/30 border-orange-500/30',
-                href: '/timeline/globalization/global-filipino-cuisine',
-                position: { x: 80, y: 5 },
-                imagePath: '/DigitalPinoy/images/friendster.png'
-              }
             ]}
             className="mt-0"
           />

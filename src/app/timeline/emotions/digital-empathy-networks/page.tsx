@@ -136,15 +136,17 @@ export default function DigitalEmpathyNetworksPage() {
               className="relative"
             >
               <div className="aspect-[4/3] bg-gradient-to-br from-green-900/30 to-emerald-900/30 rounded-xl border border-green-500/30 overflow-hidden">
-                <img 
-                  src="/DigitalPinoy/images/empathynetwork.png" 
-                  alt="Digital empathy networks and global emotional connection"
+                <img
+                  src="/DigitalPinoy/emotions/digitalempathy.png"
+                  alt="Digital empathy networks creating global emotional connections."
                   className="w-full h-full object-cover opacity-80"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                <div className="absolute bottom-3 left-3 right-3">
-                  <p className="text-white text-xs">Digital empathy networks creating global emotional connections.</p>
-                </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  (n.d.). Digital empathy. CCSI. https://ccsi.com/call-center-resources/news/digital-empathy.html
+                </p>
               </div>
             </motion.div>
           </div>
@@ -178,7 +180,7 @@ export default function DigitalEmpathyNetworksPage() {
             >
               <div className="aspect-square bg-gradient-to-br from-green-500/20 to-emerald-500/20 rounded-2xl border border-green-500/40 p-8 backdrop-blur-sm">
                 <div className="w-full h-full bg-black/50 rounded-xl border border-green-500/30 flex items-center justify-center relative overflow-hidden">
-                  <div className="absolute inset-0 bg-[url('/DigitalPinoy/images/empathynetwork.png')] bg-contain bg-center bg-no-repeat opacity-90"></div>
+                  <div className="absolute inset-0 bg-[url('/DigitalPinoy/emotions/globalempathy.png')] bg-contain bg-center bg-no-repeat opacity-90"></div>
                   <div className="absolute bottom-3 left-3 right-3 text-center">
                     <p className="text-white text-xs bg-black/70 backdrop-blur-sm rounded-lg py-2 px-3">
                       🌍 Global Empathy
@@ -194,6 +196,11 @@ export default function DigitalEmpathyNetworksPage() {
               >
                 Global!
               </motion.div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  (n.d.). Transforming perspectives: Embracing empathy and global awareness for a unified future. Medium. https://medium.com/be-open/transforming-perspectives-embracing-empathy-and-global-awareness-for-a-unified-future-8f6fafa6adb4
+                </p>
+              </div>
             </motion.div>
 
             {/* Empathy Network Details */}
@@ -327,15 +334,17 @@ export default function DigitalEmpathyNetworksPage() {
               viewport={{ once: true }}
             >
               <div className="aspect-video bg-gradient-to-br from-emerald-900/30 to-green-900/30 rounded-xl border border-emerald-500/30 overflow-hidden relative">
-                <img 
-                  src="/DigitalPinoy/images/social.png" 
-                  alt="Digital empathy networks impact"
+                <img
+                  src="/DigitalPinoy/emotions/globalempathy2.png"
+                  alt="Digital empathy networks shaping global emotional culture."
                   className="w-full h-full object-cover opacity-80"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                <div className="absolute bottom-3 left-3 right-3">
-                  <p className="text-white text-xs">Digital empathy networks shaping global emotional culture.</p>
-                </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  Lemille, A. (n.d.). Empathy for the future. Medium. https://alexlemille.medium.com/empathy-for-the-future-a63dd90e9097
+                </p>
               </div>
             </motion.div>
 
@@ -426,9 +435,15 @@ export default function DigitalEmpathyNetworksPage() {
                   ← Previous: Neuro-Tech
                 </motion.button>
               </Link>
-              <div className="px-5 py-2 bg-gray-900/30 border border-gray-500/30 rounded-lg text-gray-400 text-sm">
-                The Future Awaits
-              </div>
+              <Link href="/timeline/globalization">
+                <motion.button
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  className="px-5 py-2 bg-orange-900/30 border border-orange-500/30 rounded-lg text-orange-300 text-sm hover:bg-orange-900/50 transition-all"
+                >
+                  Go to Globalization Hall →
+                </motion.button>
+              </Link>
             </div>
           </div>
         </div>

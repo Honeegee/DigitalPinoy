@@ -138,9 +138,9 @@ export default function InternetCafePage() {
               viewport={{ once: true }}
               className="relative"
             >
-              <div className="aspect-[4/3] bg-gradient-to-br from-amber-900/30 to-orange-900/30 rounded-xl border border-amber-500/30 overflow-hidden">
-                <img 
-                  src="/DigitalPinoy/technology/icafe.jpg" 
+              <div className="aspect-[4/3] bg-gradient-to-br from-amber-900/30 to-orange-900/30 rounded-xl border border-amber-500/30 overflow-hidden relative">
+                <img
+                  src="/DigitalPinoy/technology/icafe.jpg"
                   alt="Classic internet café setup"
                   className="w-full h-full object-cover opacity-80"
                 />
@@ -148,6 +148,11 @@ export default function InternetCafePage() {
                 <div className="absolute bottom-3 left-3 right-3">
                   <p className="text-white text-xs">Rows of CRT monitors, ₱15 per hour, ₱100 overnight packages.</p>
                 </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  Situations facing i-café owner in the Philippines. (2009). <em>iCafé Philippines</em>. https://icafepilipinas.blogspot.com/2009/08/situations-facing-i-cafe-owner-in.html
+                </p>
               </div>
             </motion.div>
           </div>
@@ -187,6 +192,11 @@ export default function InternetCafePage() {
                     💻 Classic Internet Café Computer
                   </p>
                 </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  2000 computer [Photograph]. (n.d.). iStock. https://www.istockphoto.com/photos/2000-computer
+                </p>
               </div>
               </div>
 
@@ -332,8 +342,8 @@ export default function InternetCafePage() {
               viewport={{ once: true }}
             >
               <div className="aspect-video bg-gradient-to-br from-blue-900/30 to-cyan-900/30 rounded-xl border border-blue-500/30 overflow-hidden relative">
-                <img 
-                  src="/DigitalPinoy/technology/tambayan.jpg" 
+                <img
+                  src="/DigitalPinoy/technology/tambayan.jpg"
                   alt="Internet café social scene"
                   className="w-full h-full object-cover opacity-80"
                 />
@@ -341,6 +351,11 @@ export default function InternetCafePage() {
                 <div className="absolute bottom-3 left-3 right-3">
                   <p className="text-white text-xs">Where "tambayan" met technology - friendships forged over games.</p>
                 </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  Situations facing i-café owner in the Philippines. (2009). <em>iCafé Philippines</em>. https://icafepilipinas.blogspot.com/2009/08/situations-facing-i-cafe-owner-in.html
+                </p>
               </div>
             </motion.div>
 

@@ -135,15 +135,17 @@ export default function DigitalCreatorsPage() {
               className="relative"
             >
               <div className="aspect-[4/3] bg-gradient-to-br from-purple-900/30 to-indigo-900/30 rounded-xl border border-purple-500/30 overflow-hidden">
-                <img 
-                  src="/DigitalPinoy/images/content.png" 
-                  alt="Digital creators global content"
+                <img
+                  src="/DigitalPinoy/globalization/influencers1.png"
+                  alt="Digital creators creating global content and cultural exchange."
                   className="w-full h-full object-cover opacity-80"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                <div className="absolute bottom-3 left-3 right-3">
-                  <p className="text-white text-xs">Digital creators creating global content and cultural exchange.</p>
-                </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  (n.d.). Top social media influencers in the Philippines. Spiralytics. https://www.spiralytics.com/blog/top-social-media-influencers-in-the-philippines
+                </p>
               </div>
             </motion.div>
           </div>
@@ -177,7 +179,7 @@ export default function DigitalCreatorsPage() {
             >
               <div className="aspect-square bg-gradient-to-br from-purple-500/20 to-indigo-500/20 rounded-2xl border border-purple-500/40 p-8 backdrop-blur-sm">
                 <div className="w-full h-full bg-black/50 rounded-xl border border-purple-500/30 flex items-center justify-center relative overflow-hidden">
-                  <div className="absolute inset-0 bg-[url('/DigitalPinoy/images/content.png')] bg-contain bg-center bg-no-repeat opacity-90"></div>
+                  <div className="absolute inset-0 bg-[url('/DigitalPinoy/globalization/influencers2.png')] bg-contain bg-center bg-no-repeat opacity-90"></div>
                   <div className="absolute bottom-3 left-3 right-3 text-center">
                     <p className="text-white text-xs bg-black/70 backdrop-blur-sm rounded-lg py-2 px-3">
                       🎬 Digital Story
@@ -193,6 +195,11 @@ export default function DigitalCreatorsPage() {
               >
                 Create!
               </motion.div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  (2024). Filipino content creators took over our feeds. Nylon Manila. https://nylonmanila.com/pop-culture/filipino-content-creators-took-over-our-feeds-2024
+                </p>
+              </div>
             </motion.div>
 
             {/* Creator Details */}
@@ -326,15 +333,17 @@ export default function DigitalCreatorsPage() {
               viewport={{ once: true }}
             >
               <div className="aspect-video bg-gradient-to-br from-indigo-900/30 to-purple-900/30 rounded-xl border border-indigo-500/30 overflow-hidden relative">
-                <img 
-                  src="/DigitalPinoy/images/content.png" 
-                  alt="Digital creators cultural impact"
+                <img
+                  src="/DigitalPinoy/globalization/influencers3.png"
+                  alt="Digital creators shaping global content culture."
                   className="w-full h-full object-cover opacity-80"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                <div className="absolute bottom-3 left-3 right-3">
-                  <p className="text-white text-xs">Digital creators shaping global content culture.</p>
-                </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  (2020, December 16). Digital YouTube reveals top trending videos and content creators of 2020 in the Philippines. Adobe Magazine. https://www.adobomagazine.com/digital-news/digital-youtube-reveals-top-trending-videos-and-content-creators-of-2020-in-the-philippines
+                </p>
               </div>
             </motion.div>
 
@@ -416,13 +425,13 @@ export default function DigitalCreatorsPage() {
             </Link>
 
             <div className="flex gap-3">
-              <Link href="/timeline/globalization/global-filipino-cuisine">
+              <Link href="/timeline/globalization/pinoy-big-brother">
                 <motion.button
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  className="px-5 py-2 bg-orange-900/30 border border-orange-500/30 rounded-lg text-orange-300 text-sm hover:bg-orange-900/50 transition-all"
+                  className="px-5 py-2 bg-yellow-900/30 border border-yellow-500/30 rounded-lg text-yellow-300 text-sm hover:bg-yellow-900/50 transition-all"
                 >
-                  ← Previous: Filipino Cuisine
+                  ← Previous: Pinoy Big Brother
                 </motion.button>
               </Link>
               <Link href="/timeline/globalization/global-platforms">

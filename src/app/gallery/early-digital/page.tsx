@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowLeft, Image as ImageIcon, Download, Share2, Heart, ChevronLeft, ChevronRight, X } from 'lucide-react';
+import { ArrowLeft, Image as ImageIcon, Download, Share2, Heart, ChevronLeft, ChevronRight, X, Search } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -174,12 +174,18 @@ export default function EarlyDigitalGallery() {
   const [selectedImage, setSelectedImage] = useState<typeof galleryImages[0] | null>(null);
   const [selectedImageIndex, setSelectedImageIndex] = useState<number>(0);
   const [filter, setFilter] = useState('all');
+  const [searchTerm, setSearchTerm] = useState('');
 
   const categories = ['all', 'Social Media', 'Technology', 'Gaming', 'Communication', 'Entertainment', 'Photography'];
 
-  const filteredImages = filter === 'all'
-    ? galleryImages
-    : galleryImages.filter(img => img.category === filter);
+  const filteredImages = galleryImages
+    .filter(img => filter === 'all' || img.category === filter)
+    .filter(img =>
+      searchTerm === '' ||
+      img.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      img.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      img.category.toLowerCase().includes(searchTerm.toLowerCase())
+    );
 
   const openLightbox = (image: typeof galleryImages[0], index: number) => {
     setSelectedImage(image);
@@ -244,7 +250,7 @@ export default function EarlyDigitalGallery() {
       </motion.div>
 
       <div className="max-w-7xl mx-auto px-4 py-8 relative z-10">
-        {/* Filter Tabs */}
+        {/* Search and Filter */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -252,6 +258,21 @@ export default function EarlyDigitalGallery() {
           className="mb-8"
         >
           <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md rounded-2xl p-4 border border-white/20">
+            {/* Search Bar */}
+            <div className="mb-4">
+              <div className="relative">
+                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" />
+                <input
+                  type="text"
+                  placeholder="Search images by title, description, or category..."
+                  value={searchTerm}
+                  onChange={(e) => setSearchTerm(e.target.value)}
+                  className="w-full pl-10 pr-4 py-3 bg-white/5 border border-white/20 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:border-green-400/50 focus:bg-white/10 transition-all"
+                />
+              </div>
+            </div>
+
+            {/* Filter Tabs */}
             <div className="flex gap-2 overflow-x-auto pb-2 scrollbar-hide">
               {categories.map((category) => (
                 <button
@@ -278,7 +299,7 @@ export default function EarlyDigitalGallery() {
         >
           <AnimatePresence mode="wait">
             <motion.div
-              key={filter}
+              key={`${filter}-${searchTerm}`}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}

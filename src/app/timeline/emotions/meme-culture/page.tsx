@@ -136,15 +136,17 @@ export default function MemeCulturePage() {
               className="relative"
             >
               <div className="aspect-[4/3] bg-gradient-to-br from-yellow-900/30 to-orange-900/30 rounded-xl border border-yellow-500/30 overflow-hidden">
-                <img 
-                  src="/DigitalPinoy/images/memes.png" 
-                  alt="Meme culture digital humor"
+                <img
+                  src="/DigitalPinoy/emotions/meme1.gif"
+                  alt="Meme culture creating digital humor and social bonding."
                   className="w-full h-full object-cover opacity-80"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                <div className="absolute bottom-3 left-3 right-3">
-                  <p className="text-white text-xs">Meme culture creating digital humor and social bonding.</p>
-                </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  (n.d.). Meme culture creating digital humor and social bonding [GIF]. Giphy. https://giphy.com/gifs/philippines-filipino-uy-ikr2iDniKOfuH5sYDs
+                </p>
               </div>
             </motion.div>
           </div>
@@ -178,7 +180,7 @@ export default function MemeCulturePage() {
             >
               <div className="aspect-square bg-gradient-to-br from-yellow-500/20 to-orange-500/20 rounded-2xl border border-yellow-500/40 p-8 backdrop-blur-sm">
                 <div className="w-full h-full bg-black/50 rounded-xl border border-yellow-500/30 flex items-center justify-center relative overflow-hidden">
-                  <div className="absolute inset-0 bg-[url('/DigitalPinoy/images/memes.png')] bg-contain bg-center bg-no-repeat opacity-90"></div>
+                  <div className="absolute inset-0 bg-[url('/DigitalPinoy/emotions/meme2.jpg')] bg-contain bg-center bg-no-repeat opacity-90"></div>
                   <div className="absolute bottom-3 left-3 right-3 text-center">
                     <p className="text-white text-xs bg-black/70 backdrop-blur-sm rounded-lg py-2 px-3">
                       😂 Digital Humor
@@ -194,6 +196,11 @@ export default function MemeCulturePage() {
               >
                 LOL!
               </motion.div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  (n.d.). Meme-fied: How Pinoys get rid of bad days through memes. Explained.ph. https://explained.ph/meme-fied-how-pinoys-get-rid-of-bad-days-through-memes
+                </p>
+              </div>
             </motion.div>
 
             {/* Meme Details */}
@@ -327,15 +334,17 @@ export default function MemeCulturePage() {
               viewport={{ once: true }}
             >
               <div className="aspect-video bg-gradient-to-br from-orange-900/30 to-yellow-900/30 rounded-xl border border-orange-500/30 overflow-hidden relative">
-                <img 
-                  src="/DigitalPinoy/images/content.png" 
-                  alt="Meme culture digital impact"
+                <img
+                  src="/DigitalPinoy/emotions/meme3.jpg"
+                  alt="Meme culture shaping digital communication and humor."
                   className="w-full h-full object-cover opacity-80"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                <div className="absolute bottom-3 left-3 right-3">
-                  <p className="text-white text-xs">Meme culture shaping digital communication and humor.</p>
-                </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  (n.d.). Meme culture shaping digital communication and humor [PDF]. MSU-IIT. https://www.msuiit.edu.ph/academics/colleges/cass/research/langkit/2016/1-20.pdf
+                </p>
               </div>
             </motion.div>
 

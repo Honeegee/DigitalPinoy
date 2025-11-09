@@ -138,16 +138,21 @@ export default function MetaversePHPage() {
               viewport={{ once: true }}
               className="relative"
             >
-              <div className="aspect-[4/3] bg-gradient-to-br from-purple-900/30 to-pink-900/30 rounded-xl border border-purple-500/30 overflow-hidden">
-                <img 
-                  src="/DigitalPinoy/images/metaverse.png" 
+              <div className="aspect-[4/3] bg-gradient-to-br from-purple-900/30 to-pink-900/30 rounded-xl border border-purple-500/30 overflow-hidden relative">
+                <img
+                  src="/DigitalPinoy/technology/vrph.jpg"
                   alt="Metaverse and virtual reality"
                   className="w-full h-full object-cover opacity-80"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                 <div className="absolute bottom-3 left-3 right-3">
-                  <p className="text-white text-xs">Filipino creators building virtual worlds and experiences.</p>
+                  <p className="text-white text-xs">First VR gaming in Philippines.</p>
                 </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  First VR gaming experience in the Philippines opens at SM City Olongapo Central. (n.d.). iOrbit News. https://iorbitnews.com/first-vr-gaming-experience-in-the-philippines-opens-at-sm-city-olongapo-central
+                </p>
               </div>
             </motion.div>
           </div>
@@ -181,13 +186,18 @@ export default function MetaversePHPage() {
             >
               <div className="aspect-square bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-2xl border border-purple-500/40 p-8 backdrop-blur-sm">
                 <div className="w-full h-full bg-black/50 rounded-xl border border-purple-500/30 flex items-center justify-center relative overflow-hidden">
-                  <div className="absolute inset-0 bg-[url('/DigitalPinoy/images/metaverse.png')] bg-contain bg-center bg-no-repeat opacity-90"></div>
+                  <div className="absolute inset-0 bg-[url('/DigitalPinoy/technology/vrset.jpg')] bg-contain bg-center bg-no-repeat opacity-90"></div>
                   <div className="absolute bottom-3 left-3 right-3 text-center">
                     <p className="text-white text-xs bg-black/70 backdrop-blur-sm rounded-lg py-2 px-3">
                       🌐 Virtual Philippines
                     </p>
                   </div>
                 </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  Buyer's guide: Best gaming VR headsets. (n.d.). VR Expert. https://vrx.vr-expert.com/buyers-guide-best-gaming-vr-headsets
+                </p>
               </div>
 
               <motion.div
@@ -330,8 +340,8 @@ export default function MetaversePHPage() {
               viewport={{ once: true }}
             >
               <div className="aspect-video bg-gradient-to-br from-pink-900/30 to-purple-900/30 rounded-xl border border-pink-500/30 overflow-hidden relative">
-                <img 
-                  src="/DigitalPinoy/images/hologram.png" 
+                <img
+                  src="/DigitalPinoy/technology/vrhologram.png"
                   alt="Holographic technology"
                   className="w-full h-full object-cover opacity-80"
                 />
@@ -339,6 +349,11 @@ export default function MetaversePHPage() {
                 <div className="absolute bottom-3 left-3 right-3">
                   <p className="text-white text-xs">Advanced virtual and holographic experiences.</p>
                 </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  Top futuristic holographic experiences in entertainment. (n.d.). Vision3D. https://www.vision3d.in/blog/top-futuristic-holographic-experiences-in-entertainment
+                </p>
               </div>
             </motion.div>
 

@@ -136,15 +136,17 @@ export default function NeuroTechInterfacesPage() {
               className="relative"
             >
               <div className="aspect-[4/3] bg-gradient-to-br from-indigo-900/30 to-blue-900/30 rounded-xl border border-indigo-500/30 overflow-hidden">
-                <img 
-                  src="/DigitalPinoy/images/neurotech.png" 
-                  alt="Neuro-tech interfaces and brain-computer connection"
+                <img
+                  src="/DigitalPinoy/emotions/neuro1.png"
+                  alt="Neuro-tech interfaces creating direct brain-computer connections."
                   className="w-full h-full object-cover opacity-80"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                <div className="absolute bottom-3 left-3 right-3">
-                  <p className="text-white text-xs">Neuro-tech interfaces creating direct brain-computer connections.</p>
-                </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  (n.d.). Brain-computer interfaces: 10 breakthrough technologies 2025. MIT Technology Review. https://www.technologyreview.com/2025/04/01/1114009/brain-computer-interfaces-10-breakthrough-technologies-2025
+                </p>
               </div>
             </motion.div>
           </div>
@@ -178,7 +180,7 @@ export default function NeuroTechInterfacesPage() {
             >
               <div className="aspect-square bg-gradient-to-br from-indigo-500/20 to-blue-500/20 rounded-2xl border border-indigo-500/40 p-8 backdrop-blur-sm">
                 <div className="w-full h-full bg-black/50 rounded-xl border border-indigo-500/30 flex items-center justify-center relative overflow-hidden">
-                  <div className="absolute inset-0 bg-[url('/DigitalPinoy/images/neurotech.png')] bg-contain bg-center bg-no-repeat opacity-90"></div>
+                  <div className="absolute inset-0 bg-[url('/DigitalPinoy/emotions/neuro2.png')] bg-contain bg-center bg-no-repeat opacity-90"></div>
                   <div className="absolute bottom-3 left-3 right-3 text-center">
                     <p className="text-white text-xs bg-black/70 backdrop-blur-sm rounded-lg py-2 px-3">
                       🧠 Brain Interface
@@ -194,6 +196,11 @@ export default function NeuroTechInterfacesPage() {
               >
                 Neural!
               </motion.div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  (n.d.). Mind meld: Brain-computer interfaces unlock the future 2024 and beyond. Sify. https://www.sify.com/science-tech/mind-meld-brain-computer-interfaces-unlock-the-future-2024-and-beyond
+                </p>
+              </div>
             </motion.div>
 
             {/* Neuro-Tech Details */}
@@ -327,15 +334,17 @@ export default function NeuroTechInterfacesPage() {
               viewport={{ once: true }}
             >
               <div className="aspect-video bg-gradient-to-br from-blue-900/30 to-indigo-900/30 rounded-xl border border-blue-500/30 overflow-hidden relative">
-                <img 
-                  src="/DigitalPinoy/images/hologram.png" 
-                  alt="Neuro-tech interfaces impact"
+                <img
+                  src="/DigitalPinoy/emotions/neuro3.png"
+                  alt="Neuro-tech interfaces shaping brain-computer culture."
                   className="w-full h-full object-cover opacity-80"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                <div className="absolute bottom-3 left-3 right-3">
-                  <p className="text-white text-xs">Neuro-tech interfaces shaping brain-computer culture.</p>
-                </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  (n.d.). Neurotechnology and brain-computer interfaces: The future of healthcare. Entrepreneur India. https://www.entrepreneurindia.co/blogs/neurotechnology-and-brain-computer-interfaces-the-future-of-healthcare
+                </p>
               </div>
             </motion.div>
 

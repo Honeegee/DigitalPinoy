@@ -138,9 +138,9 @@ export default function AICompanionsPage() {
               viewport={{ once: true }}
               className="relative"
             >
-              <div className="aspect-[4/3] bg-gradient-to-br from-green-900/30 to-emerald-900/30 rounded-xl border border-green-500/30 overflow-hidden">
-                <img 
-                  src="/DigitalPinoy/images/aicompanion.png" 
+              <div className="aspect-[4/3] bg-gradient-to-br from-green-900/30 to-emerald-900/30 rounded-xl border border-green-500/30 overflow-hidden relative">
+                <img
+                  src="/DigitalPinoy/technology/aicompanion.jpg"
                   alt="AI companions and emotional support"
                   className="w-full h-full object-cover opacity-80"
                 />
@@ -148,6 +148,11 @@ export default function AICompanionsPage() {
                 <div className="absolute bottom-3 left-3 right-3">
                   <p className="text-white text-xs">AI companions providing emotional support and friendship.</p>
                 </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  How AI companionship is changing human interaction. (n.d.). EMB Global. https://blog.emb.global/how-ai-companionship-is-changing-human-interaction
+                </p>
               </div>
             </motion.div>
           </div>
@@ -181,13 +186,18 @@ export default function AICompanionsPage() {
             >
               <div className="aspect-square bg-gradient-to-br from-green-500/20 to-emerald-500/20 rounded-2xl border border-green-500/40 p-8 backdrop-blur-sm">
                 <div className="w-full h-full bg-black/50 rounded-xl border border-green-500/30 flex items-center justify-center relative overflow-hidden">
-                  <div className="absolute inset-0 bg-[url('/DigitalPinoy/images/aicompanion.png')] bg-contain bg-center bg-no-repeat opacity-90"></div>
+                  <div className="absolute inset-0 bg-[url('/DigitalPinoy/technology/aifriend.jpg')] bg-contain bg-center bg-no-repeat opacity-90"></div>
                   <div className="absolute bottom-3 left-3 right-3 text-center">
                     <p className="text-white text-xs bg-black/70 backdrop-blur-sm rounded-lg py-2 px-3">
                       🤖 AI Friend
                     </p>
                   </div>
                 </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  AI friend for kids. (n.d.). Moxie Robot. https://moxierobot.com/blogs/news/ai-friend-for-kids
+                </p>
               </div>
 
               <motion.div
@@ -330,8 +340,8 @@ export default function AICompanionsPage() {
               viewport={{ once: true }}
             >
               <div className="aspect-video bg-gradient-to-br from-emerald-900/30 to-green-900/30 rounded-xl border border-emerald-500/30 overflow-hidden relative">
-                <img 
-                  src="/DigitalPinoy/images/emotionalAI.png" 
+                <img
+                  src="/DigitalPinoy/technology/aiasfriend.jpg"
                   alt="AI emotional intelligence"
                   className="w-full h-full object-cover opacity-80"
                 />
@@ -339,6 +349,11 @@ export default function AICompanionsPage() {
                 <div className="absolute bottom-3 left-3 right-3">
                   <p className="text-white text-xs">AI understanding and responding to human emotions.</p>
                 </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  The rise of AI companions: Can a machine be your friend? (n.d.). Vocal Media. https://vocal.media/futurism/the-rise-of-ai-companions-can-a-machine-be-your-friend
+                </p>
               </div>
             </motion.div>
 

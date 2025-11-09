@@ -158,9 +158,9 @@ export default function DialUpPage() {
               viewport={{ once: true }}
               className="relative"
             >
-              <div className="aspect-[4/3] bg-gradient-to-br from-blue-900/30 to-cyan-900/30 rounded-xl border border-blue-500/30 overflow-hidden">
-                <img 
-                  src="/DigitalPinoy/technology/dialup.jpg" 
+              <div className="aspect-[4/3] bg-gradient-to-br from-blue-900/30 to-cyan-900/30 rounded-xl border border-blue-500/30 overflow-hidden relative">
+                <img
+                  src="/DigitalPinoy/technology/dialup.jpg"
                   alt="Dial-up modem connection"
                   className="w-full h-full object-cover opacity-80"
                 />
@@ -168,6 +168,11 @@ export default function DialUpPage() {
                 <div className="absolute bottom-3 left-3 right-3">
                   <p className="text-white text-xs">The iconic 56k modem that connected Filipinos to the world.</p>
                 </div>
+              </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-400 italic">
+                  Who still uses 56k modems and why? (n.d.). TechRadar. https://www.techradar.com/news/internet/who-still-uses-56k-modems-and-why-471022
+                </p>
               </div>
             </motion.div>
           </div>
