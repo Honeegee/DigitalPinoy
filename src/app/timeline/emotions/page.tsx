@@ -185,7 +185,7 @@ export default function EmotionsTimelinePage() {
                 color: 'bg-gradient-to-br from-cyan-900/30 to-blue-900/30 border-cyan-500/30',
                 href: '/timeline/emotions/emotional-ai-tools',
                 position: { x: 64, y: 5 },
-                imagePath: '/DigitalPinoy/images/emotionalai.png'
+                imagePath: '/DigitalPinoy/images/emotionalAI.png'
               }
             ]}
             className="mt-0"
