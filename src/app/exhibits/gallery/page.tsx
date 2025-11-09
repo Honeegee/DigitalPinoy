@@ -1,108 +1,230 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowLeft, Image as ImageIcon, Calendar, Grid3x3 } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-// Gallery images organized by era
+// Gallery images organized by era - manually curated with available images
 const galleryImages = {
   'early-digital': [
     {
       id: 1,
-      src: '/DigitalPinoy/images/gallery/early-1.jpg',
-      title: 'Friendster Profile',
+      src: '/gallery/nokia_collection.jpg',
+      title: 'Nokia Collection',
       year: '2003',
-      description: 'Classic Friendster profile with glitter graphics'
+      description: 'The legendary Nokia phones that defined early mobile communication'
     },
     {
       id: 2,
-      src: '/DigitalPinoy/images/gallery/early-2.jpg',
-      title: 'Internet Café',
-      year: '2004',
-      description: 'Computer shop gaming sessions'
+      src: '/gallery/nokia_phones.jpg',
+      title: 'Nokia Phones',
+      year: '2003',
+      description: 'Iconic Nokia devices from the early 2000s'
     },
     {
       id: 3,
-      src: '/DigitalPinoy/images/gallery/early-3.jpg',
-      title: 'Nokia 3310',
-      year: '2002',
-      description: 'The legendary Nokia phone'
+      src: '/gallery/compshop.jpg',
+      title: 'Computer Shop',
+      year: '2004',
+      description: 'Internet cafés and computer shops where digital life began'
     },
-    // Add more images here
-  ],
-  'golden-age': [
     {
       id: 4,
-      src: '/DigitalPinoy/images/gallery/golden-1.jpg',
-      title: 'Multiply Blog',
-      year: '2007',
-      description: 'Multiply was the place for bloggers'
+      src: '/gallery/early_internet_setup.jpg',
+      title: 'Early Internet Setup',
+      year: '2002',
+      description: 'The first home internet connections in the Philippines'
     },
     {
       id: 5,
-      src: '/DigitalPinoy/images/gallery/golden-2.jpg',
-      title: 'YM Status',
-      year: '2008',
-      description: 'Yahoo Messenger golden era'
-    },
+      src: '/gallery/slider_flip.jpg',
+      title: 'Slider Flip Phones',
+      year: '2005',
+      description: 'Cool slider and flip phones that were all the rage'
+    }
+  ],
+  'golden-age': [
     {
       id: 6,
-      src: '/DigitalPinoy/images/gallery/golden-3.jpg',
-      title: 'Camera Phone',
-      year: '2009',
-      description: 'First camera phone selfies'
+      src: '/gallery/counterstrike.jpg',
+      title: 'Counter-Strike Gaming',
+      year: '2007',
+      description: 'LAN gaming sessions at internet cafés'
     },
-    // Add more images here
-  ],
-  'smartphone': [
     {
       id: 7,
-      src: '/DigitalPinoy/images/gallery/smartphone-1.jpg',
-      title: 'Instagram Filter',
-      year: '2012',
-      description: 'Instagram filters everywhere'
+      src: '/gallery/dota.jpg',
+      title: 'DOTA Gaming',
+      year: '2008',
+      description: 'Defense of the Ancients became a national phenomenon'
     },
     {
       id: 8,
-      src: '/DigitalPinoy/images/gallery/smartphone-2.jpg',
-      title: 'Facebook Timeline',
-      year: '2013',
-      description: 'When Facebook timeline launched'
+      src: '/gallery/vcd_cover.jpg',
+      title: 'VCD Movie Rentals',
+      year: '2006',
+      description: 'Video CD rentals before streaming services'
     },
     {
       id: 9,
-      src: '/DigitalPinoy/images/gallery/smartphone-3.jpg',
-      title: 'Selfie Stick Era',
-      year: '2014',
-      description: 'The rise of the selfie stick'
+      src: '/gallery/vhs.jpg',
+      title: 'VHS to DVD Transition',
+      year: '2007',
+      description: 'The shift from VHS tapes to DVD players'
     },
-    // Add more images here
-  ],
-  'modern': [
     {
       id: 10,
-      src: '/DigitalPinoy/images/gallery/modern-1.jpg',
-      title: 'TikTok Dance',
-      year: '2020',
-      description: 'TikTok takes over'
-    },
+      src: '/gallery/video_rental.jpg',
+      title: 'Video Rental Shops',
+      year: '2008',
+      description: 'Blockbuster-style video rental stores'
+    }
+  ],
+  'smartphone': [
     {
       id: 11,
-      src: '/DigitalPinoy/images/gallery/modern-2.jpg',
-      title: 'Zoom Culture',
-      year: '2021',
-      description: 'Virtual everything'
+      src: '/gallery/Motorola Razr.png',
+      title: 'Motorola Razr',
+      year: '2011',
+      description: 'The iconic flip phone that made a comeback'
     },
     {
       id: 12,
-      src: '/DigitalPinoy/images/gallery/modern-3.jpg',
-      title: 'Content Creation',
-      year: '2023',
-      description: 'Everyone is a content creator'
+      src: '/gallery/Old Cellphone.png',
+      title: 'Old Cellphones',
+      year: '2012',
+      description: 'Transitioning from feature phones to smartphones'
     },
-    // Add more images here
+    {
+      id: 13,
+      src: '/gallery/Smart Buddy Old Sim.png',
+      title: 'Old SIM Cards',
+      year: '2010',
+      description: 'The evolution of SIM card technology'
+    }
+  ],
+  'modern': [
+    {
+      id: 14,
+      src: '/gallery/2000 converse.jpg',
+      title: '2000s Converse',
+      year: '2000',
+      description: 'Y2K fashion and sneaker culture'
+    },
+    {
+      id: 15,
+      src: '/gallery/2000 fashion.jpg',
+      title: '2000s Fashion',
+      year: '2000',
+      description: 'Y2K fashion trends and styles'
+    },
+    {
+      id: 16,
+      src: '/gallery/2000 hits.jpg',
+      title: '2000s Music Hits',
+      year: '2000',
+      description: 'Popular music from the early 2000s'
+    },
+    {
+      id: 17,
+      src: '/gallery/2000 nike.jpg',
+      title: '2000s Nike',
+      year: '2000',
+      description: 'Sneaker culture and Nike popularity'
+    },
+    {
+      id: 18,
+      src: '/gallery/y2k 1.jpg',
+      title: 'Y2K Fashion 1',
+      year: '2000',
+      description: 'Iconic Y2K fashion and accessories'
+    },
+    {
+      id: 19,
+      src: '/gallery/y2k 2.jpg',
+      title: 'Y2K Fashion 2',
+      year: '2000',
+      description: 'More Y2K fashion trends and styles'
+    },
+    {
+      id: 20,
+      src: '/gallery/h and m.png',
+      title: 'H&M Fashion',
+      year: '2015',
+      description: 'Fast fashion becomes accessible'
+    },
+    {
+      id: 21,
+      src: '/gallery/levis.png',
+      title: 'Levi\'s Jeans',
+      year: '2016',
+      description: 'Classic denim fashion'
+    },
+    {
+      id: 22,
+      src: '/gallery/mango.png',
+      title: 'Mango Fashion',
+      year: '2017',
+      description: 'European fashion brands in the Philippines'
+    },
+    {
+      id: 23,
+      src: '/gallery/zara.png',
+      title: 'Zara Fashion',
+      year: '2018',
+      description: 'Fast fashion revolution'
+    },
+    {
+      id: 24,
+      src: '/gallery/teleserye 1.jpeg',
+      title: 'Teleserye Culture 1',
+      year: '2019',
+      description: 'Filipino soap operas and drama series'
+    },
+    {
+      id: 25,
+      src: '/gallery/teleserye 2.jpg',
+      title: 'Teleserye Culture 2',
+      year: '2019',
+      description: 'Popular Filipino television dramas'
+    },
+    {
+      id: 26,
+      src: '/gallery/teleserye 3.jpg',
+      title: 'Teleserye Culture 3',
+      year: '2019',
+      description: 'Iconic teleserye moments and stars'
+    },
+    {
+      id: 27,
+      src: '/gallery/pbb.jpg',
+      title: 'Pinoy Big Brother',
+      year: '2020',
+      description: 'Reality TV phenomenon in the Philippines'
+    },
+    {
+      id: 28,
+      src: '/gallery/philippine idol.jpg',
+      title: 'Philippine Idol',
+      year: '2021',
+      description: 'Filipino version of American Idol'
+    },
+    {
+      id: 29,
+      src: '/gallery/harry potter.jpg',
+      title: 'Harry Potter Mania',
+      year: '2022',
+      description: 'Harry Potter books and movies obsession'
+    },
+    {
+      id: 30,
+      src: '/gallery/twilight.jpg',
+      title: 'Twilight Saga',
+      year: '2023',
+      description: 'Vampire romance that captivated the nation'
+    }
   ]
 };
 
@@ -288,7 +410,7 @@ export default function GalleryPage() {
               transition={{ duration: 0.3 }}
               className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
             >
-              {filteredImages.map((image, index) => (
+              {filteredImages.map((image: any, index: number) => (
                 <motion.div
                   key={image.id}
                   initial={{ opacity: 0, scale: 0.9 }}
@@ -298,17 +420,21 @@ export default function GalleryPage() {
                   onClick={() => setSelectedImage(image)}
                   className="group relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-2xl overflow-hidden border border-white/20 hover:border-purple-400/50 transition-all cursor-pointer shadow-lg hover:shadow-2xl"
                 >
-                  {/* Image Placeholder - Replace with actual images */}
+                  {/* Actual Image */}
                   <div className="aspect-square bg-gradient-to-br from-purple-500/20 to-pink-500/20 flex items-center justify-center relative overflow-hidden">
                     <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-pink-500/10 group-hover:scale-110 transition-transform duration-500" />
-                    <ImageIcon className="w-16 h-16 text-white/30" />
-                    {/* Uncomment when you have actual images */}
-                    {/* <Image
+                    <Image
                       src={image.src}
                       alt={image.title}
                       fill
                       className="object-cover"
-                    /> */}
+                      onError={(e) => {
+                        // Fallback to icon if image fails to load
+                        e.currentTarget.style.display = 'none';
+                        e.currentTarget.parentElement?.querySelector('.fallback-icon')?.classList.remove('hidden');
+                      }}
+                    />
+                    <ImageIcon className="w-16 h-16 text-white/30 fallback-icon hidden" />
                   </div>
 
                   {/* Image Info Overlay */}
@@ -403,15 +529,19 @@ export default function GalleryPage() {
             >
               {/* Image */}
               <div className="aspect-video bg-gradient-to-br from-purple-500/20 to-pink-500/20 flex items-center justify-center">
-                <ImageIcon className="w-32 h-32 text-white/30" />
-                {/* Uncomment when you have actual images */}
-                {/* <Image
+                <Image
                   src={selectedImage.src}
                   alt={selectedImage.title}
                   width={800}
                   height={600}
-                  className="object-contain"
-                /> */}
+                  className="object-contain max-w-full max-h-full"
+                  onError={(e) => {
+                    // Fallback to icon if image fails to load
+                    e.currentTarget.style.display = 'none';
+                    e.currentTarget.parentElement?.querySelector('.fallback-icon')?.classList.remove('hidden');
+                  }}
+                />
+                <ImageIcon className="w-32 h-32 text-white/30 fallback-icon hidden" />
               </div>
 
               {/* Info */}

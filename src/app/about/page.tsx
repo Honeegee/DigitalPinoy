@@ -89,6 +89,35 @@ export default function AboutPage() {
         </div>
       </div>
 
+      {/* Video Section */}
+      <div className="relative z-10 py-16">
+        <div className="max-w-4xl mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-center"
+          >
+            <h2 className="text-3xl font-bold text-white mb-8">Experience Our Digital Journey</h2>
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/10">
+              <iframe
+                width="100%"
+                height="500"
+                src="https://www.youtube.com/embed/JVItuhKHOnY"
+                title="Digital Pinoy Journey"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="w-full"
+              ></iframe>
+            </div>
+            <p className="text-gray-400 mt-6 max-w-2xl mx-auto">
+              Watch this video to immerse yourself in the digital culture that shaped Filipino online experiences.
+            </p>
+          </motion.div>
+        </div>
+      </div>
+
       {/* Mission Section */}
       <div className="relative z-10 py-16">
         <div className="max-w-6xl mx-auto px-4">

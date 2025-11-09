@@ -1,0 +1,519 @@
+{
+  "early-digital": [
+    {
+      "id": 40,
+      "src": "/nokia_collection.jpg",
+      "title": "Nokia Collection",
+      "year": "2003",
+      "description": "From the early days of digital Philippines"
+    },
+    {
+      "id": 41,
+      "src": "/nokia_phones.jpg",
+      "title": "Nokia Phones",
+      "year": "2003",
+      "description": "From the early days of digital Philippines"
+    }
+  ],
+  "golden-age": [],
+  "smartphone": [],
+  "modern": [
+    {
+      "id": 1,
+      "src": "/2000 converse.jpg",
+      "title": "2000 Converse",
+      "year": "2000",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 2,
+      "src": "/2000 fashion.jpg",
+      "title": "2000 Fashion",
+      "year": "2000",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 3,
+      "src": "/2000 hits.jpg",
+      "title": "2000 Hits",
+      "year": "2000",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 4,
+      "src": "/2000 nike.jpg",
+      "title": "2000 Nike",
+      "year": "2000",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 5,
+      "src": "/Bamboo.png",
+      "title": "Bamboo",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 6,
+      "src": "/cable tv.jpg",
+      "title": "Cable Tv",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 7,
+      "src": "/Callalily.png",
+      "title": "Callalily",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 8,
+      "src": "/candy mag 1.jpg",
+      "title": "Candy Mag 1",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 9,
+      "src": "/candy mag 2.gif",
+      "title": "Candy Mag 2",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 10,
+      "src": "/cartoon network.jpg",
+      "title": "Cartoon Network",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 11,
+      "src": "/Champ.png",
+      "title": "Champ",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 12,
+      "src": "/Champ2.png",
+      "title": "Champ2",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 13,
+      "src": "/classic_pc_setup.jpg",
+      "title": "Classic Pc Setup",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 14,
+      "src": "/collage.png",
+      "title": "Collage",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 15,
+      "src": "/compshop.jpg",
+      "title": "Compshop",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 16,
+      "src": "/counterstrike.jpg",
+      "title": "Counterstrike",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 17,
+      "src": "/counterstrike_tactical.jpg",
+      "title": "Counterstrike Tactical",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 18,
+      "src": "/disney.png",
+      "title": "Disney",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 19,
+      "src": "/dota.jpg",
+      "title": "Dota",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 20,
+      "src": "/Dyesebel.png",
+      "title": "Dyesebel",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 21,
+      "src": "/Dyosa.png",
+      "title": "Dyosa",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 22,
+      "src": "/early_internet_setup.jpg",
+      "title": "Early Internet Setup",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 23,
+      "src": "/El Shaddai.png",
+      "title": "El Shaddai",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 24,
+      "src": "/Eli Soriano.png",
+      "title": "Eli Soriano",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 25,
+      "src": "/gaming.jpg",
+      "title": "Gaming",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 26,
+      "src": "/h and m.png",
+      "title": "H And M",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 27,
+      "src": "/Hale.png",
+      "title": "Hale",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 28,
+      "src": "/harry potter.jpg",
+      "title": "Harry Potter",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 29,
+      "src": "/Itchy Worms.png",
+      "title": "Itchy Worms",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 30,
+      "src": "/Jeje text.png",
+      "title": "Jeje Text",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 31,
+      "src": "/levis.png",
+      "title": "Levis",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 32,
+      "src": "/mango.png",
+      "title": "Mango",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 33,
+      "src": "/Marina.png",
+      "title": "Marina",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 34,
+      "src": "/Mayonnaise.png",
+      "title": "Mayonnaise",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 35,
+      "src": "/meteor garden.jpg",
+      "title": "Meteor Garden",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 36,
+      "src": "/Motorola Razr.png",
+      "title": "Motorola Razr",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 37,
+      "src": "/Mulawin.png",
+      "title": "Mulawin",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 38,
+      "src": "/Nazareno.png",
+      "title": "Nazareno",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 39,
+      "src": "/nick.png",
+      "title": "Nick",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 42,
+      "src": "/Old Cellphone.png",
+      "title": "Old Cellphone",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 43,
+      "src": "/old shows disney.jpg",
+      "title": "Old Shows Disney",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 44,
+      "src": "/Panday.png",
+      "title": "Panday",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 45,
+      "src": "/Pangako Sa_yo.png",
+      "title": "Pangako Sa Yo",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 46,
+      "src": "/Parokya ni Edgar.png",
+      "title": "Parokya Ni Edgar",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 47,
+      "src": "/pbb.jpg",
+      "title": "Pbb",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 48,
+      "src": "/philippine idol.jpg",
+      "title": "Philippine Idol",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 49,
+      "src": "/Photo album.jpg",
+      "title": "Photo Album",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 50,
+      "src": "/powerpuff girls.jpg",
+      "title": "Powerpuff Girls",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 51,
+      "src": "/sarah g.jpg",
+      "title": "Sarah G",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 52,
+      "src": "/seventeen mag 1.jpg",
+      "title": "Seventeen Mag 1",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 53,
+      "src": "/seventeen mag 2.jpg",
+      "title": "Seventeen Mag 2",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 54,
+      "src": "/Simbang Gabi.png",
+      "title": "Simbang Gabi",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 55,
+      "src": "/slider_flip.jpg",
+      "title": "Slider Flip",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 56,
+      "src": "/Smart Buddy Old Sim.png",
+      "title": "Smart Buddy Old Sim",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 57,
+      "src": "/spider man.jpg",
+      "title": "Spider Man",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 58,
+      "src": "/Super Twins.png",
+      "title": "Super Twins",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 59,
+      "src": "/teleserye 1.jpeg",
+      "title": "Teleserye 1",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 60,
+      "src": "/teleserye 2.jpg",
+      "title": "Teleserye 2",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 61,
+      "src": "/teleserye 3.jpg",
+      "title": "Teleserye 3",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 62,
+      "src": "/twilight.jpg",
+      "title": "Twilight",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 63,
+      "src": "/vcd_cover.jpg",
+      "title": "Vcd Cover",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 64,
+      "src": "/vcd_karaoke.jpg",
+      "title": "Vcd Karaoke",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 65,
+      "src": "/vhs.jpg",
+      "title": "Vhs",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 66,
+      "src": "/video_rental.jpg",
+      "title": "Video Rental",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 67,
+      "src": "/vs. Dela Hoya.png",
+      "title": "Vs. Dela Hoya",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 68,
+      "src": "/vs. Diaz.png",
+      "title": "Vs. Diaz",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 69,
+      "src": "/vs. Marquez.png",
+      "title": "Vs. Marquez",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 70,
+      "src": "/vs. Morales.png",
+      "title": "Vs. Morales",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 71,
+      "src": "/y2k 1.jpg",
+      "title": "Y2k 1",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 72,
+      "src": "/y2k 2.jpg",
+      "title": "Y2k 2",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    },
+    {
+      "id": 73,
+      "src": "/zara.png",
+      "title": "Zara",
+      "year": "2020",
+      "description": "Contemporary digital Filipino life"
+    }
+  ]
+}

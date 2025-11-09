@@ -35,7 +35,8 @@ const getYouTubeVideoId = (url: string): string => {
 // Function to get YouTube thumbnail URL with fallbacks
 const getYouTubeThumbnail = (url: string): string => {
   const videoId = getYouTubeVideoId(url);
-  return `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
+  // Use hqdefault for better quality and reliability
+  return `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
 };
 
 // Function to get fallback thumbnail URLs
@@ -99,6 +100,78 @@ export default function OPMExhibit() {
       duration: '3:41',
       genre: 'Alternative Rock',
       youtubeUrl: 'https://www.youtube.com/watch?v=EJqa7s121rM',
+      iconic: true
+    },
+    {
+      id: 4,
+      title: 'Jopay',
+      artist: 'Mayonnaise',
+      album: 'Pula',
+      year: 2007,
+      description: 'A powerful rock anthem about social injustice and the struggles of the Filipino people.',
+      duration: '4:15',
+      genre: 'Alternative Rock',
+      youtubeUrl: 'https://youtu.be/oZmcCIXwpto',
+      iconic: true
+    },
+    {
+      id: 5,
+      title: 'Magbalik',
+      artist: 'Callalily',
+      album: 'Flower Power',
+      year: 2006,
+      description: 'A heartfelt ballad about longing and the pain of separation, capturing the essence of Filipino emotional expression.',
+      duration: '4:15',
+      genre: 'Alternative Rock',
+      youtubeUrl: 'https://www.youtube.com/watch?v=2G5s-FkqH3Y&list=RD2G5s-FkqH3Y&start_radio=1',
+      iconic: true
+    },
+    {
+      id: 6,
+      title: 'Gitara',
+      artist: 'Parokya ni Edgar',
+      album: 'Bumuka',
+      year: 2002,
+      description: 'A fun and energetic song about playing guitar and enjoying life, showcasing the playful side of Filipino rock music.',
+      duration: '3:45',
+      genre: 'Alternative Rock',
+      youtubeUrl: 'https://www.youtube.com/watch?v=LIwV5bPxVPM&list=RDLIwV5bPxVPM&start_radio=1',
+      iconic: true
+    },
+    {
+      id: 7,
+      title: 'Hawak Kamay',
+      artist: 'Yeng Constantino',
+      album: 'Salamat',
+      year: 2007,
+      description: 'A romantic ballad about holding hands and the simple joys of love, capturing the sweet essence of Filipino romance.',
+      duration: '4:02',
+      genre: 'Pop',
+      youtubeUrl: 'https://www.youtube.com/watch?v=5ULI9pXx9ag&list=RD5ULI9pXx9ag&start_radio=1',
+      iconic: true
+    },
+    {
+      id: 8,
+      title: 'Huwag Ka Nang Umiyak',
+      artist: 'Sugarfree',
+      album: 'Dahil Sa Gusto Ko Lang Sa Yo',
+      year: 2003,
+      description: 'A comforting song about moving on from heartbreak, offering solace and hope to those healing from lost love.',
+      duration: '4:08',
+      genre: 'Alternative Rock',
+      youtubeUrl: 'https://www.youtube.com/watch?v=NOzRYG91_rQ&list=RDNOzRYG91_rQ&start_radio=1',
+      iconic: true
+    },
+    {
+      id: 9,
+      title: 'Huwag na Huwag Mong Sasabihin',
+      artist: 'Kitchie Nadal',
+      album: 'Kitchie Nadal',
+      year: 2004,
+      description: 'A soulful ballad about unspoken feelings and the fear of confessing love, capturing the vulnerability of young romance.',
+      duration: '4:12',
+      genre: 'Pop/Rock',
+      youtubeUrl: 'https://www.youtube.com/watch?v=-0WBQmiwp50&list=RD-0WBQmiwp50&start_radio=1',
       iconic: true
     }
   ];
@@ -187,7 +260,7 @@ export default function OPMExhibit() {
                       <iframe
                         width="100%"
                         height="100%"
-                        src={`https://www.youtube.com/embed/${getYouTubeVideoId(selectedSong.youtubeUrl)}?autoplay=${isPlaying ? 1 : 0}&controls=1&rel=0`}
+                        src={`https://www.youtube.com/embed/${getYouTubeVideoId(selectedSong.youtubeUrl)}?autoplay=1&controls=1&rel=0`}
                         title={selectedSong.title}
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

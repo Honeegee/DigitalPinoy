@@ -9,35 +9,35 @@ export default function TimelinePage() {
     {
       title: 'Technology',
       subtitle: 'More Than Machines',
-      description: 'From cassette tapes to smartphones, discover how technology became part of our barkada.',
+      description: 'From cassette tapes to AI companions, discover how technology became part of our barkada.',
       icon: Cpu,
       color: 'from-blue-500 to-cyan-500',
       bgColor: 'from-blue-900/20 to-cyan-900/20',
       href: '/timeline/technology',
-      years: '2000-2010',
-      highlights: ['SMS Revolution', 'Internet Cafés', 'Friendster Era', 'Facebook Migration']
+      years: '2000-2030',
+      highlights: ['SMS Revolution', 'Internet Cafés', 'Friendster Era', 'AI Integration', 'Metaverse PH']
     },
     {
       title: 'Emotions',
       subtitle: 'affect, senses, & feelings',
-      description: 'How Filipinos humanized technology with love, laughter, and genuine connections.',
+      description: 'How Filipinos humanized technology with love, laughter, and genuine connections from hugot to AI empathy.',
       icon: Heart,
       color: 'from-pink-500 to-red-500',
       bgColor: 'from-pink-900/20 to-red-900/20',
       href: '/timeline/emotions',
-      years: '2000-2010',
-      highlights: ['OPM Hugot Era', 'Teleserye Bonding', 'Text Poetry', 'Pacquiao Pride']
+      years: '2000-2030',
+      highlights: ['OPM Hugot Era', 'Teleserye Bonding', 'Text Poetry', 'Pacquiao Pride', 'AI Emotional Companions']
     },
     {
       title: 'Globalization',
       subtitle: 'The World Knocks on Our Doors',
-      description: 'We transformed global culture with our humor, language, and Filipino identity.',
+      description: 'We transformed global culture with our humor, language, and Filipino identity from K-dramas to AI translation.',
       icon: Globe,
       color: 'from-green-500 to-emerald-500',
       bgColor: 'from-green-900/20 to-emerald-900/20',
       href: '/timeline/globalization',
-      years: '2000-2010',
-      highlights: ['Korean Drama Wave', 'American Idol', 'K-pop Covers', 'Global Fandoms']
+      years: '2000-2030',
+      highlights: ['Korean Drama Wave', 'American Idol', 'K-pop Covers', 'Global Fandoms', 'AI Translation']
     }
   ];
 
@@ -75,11 +75,11 @@ export default function TimelinePage() {
               <Clock className="w-8 h-8 text-pink-400" />
             </div>
             <p className="text-xl text-gray-300 mb-8">
-              🇵🇭 The decade that shaped Filipino digital culture (2000-2010) 🇵🇭
+              🇵🇭 The era that shaped Filipino digital culture (2000-2030) 🇵🇭
             </p>
             <p className="text-gray-400 max-w-3xl mx-auto mb-12">
               Explore three interconnected stories of how Filipinos conquered the digital world with
-              heart, humor, and community. Each timeline covers the complete 2000-2010 decade.
+              heart, humor, and community. Each timeline covers the complete 2000-2030 era.
             </p>
           </motion.div>
         </div>
@@ -180,8 +180,8 @@ export default function TimelinePage() {
               Relive the Digital Revolution
             </h2>
             <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
-              From text messaging dominance to social media explosion, witness how the Philippines became
-              a digital pioneer in Southeast Asia. Each moment shaped the unique Filipino internet culture we know today.
+              From text messaging dominance to AI companions and metaverse worlds, witness how the Philippines became
+              a digital pioneer in Southeast Asia. Each moment shaped the unique Filipino internet culture we know today and tomorrow.
             </p>
             <div className="flex items-center justify-center gap-4">
               <Zap className="w-6 h-6 text-yellow-400" />

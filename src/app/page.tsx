@@ -181,7 +181,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gradient-to-r from-pink-400 to-red-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="relative flex items-center gap-3">
                   <Calendar className="w-5 h-5" />
-                  <span>TIMELINE 2000-2010</span>
+                  <span>TIMELINE 2000-2030</span>
                 </div>
               </motion.button>
             </Link>
