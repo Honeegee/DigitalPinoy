@@ -23,28 +23,39 @@ interface FloatingSymbolsProps {
 
 export default function FloatingSymbols({ symbols, className = '', onSymbolClick }: FloatingSymbolsProps) {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
       setMousePosition({ x: e.clientX, y: e.clientY });
     };
 
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    checkMobile();
     window.addEventListener('mousemove', handleMouseMove);
-    return () => window.removeEventListener('mousemove', handleMouseMove);
+    window.addEventListener('resize', checkMobile);
+    
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove);
+      window.removeEventListener('resize', checkMobile);
+    };
   }, []);
 
   return (
-    <div className={`relative w-full min-h-[300px] ${className}`}>
+    <div className={`relative w-full ${isMobile ? 'flex flex-col gap-12 py-8' : 'min-h-[300px] lg:min-h-[400px]'} ${className}`}>
       {symbols.map((symbol, index) => {
         const IconComponent = symbol.icon;
         return (
           <motion.div
             key={symbol.id}
-            className="absolute cursor-pointer group"
-            style={{
+            className={`cursor-pointer group ${isMobile ? 'flex flex-col items-center justify-center' : 'absolute'}`}
+            style={!isMobile ? {
               left: `${symbol.position.x}%`,
               top: `${symbol.position.y}%`,
-            }}
+            } : undefined}
             initial={{ 
               opacity: 0,
               scale: 0,
@@ -60,24 +71,24 @@ export default function FloatingSymbols({ symbols, className = '', onSymbolClick
               rotateY: 0
             }}
             transition={{
-              delay: index * 0.15,
+              delay: isMobile ? index * 0.15 : index * 0.15,
               duration: 1.5,
               rotateX: { duration: 1, ease: "easeOut" },
               rotateY: { duration: 1, ease: "easeOut" },
-              y: {
+              y: isMobile ? undefined : {
                 duration: 5,
                 repeat: Infinity,
                 ease: "easeInOut",
               }
             }}
-            whileHover={{
+            whileHover={!isMobile ? {
               scale: 1.3,
               y: -10,
               rotateY: 5,
               rotateX: 5,
               transition: { duration: 0.4 }
-            }}
-            whileTap={{ scale: 0.95 }}
+            } : undefined}
+            whileTap={{ scale: isMobile ? 1.1 : 0.95 }}
           >
             <Link href={symbol.href}>
               <div
@@ -91,21 +102,21 @@ export default function FloatingSymbols({ symbols, className = '', onSymbolClick
                     transformStyle: 'preserve-3d',
                     perspective: '1000px'
                   }}
-                  whileHover={{
+                  whileHover={!isMobile ? {
                     rotateY: 5,
                     rotateX: 5,
-                  }}
+                  } : undefined}
                 >
                   {/* Icon/Image - No Background */}
                   <motion.div
                     className="relative"
-                    whileHover={{
+                    whileHover={!isMobile ? {
                       scale: 1.3,
-                    }}
+                    } : undefined}
                   >
                     {symbol.imagePath ? (
                       // Display the actual image when imagePath is provided - No background
-                      <div className="w-40 h-40 transform translate-z-30">
+                      <div className="w-20 h-20 md:w-32 md:h-32 lg:w-40 lg:h-40 transform translate-z-30">
                         <img
                           src={symbol.imagePath}
                           alt={symbol.title}
@@ -114,8 +125,8 @@ export default function FloatingSymbols({ symbols, className = '', onSymbolClick
                       </div>
                     ) : (
                       // Current placeholder with icon - Bigger, no background
-                      <div className="w-40 h-40 flex items-center justify-center transform translate-z-30">
-                        <IconComponent className="w-24 h-24 text-white" />
+                      <div className="w-20 h-20 md:w-32 md:h-32 lg:w-40 lg:h-40 flex items-center justify-center transform translate-z-30">
+                        <IconComponent className="w-12 h-12 md:w-20 md:h-20 lg:w-24 lg:h-24 text-white" />
                       </div>
                     )}
 
@@ -123,14 +134,14 @@ export default function FloatingSymbols({ symbols, className = '', onSymbolClick
                     <motion.div
                       className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent rounded-full opacity-0 group-hover:opacity-100"
                       initial={{ scale: 0 }}
-                      whileHover={{ scale: 1 }}
+                      whileHover={!isMobile ? { scale: 1 } : undefined}
                       transition={{ duration: 0.3 }}
                     />
                   </motion.div>
 
                   {/* Title - Positioned below icon */}
                   <motion.h3
-                    className="text-white font-bold text-base text-center mt-4 px-3 leading-tight transform translate-z-20"
+                    className="text-white font-bold text-xs md:text-sm lg:text-base text-center mt-2 md:mt-3 lg:mt-4 px-2 md:px-3 leading-tight transform translate-z-20"
                     animate={{
                       opacity: [0.8, 1, 0.8],
                     }}
@@ -144,8 +155,8 @@ export default function FloatingSymbols({ symbols, className = '', onSymbolClick
 
                   {/* 3D Shadow Effect */}
                   <motion.div
-                    className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-24 h-3 bg-black/40 blur-lg rounded-full opacity-0 group-hover:opacity-60"
-                    whileHover={{ scale: 1.1 }}
+                    className="absolute -bottom-1 md:-bottom-2 left-1/2 transform -translate-x-1/2 w-16 md:w-20 lg:w-24 h-2 md:h-3 bg-black/40 blur-lg rounded-full opacity-0 group-hover:opacity-60"
+                    whileHover={!isMobile ? { scale: 1.1 } : undefined}
                     transition={{ duration: 0.3 }}
                   />
                 </motion.div>
