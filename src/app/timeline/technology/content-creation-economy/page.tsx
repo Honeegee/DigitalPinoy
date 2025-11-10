@@ -26,9 +26,19 @@ export default function ContentCreationEconomyPage() {
   const heroOpacity = useTransform(scrollYProgress, [0, 0.3], [1, 0]);
 
   return (
-    <div ref={containerRef} className="min-h-screen bg-black">
-      {/* Background */}
-      <div className="fixed inset-0 z-0 bg-gradient-to-b from-orange-950 via-black to-black"></div>
+    <div
+      ref={containerRef}
+      className="min-h-screen relative"
+      style={{
+        backgroundImage: 'url(/DigitalPinoy/images/technology.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        backgroundAttachment: 'fixed'
+      }}
+    >
+      {/* Background Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70"></div>
 
       {/* Hero Section */}
       <motion.section 
